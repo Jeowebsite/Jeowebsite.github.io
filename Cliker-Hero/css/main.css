@@ -1,0 +1,415 @@
+/*
+ * Generic styles
+ */
+html {
+    overflow: hidden;
+    width: 100%;
+    height: 99.9%;
+    -webkit-text-size-adjust: none;
+}
+
+body {
+    overflow: hidden;
+    width: 100%;
+    height: 99.9%;
+    background: #efef8d;
+    color: #000;
+    font: normal normal bold 18px/24px 'Roboto Condensed', sans-serif;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    touch-action: none;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    -webkit-touch-callout: none;
+    list-style: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {-webkit-appearance: none; margin: 0}
+/* Firefox */
+input[type=number] {-moz-appearance: textfield}
+
+a {color: #000}
+a:hover {color: #000}
+
+a, button, input[type=submit], input[type=button], input[type=reset], input:focus, select, label, option {
+    cursor: pointer;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+[disabled] {
+    cursor: auto;
+}
+
+button {
+    overflow: visible;
+    position: relative;
+    top: 0;
+    width: auto;
+    padding: 0 1ex;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    color: #000;
+    font-size: 18px;
+    line-height: 1.666666;
+    transition: top 0.075s linear;
+    vertical-align: bottom;
+}
+
+button::-moz-focus-inner {border: 0}
+
+button::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 10px;
+    background: #999;
+    bottom: -3px;
+    left: 0;
+    border-radius: 5px 5px;
+    transition: bottom 0.1s linear;
+}
+
+button:active {top: 3px}
+button:active::after {bottom: 1px}
+
+button.green {background: #a4ce38; color: #fff}
+button.green::after {background: #738e27}
+
+button.orange {background: #f9a425; color: #fff}
+button.orange::after {background: #b0741c}
+
+button.red {background: #e24134; color: #fff}
+button.red::after {background: #8a1c13}
+
+button.small {font-size: 15px}
+button.big {font-size: 36px; line-height: 48px}
+
+
+h1 {
+    margin-bottom: 18px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #70a3d6;
+    text-align: center;
+    font-size: 42px;
+    line-height: 1;
+}
+
+h2 {
+    padding: 9px 0;
+    color: #c93529;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1;
+}
+
+section {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 99.9%;
+    z-index: 1;
+    opacity: 1;
+    transition: left 0.5s ease;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+    transform: translate(-50%, -50%);
+}
+
+section.upscale-portrait {
+    max-width: 580px;
+    max-height: 500px;
+}
+
+section.upscale-portrait.intro {
+    height: auto;
+    max-height: none;
+}
+
+section.upscale-landscape {
+    max-width: 580px;
+    max-height: 500px;
+}
+
+section.hidden {z-index: -1; opacity: 0; left: 20%}
+
+section>div {
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 18px;
+}
+
+section .header,
+section footer {display: table-row; width: 100%; font-size: 15px}
+section footer>* {display: table-cell; vertical-align: bottom}
+section footer>div {line-height: 18px}
+section footer .left {float: left; padding: 18px 6px 0 0; text-align: left !important}
+section footer .right {float: right; padding: 18px 0 0 6px; text-align: right !important}
+section footer .center {padding: 12px 0 0; text-align: center !important}
+section.upscale-portrait footer,
+section.upscale-landscape footer {font-size: 18px}
+section.upscale-portrait footer>div,
+section.upscale-landscape footer>div {line-height: 21px}
+
+section.main {
+    text-align: center;
+}
+
+section.main .options {
+    display: table-cell;
+    vertical-align: top;
+}
+
+section.main .options p {
+    margin-bottom: 12px;
+    font-size: 30px;
+    line-height: 36px
+}
+
+section.main li {
+    margin: 12px 0;
+}
+
+section.main button {
+    width: 260px;
+}
+
+@media screen and (max-width: 380px) {
+    h1 {
+        font-size: 42px;
+    }
+}
+
+@media screen and (max-height: 479px) and (orientation: landscape) {
+    section.main ul {
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    section.main li {
+        display: inline-block;
+        margin: 6px 0;
+    }
+
+    section.main button {
+        width: auto;
+    }
+}
+
+
+section.intro .header {display: block; font-weight: 700}
+
+section.intro div div {
+    /* display: table-row; */
+    /* vertical-align: middle; */
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+section.intro div div p {
+    max-width: 600px;
+    margin: 9px auto 0;
+}
+
+section.intro div div ul {
+    max-width: 600px;
+    margin: 18px auto 0;
+    padding: 0 0 0 36px;
+}
+
+section.intro div div li {
+    list-style: disc;
+}
+
+section.intro footer p {
+    padding: 12px 0 0;
+    text-align: center;
+}
+
+section.intro footer button {
+    width: 100px;
+}
+
+
+section.inventory>div>div {
+    display: table-row;
+    text-align: center;
+}
+
+section.inventory>div>div>div {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 18px 0 0;
+}
+
+section.inventory>div>div h3 {
+    max-width: 450px;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: left;
+}
+
+section.inventory>div>div h3.center {text-align: center}
+section.inventory>div>div h3+p {max-width: 450px; margin: 18px auto 12px; text-align: left; font-size: 21px}
+
+section.inventory>div>div ul.inventory {
+    max-width: 450px;
+    margin: 6px auto 18px;
+    text-align: left;
+}
+
+section.inventory>div>div ul.inventory li {
+    overflow: hidden;
+    line-height: 30px;
+    padding: 3px 0 7px;
+    font-size: 18px;
+    transition: opacity 0.25s ease;
+}
+
+section.inventory.upscale-portrait>div>div ul.inventory li,
+section.inventory.upscale-landscape>div>div ul.inventory li {
+    font-size: 21px;
+}
+
+
+section.inventory>div>div ul.inventory li.hidden {opacity: 0.25}
+
+section.inventory>div>div ul.inventory .field {float: right; width: 130px}
+section.inventory.upscale-landscape>div>div ul.inventory .field,
+section.inventory.upscale-portrait>div>div ul.inventory .field {width: 140px}
+
+section.inventory>div>div ul.inventory button {float: right; width: 150px}
+section.inventory>div>div ul.inventory button.short {width: 80px}
+
+section.inventory>div>div button {vertical-align: middle}
+
+section.inventory>div>div ul.inventory .field button {
+    float: none;
+    width: auto;
+    height: 30px;
+    padding: 0 0.5ex;
+    vertical-align: top;
+}
+
+section.inventory>div>div input[type='number'] {
+    box-sizing: content-box;
+    width: 18px;
+    height: 30px;
+    margin: 0 -9px;
+    padding: 0 9px;
+    border: none;
+    border-bottom: 3px solid #999;
+    text-align: right;
+    background: #fff;
+    color: #000;
+    vertical-align: top;
+    cursor: text;
+}
+
+section.inventory.upscale-portrait>div>div input[type='number'],
+section.inventory.upscale-landscape>div>div input[type='number'] {
+    width: 22px;
+}
+
+section.inventory>div>div .actions {
+    position: relative;
+    overflow: hidden;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 0 0 4px;
+}
+
+section.inventory>div>div .action+.actions {
+    margin-top: 24px;
+}
+
+section.inventory>div>div .actions li.left {float: left}
+section.inventory>div>div .actions li.right {float: right}
+section.inventory>div>div .actions li.center {display: inline}
+
+section.inventory>div>div .actions button.small {width: 90px; margin-top: 12px}
+section.inventory>div>div .actions button.big {padding: 0 1em}
+
+@media screen and (max-width: 349px) {
+    section.inventory>div>div .actions {padding-bottom: 54px}
+    section.inventory>div>div .actions li.left {position: absolute; left: 0; top: auto; bottom: 4px; float: none}
+    section.inventory>div>div .actions li.right {position: absolute; right: 0; top: auto; left: auto; bottom: 4px; float: none}
+}
+
+
+section.season p {text-align: center}
+section.season table {max-width: 500px; width: 100%; margin: 18px auto 24px; border-collapse: collapse}
+section.season tbody tr:last-child>* {padding-bottom: 9px}
+section.season tfoot tr:first-child>* {padding-top: 9px; border-top: 3px solid #000}
+section.season th {width: 55%; padding: 3px 3px 3px 0; text-align: right; vertical-align: top}
+section.season th[colspan] {text-align: center}
+section.season td {width: 45%; padding: 3px 0 3px 3px; text-align: left; vertical-align: bottom}
+section.season .green {color: #2da613}
+section.season .red {color: #b01111}
+section.season .result {margin-bottom: 30px; color: #1b1ea0; font-size: 30px}
+section.season button.big {padding: 0 1em}
+section.season .new-highscore {display: block}
+
+
+section.losses>div>div>div p {margin: 18px 0 0; text-align: center}
+section.losses button.big {padding: 0 1em}
+
+
+section.day>div>div>div p {margin: 18px 0 0; text-align: center}
+section.day>div>div>div .action {margin: 30px auto 18px}
+section.day>div>div>div button.big {padding: 0 1em}
+
+.progress-bar {position: relative; display: block; max-width: 400px; height: 34px; margin: 6px auto 0; border: 2px solid #613c03; line-height: 30px; text-align: center; color: #613c03}
+.progress-bar .bar {position: absolute; left: 0; top: 0; bottom: 0; background: #f9a425; transition: width 1s ease-in-out 1.5s}
+.progress-bar .value {position: relative}
+
+
+section.simulation {max-width: none; max-height: none; padding: 0}
+section.simulation>div {position: absolute; left: 50%; top: 50%; display: block; width: 572px; height: 442px; margin: -221px 0 0 -286px; padding: 0; transform-origin: 50% 50%; transform: scale(1, 1); transition: transform 0.2s ease}
+section.simulation .scene {position: relative; overflow: hidden; width: 572px; height: 396px; color: #fff; font-size: 18px; line-height: 21px}
+section.simulation .scene canvas {position: relative; z-index: -1; background: #000; display: block}
+section.simulation .scene .time {position: absolute; left: 18px; top: 15px; text-shadow: 1px 1px 0 #000}
+section.simulation .scene .price {position: absolute; right: 18px; top: 15px; text-shadow: 1px 1px 0 #000; text-align: right}
+section.simulation .scene .price .slider {position: relative; display: block; width: 200px; height: 10px; margin: 8px 0 8px; background: rgba(255, 255, 255, 0.5)}
+section.simulation .scene .price .slider button {position: absolute; left: 0; top: -8px; width: 22px; padding: 0}
+section.simulation .scene .price .slider button:after {display: none}
+section.simulation .scene .inventory {position: absolute; left: 0; bottom: 15px; right: 0; padding: 0 18px; text-align: center; text-shadow: 1px 1px 0 #000}
+section.simulation .scene .inventory>span {margin: 0.5ex; white-space: nowrap}
+section.simulation footer {display: table; padding: 0}
+section.simulation footer>div {display: table-row}
+section.simulation footer>div>p {display: table-cell; float: none; vertical-align: top}
+section.simulation footer .left {padding-top: 9px}
+section.simulation footer .right {padding-top: 9px}
+section.simulation button.speed span+span {display: none}
+section.simulation button.speed.fast span {display: none}
+section.simulation button.speed.fast span+span {display: inline}
+
+
+#debug {position: absolute; top: 0; left: 0; z-index: 10; border-bottom: 2px solid #000; border-right: 2px solid #000; background: #fff; color: #000; font-size: 15px; font-weight: 400}
+#debug>p {float: left}
+#debug>ul {float: left; border-left: 2px solid #000}
+#debug>ul>li {float: left}
+#debug select {float: left; height: 24px; padding: 0; border: 1px solid #fff; background: #fff}
+#debug button {float: left; width: 24px; height: 24px; padding: 0; border-radius: 0; font-size: 15px}
+#debug button:active {top: auto}
+#debug button:active::after {bottom: 0}
+#debug button::after {display: none}
+#debug .toggle button::after {display: block; content: '<'; top: 0; left: 0; bottom: 0; right: 0; z-index: 1; height: auto; border-radius: 0; background: transparent}
