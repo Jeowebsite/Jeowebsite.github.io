@@ -1,54 +1,43 @@
-<!DOCTYPE html>
-<html lang="en-us"><head>
-    <meta charset="utf-8">
-    
-    <title>Drift Hunters Unblocked - ubg235 GC</title>
-    <meta name="description" content="Drift Hunters, Drift Hunters Unblocked">
-    <meta property="og:image" content="images/drift-hunters.png">
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="js/poki-sdk.js"></script> 
-    <script src="js/unity-mod.js"></script>
-    <script src="js/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
-    <script src="js/UnityLoader2019.js"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate(
-        "gameContainer",
-        "Build/drift-hunters.json",
-        {
-            onProgress: UnityProgress,Module:{
-                onRuntimeInitialized: function() {
-                    UnityProgress(gameInstance, "complete")
-                }
-            }
-        });
-
-      function fixGameView() {
-            const gameView= document.getElementById("gameView");
-            if (gameView.clientHeight> gameView.clientWidth) {
-                gameView.style.height= Math.floor(gameView.clientWidth)+ "px";
-            }
-        }
-    </script>
-
-    <style>
-        body {
-            margin: 0px;
-            padding:0px;
-        }
-    </style>
-</head>
-<body style="overflow:hidden; margin:0; padding:0;" onload="fixGameView()">
-    <div id="gameView" class="webgl-content" style="position: absolute; width: 100%; height: 100%; margin: 0px; padding:0px;">
-        <div id="gameContainer" style="width: 100%; height: 100%; margin: 0px; padding:0px;"></div>
-        <div class="footer">
-            <div class="webgl-logo"></div>
-            <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-            <div class="title">Drift Hunters</div>
-        </div>  
-    </div>
-    <script src="js/analytics_ubg_v1_4.js"></script>
-    <script src="js/ubg235_client_v1_1.js"></script>    
-
-</body></html>
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title>Jeo</title> 
+    <style type="text/css"> 
+        html { 
+            overflow: auto; 
+        } 
+          
+        html, 
+        body, 
+        div, 
+        iframe { 
+            margin: 0px; 
+            padding: 0px; 
+            height: 100%; 
+            border: none; 
+        } 
+          
+        iframe { 
+            display: block; 
+            width: 100%; 
+            border: none; 
+            overflow-y: auto; 
+            overflow-x: hidden; 
+        } 
+    </style> 
+</head> 
+  
+<body> 
+    <iframe src="https://drifthunters.gitlab.io/"
+            frameborder="0" 
+            marginheight="0" 
+            marginwidth="0" 
+            width="100%" 
+            height="100%" 
+            scrolling="auto"> 
+  </iframe> 
+  
+</body> 
+  
+</html> 
