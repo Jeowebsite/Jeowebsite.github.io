@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: "Arial", sans-serif; /* Updated font-family */
+    font-family: "Arial", sans-serif;
     background: #f5f5f5;
     color: #333;
     text-align: center;
@@ -77,7 +77,7 @@ header h1 {
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px #000; /* Add a text shadow for better visibility */
+    text-shadow: 2px 2px 4px #000;
 }
 
 /* Navigation Styles */
@@ -109,7 +109,7 @@ nav a {
     font-size: 1.3rem;
     position: relative;
     letter-spacing: 1px;
-    text-shadow: 1px 1px 2px #000; /* Add a text shadow for better visibility */
+    text-shadow: 1px 1px 2px #000;
 }
 
 nav a::before {
@@ -177,20 +177,25 @@ main {
     margin-top: 15px;
 }
 
+/* Modern Button Style */
 .game-card a {
     text-decoration: none;
     display: inline-block;
-    background: #ff9900;
+    background: linear-gradient(135deg, #ff9900, #ff6600);
     color: #fff;
     font-weight: 600;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 12px 24px;
+    border-radius: 30px;
     margin-top: 15px;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
 }
 
 .game-card a:hover {
-    background: #333;
+    background: linear-gradient(135deg, #ff6600, #ff3300);
+    transform: scale(1.05);
 }
 
 /* Footer Styles */
