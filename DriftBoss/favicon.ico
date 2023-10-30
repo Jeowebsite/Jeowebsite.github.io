@@ -1,0 +1,571 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" prefix="og: http://ogp.me/ns#"><head><script type="text/javascript">
+var errorLocation = window.location.href;
+var possibleText = errorLocation;
+var numError = errorLocation.indexOf(".php");
+if (numError != -1) {
+	errorLocation = errorLocation.replace(".php", ".html");
+	window.location.href = errorLocation;
+	}
+if (errorLocation.substr(0,32) == "http://www.hoodamath.com/games//") {
+	errorLocation = errorLocation.replace("http://www.hoodamath.com/games//", "http://www.hoodamath.com/games/");
+	window.location.href = errorLocation;
+	}	
+if (errorLocation.substr(0,28) == "http://hoodamath.com/games//") {
+	errorLocation = errorLocation.replace("http://hoodamath.com/games//", "http://www.hoodamath.com/games/");
+	window.location.href = errorLocation;
+	}	
+if (errorLocation.substr(0,32) == "http://www.hoodamath.com//games/") {
+	errorLocation = errorLocation.replace("http://www.hoodamath.com//games/", "http://www.hoodamath.com/games/");
+	window.location.href = errorLocation;
+	}	
+if (errorLocation.substr(0,28) == "http://hoodamath.com//games/") {
+	errorLocation = errorLocation.replace("http://hoodamath.com//games/", "http://www.hoodamath.com/games/");
+	window.location.href = errorLocation;
+	}			
+else if (errorLocation == "http://www.hoodamath.com") {
+	window.location.href = "http://www.hoodamath.com/index.html";
+	}
+else if (errorLocation == "http://www.hoodamath.com/games") {
+	window.location.href = "http://www.hoodamath.com/index.html";
+	}
+else if (errorLocation == "http://www.hoodamath.com/games/") {
+	window.location.href = "http://www.hoodamath.com/index.html";
+	}				
+</script>
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>404 Error</title>
+
+
+
+
+<link rel="stylesheet" href="css/lightSlider.css">
+<style>
+body {
+	background-image:url('images/site-skin-hmd-ipad-hooda-mathx101.jpg');
+	background-repeat:no-repeat;
+	background-position: 50% 0px;
+	background-color:#44753c;
+	width:100%;
+	margin:auto;
+	padding:0;
+	border:0;
+	font-family:"sans-serif";	
+}
+a {
+	color: #FFF;
+	text-decoration:none;
+}
+div.page1 {
+     margin:0px auto;
+     padding-bottom:10px;    
+     width:996px;
+     background-color:#FFF;    
+     border-color:#44753C;
+     border-style:solid;
+     border-width:2px;
+     border-bottom:0px;
+}
+div.page {
+     width:996px;
+     margin:0px auto;
+     background-color:#FFF;
+     border-color:#44753C;
+     border-style:solid;
+     border-width:2px;
+     border-top:0px;
+}
+div.nav {
+	background-color: #44753C;
+	width:996px;
+	height:100px;
+}
+div.footer {
+	clear:both;
+	display:inline-block;
+	background-color:#44753C;
+	width:992px;
+	padding:10px 0px;
+	margin-top:0px;
+	color:#FFF;
+	text-align:center;
+	border-color:#FFF;
+	border-style:solid;
+	border-width:2px;
+}
+div.left {
+	width:650px;
+	padding:10px 2px;
+	margin:0px 0px 4px 4px;
+	background-color:#44753C;
+	color:#FFF;
+}
+div.leftTxt {
+	width:630px;
+	padding:10px 10px;
+	margin:0px 0px 4px 4px;
+	background-color:#FFF;
+	border-color:#44753C;
+	border-style:solid;
+	border-width:2px;
+	text-align:left;
+}
+div.right {
+	width:300px;
+	padding:5px 2px;
+	margin:0px 0px 4px;
+	background-color:#44753C;
+	color:#FFF;	
+}
+div.rightTxt {
+	width:290px;
+	padding:5px 5px;
+	margin:0px 0px 4px;
+	border-color:#44753C;
+	border-style:solid;
+	border-width:2px;	
+	background-color:#FFF;
+	text-align:left;
+}
+div.cat {
+	position:relative;
+	text-align:center;
+	width:199px;
+	height:249px;
+	padding:6px;
+	margin:0px 5px 5px;
+	background-color:#44753C;
+	display:inline;
+	float:left;	
+}
+div.title {
+	width:199px;
+	text-align:center;
+	color:#FFF;
+	padding-top:2px;
+}
+div.more {
+	width:199px;
+	text-align:right;
+	color:#FFF;
+	clear:both;
+	cursor:pointer;	
+}
+div.cat1 {
+	width:80px;
+	height:60px;
+	margin:9px;
+	display:inline;
+	float:left;	
+}
+div.pop {
+	background-color:#ED872D;
+	color:#000;
+	border-color:#26753c;
+	border-width:1px;
+	border-style:solid;
+	border-radius:0px;
+	margin-left:5px;
+	padding:5px;
+	font-weight:bold;
+	display:inline-block;
+}
+div.popcat {
+	background-color:#ED872D;
+	border-color:#26753c;
+	border-width:1px;
+	border-style:solid;
+	border-radius:0px;
+	padding:5px;
+	font-weight:bold;
+	display:inline-block;
+}
+img {
+	cursor:pointer;
+}
+img.bigger {
+	width:300px;
+	height:225px;
+	border-style:outset;
+	border-width:0px 1px 2px 0px;
+	border-color:#000;	
+}
+img.big {
+	width:200px;
+	height:150px;
+	border-style:outset;
+	border-width:0px 1px 2px 0px;
+	border-color:#000;	
+}
+img.medium {
+	width:160px;
+	height:120px;
+	border-style:outset;
+	border-width:0px 1px 2px 0px;
+	border-color:#000;	
+}
+img.small {
+	width:120px;
+	height:90px;
+	border-style:outset;
+	border-width:0px 1px 2px 0px;
+	border-color:#000;	
+}
+img.tiny {
+	width:100px;
+	height:75px;
+	border-style:outset;
+	border-width:0px 1px 2px 0px;
+	border-color:#000;	
+}
+img.micro {
+	width:80px;
+	height:60px;
+	border-style:outset;
+	border-width:0px 1px 2px 0px;
+	border-color:#000;	
+}
+div.menu {
+	position:absolute;
+	top:70px;
+	width:475px;
+	margin-left:0px;
+	text-align:left;
+	z-index:2;
+}
+div.menu select {
+	font-size: 14px;
+	font-family:"sans-serif";
+	height: 26px;
+	margin:0px 10px;
+	text-align:center;
+	z-index:999999;
+	background-color:#FFF;
+	cursor:pointer;
+}
+div.button {
+	cursor:pointer;
+	border-style:outset;
+	border-width:0px 1px 2px 0px;
+	border-color:#000;
+	font-size: 1.2em;
+	font-family:"sans-serif";
+	display:inline-block;
+	margin:5px;
+	padding:5px;
+	text-align:center;
+	color:#FFF;
+	cursor:pointer;	
+}
+ul{
+	list-style: none outside none;
+    padding-left: 0;
+}
+.content-slider li{
+    background-color: #ed3020;
+    text-align: center;
+    color: #FFF;
+}
+.content-slider h3 {
+    margin: 0;
+    padding: 70px 0;
+}
+.demo{
+	width: 800px;
+}
+</style>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.lightSlider.js"></script> 
+
+<!-- Begin comScore Tag -->
+<script>
+  var _comscore = _comscore || [];
+  _comscore.push({ c1: "2", c2: "8929297" });
+  (function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+    el.parentNode.insertBefore(s, el);
+  })();
+</script>
+<noscript>
+  <img src="http://b.scorecardresearch.com/p?c1=2&c2=8929297&cv=2.0&cj=1" />
+</noscript>
+
+<!-- begin dfp tag -->
+<script type="text/javascript">
+(function() {
+var useSSL = 'https:' == document.location.protocol;
+var src = (useSSL ? 'https:' : 'http:') +
+'//www.googletagservices.com/tag/js/gpt.js';
+document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+})();
+</script>
+
+<script type="text/javascript">
+googletag.defineSlot('/1019406/Box_Index_Ad_Unit', [300, 250], 'div-gpt-ad-1423978364475-0').addService(googletag.pubads());
+googletag.defineSlot('/1019406/LeadFlex_HomePage_PlayWire', [970, 90], 'div-gpt-ad-1423978364475-1').addService(googletag.pubads());
+googletag.defineSlot('/1019406/Skin_Homepage', [1, 1], 'div-gpt-ad-1423978364475-2').addService(googletag.pubads());
+googletag.pubads().enableSyncRendering();
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+</script>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/CollectionPage" style="">
+<meta itemprop="isPartOf" content="http://www.hoodamath.com">
+
+	<div style="padding-top:5px;padding-bottom:5px;background-color:#000;width:1000px;text-align:center;margin:auto;">
+		<h1 id="title" style="font-size:100%;width:1000px;color:#FFF;text-align:center;margin:0px;background-color:#000;font-size:100%;">Math Games</h1>
+	</div>
+
+	<div id="pageContent1" class="page1" style="">
+	<!--these divs above help with skins-->
+
+	<!-- top menu -->
+	<div id="navigation" class="nav" style="">
+		<div id="logo" style="display:inline;float:left;width:275px;height:50px;margin-left:10px;margin-right:10px;margin-top:25px;">
+			<a href="http://www.hoodamath.com/">
+				<img src="images/newlogo_951x173.png" width="275px" height="50px">
+			</a>
+		</div>
+		<div id="search" style="display:inline;float:left;width:481px;height:80px;margin-left:10px;margin-right:10px;">
+			<div style="position:relative;text-align:center;width:375px;color:#FFF;top:16px;">Math Games Search:</div>
+			<script>
+			  (function() {
+			    var cx = '002931417018926584874:4kvydnq3lno';
+			    var gcse = document.createElement('script');
+			    gcse.type = 'text/javascript';
+			    gcse.async = true;
+			    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+			        '//www.google.com/cse/cse.js?cx=' + cx;
+			    var s = document.getElementsByTagName('script')[0];
+			    s.parentNode.insertBefore(gcse, s);
+			  })();
+			</script>
+			<gcse:search></gcse:search>
+			<div id="dropDown" class="menu" style="margin-top:28px;">
+				<select name="grade" class="styled" onchange="document.location = this.value" value="GO">
+					<option value="">Grade Level</option>	
+					<option value="http://www.hoodamath.com/games/kindergarten.html">Kindergarten</option>	
+					<option value="http://www.hoodamath.com/games/first-grade.html">Grade 1</option> 
+					<option value="http://www.hoodamath.com/games/second-grade.html">Grade 2</option>
+					<option value="http://www.hoodamath.com/games/third-grade.html">Grade 3</option>
+					<option value="http://www.hoodamath.com/games/fourth-grade.html">Grade 4</option>
+					<option value="http://www.hoodamath.com/games/fifth-grade.html">Grade 5</option>
+					<option value="http://www.hoodamath.com/games/sixth-grade.html">Grade 6</option>
+					<option value="http://www.hoodamath.com/games/seventh-grade.html">Grade 7</option>
+					<option value="http://www.hoodamath.com/games/eighth-grade.html">Grade 8</option>
+					<option value="http://www.hoodamath.com/mobile/games/highschool.html">High School</option>
+				</select>		
+				<select name="grade" class="styled" onchange="document.location = this.value" value="GO">
+					<option value="">Category</option>			
+					<option value="http://www.hoodamath.com/mobile/games/index.html" itemprop="significantLink">Mobile</option>
+					<option value="http://www.hoodamath.com/games/papas.html" itemprop="significantLink">Papa's</option>
+			<option value="http://www.hoodamath.com/games/escape.html" itemprop="significantLink">Escape</option>						
+					<option value="http://www.hoodamath.com/games/shop.html" itemprop="significantLink">Shop</option>
+					<option value="http://www.hoodamath.com/games/grow.html" itemprop="significantLink">Grow</option>
+					<option value="http://www.hoodamath.com/games/logic.html" itemprop="significantLink">Logic</option>		
+					<option value="http://www.hoodamath.com/games/geometry.html" itemprop="significantLink">Geometry</option>
+					<option value="http://www.hoodamath.com/games/physics.html" itemprop="significantLink">Physics</option>
+					<option value="http://www.hoodamath.com/games/building.html" itemprop="significantLink">Building</option>		
+					<option value="http://www.hoodamath.com/games/number.html" itemprop="significantLink">Number</option>	
+					<option value="http://www.hoodamath.com/games/word.html" itemprop="significantLink">Word</option>
+					<option value="http://www.hoodamath.com/games/puzzle.html" itemprop="significantLink">Puzzle</option>			
+					<option value="http://www.hoodamath.com/games/blockremoval.html" itemprop="significantLink">Block Removal</option>
+					<option value="http://www.hoodamath.com/games/brain.html" itemprop="significantLink">Brain</option>
+					<option value="http://www.hoodamath.com/jigsaw-puzzles/index.html" itemprop="significantLink">Jigsaw Puzzles</option>
+					<option value="http://www.hoodamath.com/games/cooking.html" itemprop="significantLink">Cooking</option>
+					<option value="http://www.hoodamath.com/games/racing.html" itemprop="significantLink">Racing</option>				
+				</select>
+				<select name="grade" class="styled" onchange="document.location = this.value" value="GO">
+					<option value="">Math Subject</option>			
+					<option value="http://www.hoodamath.com/games/addition.html">Addition (+)</option>
+					<option value="http://www.hoodamath.com/games/subtraction.html">Subtraction ()</option>
+					<option value="http://www.hoodamath.com/games/multiplication.html">Multiplication (×)</option>
+					<option value="http://www.hoodamath.com/games/division.html">Division (÷)</option>
+					<option value="http://www.hoodamath.com/games/fraction.html">Fractions</option>
+					<option value="http://www.hoodamath.com/games/integer.html">Integers</option>
+					<option value="http://www.hoodamath.com/games/algebra.html">Algebra</option>
+				</select>			
+			</div>
+		</div>
+		<div id="classCode" style="display:inline;float:left;width:200px;height:80px;margin-top:20px;position:relative;">
+			<div style="text-align:center;width:131px;color:#FFF;">Class Page:</div>
+			<form id="form1" name="form1" method="post" action="http://class.hoodamath.com/classroom.php">
+		        <input id="tcode" name="tcode" type="text">
+		        <input name="Submit" type="submit" value="Enter" onclick="return CheckCode();" style="cursor:pointer;">
+			</form>
+			<div style="text-align:right;width:190px;position:absolute;top:50px;text-decoration:underline"><a href="http://class.hoodamath.com/login_form.php" style="color:#FFF;">Teacher Login</a></div>
+		</div>
+	</div>	
+	
+	<center>
+	
+<h1>404 Error</h1>
+
+<p>You typed the wrong URL or the page you are looking for does not exist<br>
+If you believe this is an error we made, please click <a href="http://www.hoodamath.com/contact/" style="color:#0000FF;">contact</a> and send us a quick email<br>
+Otherwise try the search bar above, or select one of our featured games below</p>
+
+</center>
+	
+	</div>
+	<div id="pageContent" class="page" style="">	
+	<div id="secondDiv">
+	<!-- use to be higher on page -->			
+	
+	<!-- game carousel-->
+	<div style="width:996px;text-align:center;">
+		<div id="PopGameCarousel" class="pop" style="margin-top:4px;color:#000;">Featured Math Games</div>
+	</div>
+	<div id="GameCarousel" class="left" style="clear:both;margin:0px 0px 4px;border:0;padding:0px 3px;width:990px;text-align:center;">
+        <ul id="gameCarousel">
+            <li id="gc1"></li> 
+            <li id="gc2"></li> 
+            <li id="gc3"></li> 
+            <li id="gc4"></li> 
+            <li id="gc5"></li> 
+            <li id="gc6"></li> 
+            <li id="gc7"></li> 
+            <li id="gc8"></li> 
+            <li id="gc9"></li> 
+            <li id="gc10"></li> 
+            <li id="gc11"></li> 
+            <li id="gc12"></li> 
+        </ul>
+    </div>
+    <script type="text/javascript">
+	 $(document).ready(function() {
+		$("#gameCarousel").lightSlider({
+            item: 6,
+            autoWidth: false,
+            slideMove: 6, //this is 1 if loop is true           
+            slideMargin:5,
+            auto:true,
+            loop:true,
+            keyPress:true,
+            controls:true,
+            pager: false,
+//	        onBeforeNextSlide: function (el) {addSixGameImages();}
+        });
+	});
+	</script> 	
+	<script src="js/allgames.js"></script>	
+	<script type="text/javascript">
+		var f = 0;
+		var nextCount = 0;  //to start
+		firstThree();
+		addSixGameImages();
+//		createAllSpots();
+/*		function createAllSpots(){
+		    for (f = 0;f < 11; f++){				
+				$(("#gc" + (f+1))).after('<li id="gc' + (f+2) + '"></li>');
+			}
+			f = 0;
+			//firstThree();
+			addSixGameImages();	
+		};*/
+		function firstThree() {
+			var fgNameSolo;
+			if (f < gameName.length) {
+			    for (f = 9; f < 12; f++){
+					fgNameSolo = gameName[f];
+					fgNameSolo = fgNameSolo.replace(/,/g,"");
+					fgNameSolo = fgNameSolo.replace(/-/g,"");
+					fgNameSolo = fgNameSolo.replace(/'/g,"");
+					fgNameSolo = fgNameSolo.replace(/ /g,"");
+					fgNameSolo = fgNameSolo.toLowerCase();					
+					document.getElementById(('gc' + (f-8))).innerHTML = '<a href="http://www.hoodamath.com/games/' + fgNameSolo +'.html"><img class="medium" src="http://jpg.hoodamath.com/' + fgNameSolo + '.jpg"></a>';
+				}
+			}
+		}		
+		function addSixGameImages() {
+			var fgNameSolo;
+			if (f < gameName.length) {
+			    for (f = 0; f < 9; f++){
+					fgNameSolo = gameName[f];
+					fgNameSolo = fgNameSolo.replace(/,/g,"");
+					fgNameSolo = fgNameSolo.replace(/-/g,"");
+					fgNameSolo = fgNameSolo.replace(/'/g,"");
+					fgNameSolo = fgNameSolo.replace(/ /g,"");
+					fgNameSolo = fgNameSolo.toLowerCase();					
+					document.getElementById(('gc' + (f+4))).innerHTML = '<a href="http://www.hoodamath.com/games/' + fgNameSolo +'.html"><img class="medium" src="http://jpg.hoodamath.com/' + fgNameSolo + '.jpg"></a>';
+				}
+			}
+		}
+		/*function createAllSpots(){
+		    for (;f < fgName.length; f++){				
+				$(("#gc" + (f+1))).after('<li id="gc' + (f+2) + '"></li>');
+			}
+			f = 0;
+			addSixGameImages();	
+		};
+		function addSixGameImages() {
+			var fgNameSolo;
+			if (f < fgName.length) {
+			    for (var fgn = f; (f < (fgn+12) && f < fgName.length); f++){
+					fgNameSolo = fgName[f];
+					fgNameSolo = fgNameSolo.replace(/,/g,"");
+					fgNameSolo = fgNameSolo.replace(/-/g,"");
+					fgNameSolo = fgNameSolo.replace(/'/g,"");
+					fgNameSolo = fgNameSolo.replace(/ /g,"");
+					fgNameSolo = fgNameSolo.toLowerCase();					
+					document.getElementById(('gc' + (f+1))).innerHTML = '<a href="http://www.hoodamath.com/games/' + fgNameSolo +'.html"><img class="medium" src="http://jpg.hoodamath.com/' + fgNameSolo + '.jpg"></a>';
+				}
+			}
+		}*/
+	</script>    
+	
+	<!--1000x300 images need JS carousel make this then for facebook resize it to 851x315-->
+	<!--<div id="featuredContent" style="width:1000px;height:300px;margin:0;padding:0;border:0;">
+		<img src="http://jpg.hoodamath.com/fb-cover-isoball.jpg" alt="Check Out ISOBALL" width="1000px" height="300px" />	
+	</div>-->
+	
+		
+	
+	
+
+	<!-- footer -->
+	<div id="footer" class="footer" style="display:inline-block;">
+		<a href="http://www.hoodamath.com/tutorials/index.html" rel="nofollow" style="color:#FFF;">Tutorials</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		
+		<a href="http://www.hoodamath.com/privacypolicy.html" rel="nofollow" style="color:#FFF;">Privacy</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		
+		<a href="http://www.hoodamath.com/contact/" rel="nofollow" style="color:#FFF;">Contact</a>	
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		
+		<a href="http://faq.hoodamath.com/" rel="nofollow" style="color:#FFF;">FAQ</a>			
+	</div>
+
+<!--the extra 2 div to help skins -->
+
+<!--and 2 more -->
+</div></div>
+
+<!-- Skin_Homepage -->
+<div id="div-gpt-ad-1423978364475-2" style="width:1px; height:1px;">
+<script type="text/javascript">
+googletag.display('div-gpt-ad-1423978364475-2');
+</script>
+</div>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8947940-1']);
+  _gaq.push(['_setDomainName', 'hoodamath.com']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</body></html>
