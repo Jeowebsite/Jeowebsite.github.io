@@ -110,7 +110,7 @@
         }
 
         .webgl-content .footer .webgl-logo {
-            background-image: url('webgl-logo.png');
+            background-image: url('../images/webgl-logo.png');
             width: 204px;
             float: left;
         }
@@ -121,7 +121,7 @@
         }
 
         .webgl-content .footer .fullscreen {
-            background-image: url('fullscreen.png');
+            background-image: url('../images/fullscreen.png');
             width: 38px;
             float: right;
         }
