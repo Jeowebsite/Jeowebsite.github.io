@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* Base Styles */
 body {
     font-family: "Arial", sans-serif;
     background: #f5f5f5;
@@ -17,10 +18,15 @@ body {
 body.dark-mode {
     background: #222;
     color: #fff;
+}
+
+/* Transitions */
+body, body.dark-mode {
     transition: background-color 0.5s, color 0.5s;
     transition-timing-function: ease-in-out;
 }
 
+/* Dark Mode Switch */
 .dark-mode-switch {
     position: absolute;
     top: 10px;
