@@ -1,5 +1,4 @@
 
-```
 /* Reset some default styles */
 * {
     margin: 0;
@@ -386,4 +385,3 @@ input[type="checkbox"]:checked + .toggle-label:before {
     margin-top: 4em;
   }
 }
-``` 
