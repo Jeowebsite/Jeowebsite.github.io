@@ -1,5 +1,4 @@
 
-```
 /* Reset some default styles */
 * {
     margin: 0;
@@ -30,44 +29,51 @@ body, body.dark-mode {
 
 /* Dark Mode Switch */
 .dark-mode-switch {
-    position: absolute;
-    top: 10px;
-    right: 10px;
     display: flex;
     align-items: center;
-    color: #fff;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-right: 10px;
     font-size: 14px;
 }
 
-.dark-mode-switch .toggle-label {
+.dark-mode-switch input[type="checkbox"] {
+    width: 0;
+    height: 0;
+    position: absolute;
+    visibility: hidden;
+}
+
+.toggle-label {
     display: block;
-    width: 80px;
+    width: 40px;
     height: 20px;
-    background: #333;
+    background: #ccc;
     border-radius: 20px;
     position: relative;
     cursor: pointer;
     transition: background-color 0.3s;
-    text-align: center;
-    line-height: 20px;
 }
 
-.dark-mode-switch .toggle-label::before {
-    content: 'Dark Mode';
-    color: #fff;
+.toggle-label::before {
+    content: '';
     position: absolute;
-    width: 100%;
-    left: 0;
+    left: 2px;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fff;
     transition: transform 0.3s;
 }
 
-.dark-mode-switch input[type="checkbox"]:checked ~ .toggle-label::before {
-    transform: translateX(38px);
-    background: #fff;
+input[type="checkbox"]:checked + .toggle-label {
+    background-color: #666;
 }
 
-.dark-mode-switch input[type="checkbox"]:checked ~ .toggle-label {
-    background: #333;
+input[type="checkbox"]:checked + .toggle-label::before {
+    transform: translateX(20px);
+    background-color: #ff9900;
 }
 
 /* Header Styles */
@@ -159,7 +165,6 @@ main {
     transition: transform 0.3s ease;
     position: relative;
     overflow: hidden;
-    cursor: pointer;
 }
 
 .game-card:hover {
@@ -266,40 +271,6 @@ nav a:hover {
   text-decoration: underline;
 }
 
-.dark-mode-switch {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
-.toggle-label {
-  background-color: #444;
-  border-radius: 50px;
-  cursor: pointer;
-  display: inline-block;
-  height: 25px;
-  margin-right: 0.5em;
-  position: relative;
-  width: 50px;
-}
-
-.toggle-label:before {
-  background-color: white;
-  border-radius: 50%;
-  content: '';
-  display: block;
-  height: 20px;
-  left: 3px;
-  position: absolute;
-  top: 2px;
-  transition: transform 0.2s;
-  width: 20px;
-}
-
-input[type="checkbox"]:checked + .toggle-label:before {
-  transform: translateX(22px);
-}
-
 /* Sort by name button styles */
 .sort-button {
   background-color: #DDDDDD;
@@ -386,4 +357,3 @@ input[type="checkbox"]:checked + .toggle-label:before {
   #all-games {
     margin-top: 4em;
   }
-}
