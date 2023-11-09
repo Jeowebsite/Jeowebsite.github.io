@@ -1,3 +1,5 @@
+
+
 /* Reset some default styles */
 * {
     margin: 0;
@@ -226,4 +228,157 @@ a:focus {
 
 .game-card:hover h3 {
     color: #ff9900;
+}
+
+/* Navigation bar styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  color: white;
+  padding: 1em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav li {
+  margin-right: 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 1.2em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.dark-mode-switch {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.toggle-label {
+  background-color: #444;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  height: 25px;
+  margin-right: 0.5em;
+  position: relative;
+  width: 50px;
+}
+
+.toggle-label:before {
+  background-color: white;
+  border-radius: 50%;
+  content: '';
+  display: block;
+  height: 20px;
+  left: 3px;
+  position: absolute;
+  top: 2px;
+  transition: transform 0.2s;
+  width: 20px;
+}
+
+input[type="checkbox"]:checked + .toggle-label:before {
+  transform: translateX(22px);
+}
+
+/* Sort by name button styles */
+.sort-button {
+  background-color: #DDDDDD;
+  border: none;
+  border-radius: 4px;
+  color: black;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 1.2em;
+  margin: 1em;
+  padding: 0.5em;
+  transition: background-color 0.2s;
+}
+
+.sort-button:hover {
+  background-color: #BBBBBB;
+}
+
+/* Game card styles */
+.game-card {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  overflow: hidden;
+  width: 350px;
+}
+
+.game-card h3 {
+  background-color: #333;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 1.2em;
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.game-card p {
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  margin: 1em;
+}
+
+.game-card img {
+  max-width: 100%;
+}
+
+.game-card a {
+  background-color: #333;
+  color: white;
+  margin: 1em;
+  padding: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.game-card a:hover {
+  background-color: black;
+}
+
+/* A to Z Sorting */
+#all-games {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  #all-games {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 992px) {
+  #all-games {
+    margin-top: 4em;
+  }
 }
