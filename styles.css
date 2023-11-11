@@ -370,3 +370,13 @@ nav a:hover {
     margin-top: 4em;
   }
 }
+/* Add this to your CSS file or style tag */
+
+/* Add this to your CSS file or style tag */
+
+img {
+    image-rendering: optimizeQuality; /* Standard property for most browsers */
+    image-rendering: -webkit-optimize-contrast; /* Webkit browsers (Chrome, Safari) */
+    image-rendering: crisp-edges; /* CSS4 */
+    image-rendering: pixelated; /* Firefox */
+}
