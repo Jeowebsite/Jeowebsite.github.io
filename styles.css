@@ -34,7 +34,7 @@ body.dark-mode {
   justify-content: flex-end;
   margin-top: 10px;
   margin-right: 10px;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .dark-mode-switch input[type="checkbox"] {
@@ -49,10 +49,10 @@ body.dark-mode {
   width: 55px;
   height: 25px;
   background: #ccc;
-  border-radius: 20px;
+  border-radius: 30px;
   position: relative;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.5s;
 }
 
 .toggle-label::before {
