@@ -1,7 +1,10 @@
 // Sample array of game objects (replace this with your actual game data)
 const games = [
     { title: "Slope", description: "A fun and challenging game. slope", url: "slope/index.html" },
-    { title: "Slope 3", description: "", url: "Slope3/index.html" },
+    { title: "Slope 3", description: "Slope 3", url: "Slope3/index.html" },
+    { title: "ovo", description: "", url: "0v0/index.html" },
+    { title: "1on1Basketball", description: "", url: "1on1Basketball/index.html" },
+
     // Add more game objects...
 ];
 // Sample array of game objects (replace this with your actual game data)
