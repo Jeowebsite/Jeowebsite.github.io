@@ -51,3 +51,9 @@ function displayRecentSearches() {
         recentList.appendChild(listItem);
     });
 }
+// Event listener for the "Enter" key press in the search input
+document.getElementById('searchInput').addEventListener('keyup', function(event) {
+    if (event.key === 'Enter') {
+        searchGame();
+    }
+});
