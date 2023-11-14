@@ -389,21 +389,38 @@ img {
   padding: 10px 200px; /* Increase the padding to make it longer horizontally */
   background-color: rgb(118, 9, 214);
   color: #fff;
-  border: none;
-  border-radius: 5px;
+  border: 2px solid black; /* Add a black border */
+  border-radius: 20px;
   cursor: pointer;
   z-index: 999;
 }
+
 #retro {
   position: fixed;
   left: 80%;
   bottom: 20px;
   transform: translateX(-50%);
-  padding: 10px 50px;
-  background-color:rgb(118, 9, 214);
+  padding: 10px 48px;
+  background-color: rgb(118, 9, 214);
   color: #fff;
-  border: none;
-  border-radius: 5px;
+  border: 2px solid black; /* Add a black border */
+  border-radius: 20px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+
+
+#proxy {
+  position: fixed;
+  left: 16%;
+  bottom: 22px;
+  transform: translateX(-50%);
+  padding: 17px 50px;
+  background-color: rgb(118, 9, 214);
+  color: #fff;
+  border: 2px solid black; /* Add a black border */
+  border-radius: 20px;
   cursor: pointer;
   z-index: 999;
 }
