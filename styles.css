@@ -425,38 +425,47 @@ img {
   z-index: 999;
 }
 /* Search Container Styles */
+/* Search Container Styles */
 .search-container {
   display: flex;
-  max-width: 400px; /* Set a maximum width for the search bar */
+  max-width: 500px; /* Adjusted maximum width */
   margin: 20px auto; /* Center the search bar */
-  border-radius: 30px; /* Rounded corners */
+  border-radius: 50px; /* Increased border-radius for a rounder look */
   overflow: hidden; /* Hide overflowing content */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  background-color: #333; /* Dark background color */
 }
 
 /* Search Input Styles */
 #searchInput {
   flex: 1; /* Take up remaining space */
-  padding: 12px; /* Padding for input field */
+  padding: 15px; /* Increased padding for input field */
   border: none; /* Remove default border */
   outline: none; /* Remove outline on focus */
-  border-radius: 30px 0 0 30px; /* Rounded left corner */
+  border-radius: 50px; /* Rounded corners for input */
+  font-size: 16px; /* Adjusted font size */
+  background-color: #555; /* Darker input background color */
+  color: #fff; /* Text color */
 }
 
 /* Search Button Styles */
 .search-container button {
-  padding: 12px 20px; /* Button padding */
-  background-color: #ff9900; /* Button background color */
+  padding: 15px 25px; /* Adjusted button padding */
+  background-color: #000; /* Black button background color */
   color: #fff; /* Text color */
   border: none; /* Remove border */
-  border-radius: 0 30px 30px 0; /* Rounded right corner */
+  border-radius: 50px; /* Rounded corners for button */
   cursor: pointer; /* Show pointer cursor */
   transition: background-color 0.3s; /* Smooth background transition */
 }
 
 /* Button Hover Effect */
 .search-container button:hover {
-  background-color: #ff6600; /* Darker color on hover */
+  background-color: #333; /* Darker color on hover */
 }
+
+
+
+
 
 
