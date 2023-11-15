@@ -383,11 +383,11 @@ img {
 
 #scrollButton {
   position: fixed;
-  left: 50%;
+  left: 49%;
   bottom: 20px;
   transform: translateX(-50%);
-  padding: 10px 200px; /* Increase the padding to make it longer horizontally */
-  background-color: rgb(118, 9, 214);
+  padding: 10px 40px; /* Increase the padding to make it longer horizontally */
+  background-color: rgb(54, 7, 64);
   color: #fff;
   border: 2px solid black; /* Add a black border */
   border-radius: 20px;
@@ -395,13 +395,13 @@ img {
   z-index: 999;
 }
 
-#retro {
+#redirectButton {
   position: fixed;
-  left: 80%;
+  left: 75%;
   bottom: 20px;
   transform: translateX(-50%);
-  padding: 10px 48px;
-  background-color: rgb(118, 9, 214);
+  padding: 10px 27px;
+  background-color: rgb(0, 0, 0);
   color: #fff;
   border: 2px solid black; /* Add a black border */
   border-radius: 20px;
@@ -413,11 +413,11 @@ img {
 
 #proxy {
   position: fixed;
-  left: 16%;
+  left: 23%;
   bottom: 22px;
   transform: translateX(-50%);
-  padding: 17px 50px;
-  background-color: rgb(118, 9, 214);
+  padding: 10px 32px;
+  background-color: rgb(20, 20, 21);
   color: #fff;
   border: 2px solid black; /* Add a black border */
   border-radius: 20px;
