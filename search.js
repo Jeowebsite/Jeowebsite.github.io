@@ -77,6 +77,17 @@ const games = [
     { title: "world hardest-game", description: "", url: "world-hardest-game/index.html" },
     { title: "worlde", description: "", url: "worlde/index.html" },
     { title: "xTrailRacing", description: "", url: "xTrailRacing/index.html" },
+    { title: "getaway shootout", description: "", url: "getaway-shootout/index.html" },
+    { title: "champion island", description: "", url: "champion-island/index.html" },
+    { title: "cell machine", description: "", url: "cell-machine/index.html" },
+    { title: "Subway Surfers ", description: "", url: "bus and subway/index.html" },
+    { title: "burger and frights  ", description: "", url: "burger and frights/index.html" },
+
+
+    
+    
+    
+    
     
 
 
