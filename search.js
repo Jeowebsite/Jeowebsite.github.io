@@ -1,5 +1,16 @@
 // Sample array of game objects (replace this with your actual game data)
 const games = [
+    { title: "Advance wars1", description: "A fun and challenging game. slope", url: "Advance-wars1/index.html" },
+    { title: "Advance wars2", description: "A fun and challenging game. slope", url: "Advance-wars2/index.html" },
+    { title: "Donkey Kong-Country1", description: "A fun and challenging game. slope", url: "Donkey-Kong-Country1/index.html" },
+    { title: "Donkey Kong Country 3", description: "A fun and challenging game. slope", url: "DonkeyKong3/index.html" },
+    { title: "Donkey Kong Country 2", description: "A fun and challenging game. slope", url: "DonkeyKongCountry2/index.html" },
+    { title: "Pokemon Fire Red", description: "A fun and challenging game. slope", url: "Pokemon-Fire-Red/index.html" },
+    { title: "Pokemon Saphire", description: "A fun and challenging game. slope", url: "Pokemon-Saphire/index.html" },
+    { title: "Pokemon emrald", description: "A fun and challenging game. slope", url: "Pokemon-emrald/index.html" },
+    { title: "Pokemon leafGreen", description: "A fun and challenging game. slope", url: "Pokemon-leafGreen/index.html" },
+    { title: "Pokemon mystery", description: "A fun and challenging game. slope", url: "Pokemon-mystery/index.html" },
+    { title: "Pokemon ruby", description: "A fun and challenging game. slope", url: "Pokemon-ruby/index.html" },
     { title: "Slope", description: "A fun and challenging game. slope", url: "slope/index.html" },
     { title: "Slope 3", description: "Slope 3", url: "Slope3/index.html" },
     { title: "ovo", description: "", url: "0v0/index.html" },
