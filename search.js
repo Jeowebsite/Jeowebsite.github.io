@@ -158,7 +158,15 @@ const games = [
     { title: "eel slap", description: "A fun and challenging game. slope", url: "eel-slap/index.html" },
     { title: "escaping the prison", description: "A fun and challenging game. slope", url: "escapingtheprison/index.html" },
     { title: "elastic man", description: "A fun and challenging game. slope", url: "elasticman/index.html" },
-    { title: "2048", description: "A fun and challenging game. slope", url: "2048/index.html" },
+    { title: "evolution", description: "A fun and challenging game. slope", url: "evolution/index.html" },
+    { title: "evil glitch", description: "A fun and challenging game. slope", url: "evil-glitch/index.html" },
+    { title: "factory balls", description: "A fun and challenging game. slope", url: "factoryballs/index.html" },
+    { title: "exo", description: "A fun and challenging game. slope", url: "exo/index.html" },
+    { title: "fancy pants adventures", description: "A fun and challenging game. slope", url: "fancypantsadventures/index.html" },
+    { title: "fake virus", description: "A fun and challenging game. slope", url: "fake-virus/index.html" },
+    { title: "There is no game", description: "A fun and challenging game. slope", url: "There-is-no-game/index.html" },
+    { title: "google snake", description: "A fun and challenging game. slope", url: "google-snake/index.html" },
+
 
 
 
