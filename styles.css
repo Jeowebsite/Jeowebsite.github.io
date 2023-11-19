@@ -483,4 +483,44 @@ img {
   height: 400px; /* Increased height of the ad container */
   padding: 10px; /* Example padding for the ad container */
 }
+.form-container {
+  margin-bottom: 20px;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #555;
+}
+
+input[type="email"],
+input[type="password"],
+button {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+  font-size: 16px;
+  outline: none;
+}
+
+input[type="email"],
+input[type="password"] {
+  height: 50px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
 
