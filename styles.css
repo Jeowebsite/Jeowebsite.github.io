@@ -475,5 +475,12 @@ img {
 .search-container button:hover {
   background-color: #333; /* Darker color on hover */
 }
-
+.ad-container {
+  position: absolute; /* Position the ad absolutely within the game card */
+  top: 0; /* Aligns the top of the ad with the top of the game card */
+  left: -10px; /* Adjust this value to position the ad to the left of the game card */
+  width: 240px; /* Example width of the ad container */
+  height: 400px; /* Increased height of the ad container */
+  padding: 10px; /* Example padding for the ad container */
+}
 
