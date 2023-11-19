@@ -1,26 +1,47 @@
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Beach Crazy Jeo</title>
-    <link rel="icon" type="image/x-icon" href="beach.jpeg" />
-    <link rel="shortcut icon" type="image/x-icon" href="beach.jpeg" />
-  </head>
-  <body>
-    <script src="/js/main.js"></script>
-    <div id="ruffle" width="100%" height="100%"></div>
-    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-    <script>
-      window.RufflePlayer = window.RufflePlayer || {};
-      window.addEventListener("load", (event) => {
-        const ruffle = window.RufflePlayer.newest();
-        const player = ruffle.createPlayer();
-        const container = document.getElementById("ruffle");
-        player.id = "player";
-        player.style.width = "100%";
-        player.style.height = "100%";
-        container.appendChild(player);
-        player.load("beach-crazy-155699c35.swf");
-      });
-    </script>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beach Crazy</title>
+  <!-- Include Ruffle -->
+  <script src="https://cdn.jsdelivr.net/npm/@rufflejs/ruffle@latest/dist/ruffle.js"></script>
+  <!-- CSS for basic styling -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    #swf-container {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ruffle SWF Player</h1>
+  
+  <!-- Placeholder for displaying the SWF content -->
+  <div id="swf-container"></div>
+
+  <script>
+    // Path to the pandemic.swf file
+    const swfPath = 'path/to/beach-crazy-155699c35.swf'; // Replace with the correct path
+
+    // Create a new Ruffle player instance
+    const rufflePlayer = RufflePlayer.newest();
+
+    // Load the SWF content into the Ruffle player
+    const container = document.getElementById('swf-container');
+    rufflePlayer.load(swfPath, {
+      // Set width and height of the SWF content
+      width: 800,
+      height: 600,
+      // Additional options if needed
+      // ...
+    }).then((instance) => {
+      container.appendChild(instance); // Display the SWF content
+    }).catch((error) => {
+      console.error('Error loading SWF:', error);
+    });
+  </script>
+</body>
 </html>
