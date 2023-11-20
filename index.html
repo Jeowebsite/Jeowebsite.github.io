@@ -12,6 +12,7 @@
         😊</button>
     <button id="redirectButton">🇷​​🇪​​🇹​​🇷​​🇴​ ​🇬​​🇦​​🇲​​🇪​​🇸​​ 🎮</button>
     <button id="proxy" onclick="redirectToWebsite()">​​🇵​​🇷​​🇴​​🇽​​🇾​ ​🇱​​🇮​​🇳​​🇰​​🇸🌐​ </button>
+    <button id="loginBtn">Login / Sign Up</button>
     <meta name="google-site-verification" content="AEDdz9XcY3x0M9T7nN3N5C0jDTqfXBeSObY9oFh1xP4" />
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3788774762807047"
@@ -61,6 +62,26 @@
         </ul>
     </nav>
     <main>
+        <div class="login-signup-menu" id="loginSignupMenu">
+            <h2>Login / Sign Up Menu</h2>
+            <form id="loginForm" style="display: none;">
+              <h3>Login</h3>
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username"><br><br>
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password"><br><br>
+              <input type="submit" value="Login">
+            </form>
+        
+            <form id="signupForm" style="display: none;">
+              <h3>Sign Up</h3>
+              <label for="newUsername">Username:</label>
+              <input type="text" id="newUsername" name="newUsername"><br><br>
+              <label for="newPassword">Password:</label>
+              <input type="password" id="newPassword" name="newPassword"><br><br>
+              <input type="submit" value="Sign Up">
+            </form>
+          </div>
         <div id="sfch9fylzcz73ezcy5sf45cldtw5rnpd2gz">
         </div><script type="text/javascript" src="https://counter8.optistats.ovh/private/counter.js?c=h9fylzcz73ezcy5sf45cldtw5rnpd2gz&down=async"
          async></script><br><a href="">Visitors</a><noscript><a href=""
@@ -912,6 +933,7 @@
     <script src="search.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="counter.js"></script>
+  <script src="login.js"></script>
     
 
 </body>
