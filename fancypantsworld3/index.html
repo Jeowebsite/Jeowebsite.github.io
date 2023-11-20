@@ -5,7 +5,7 @@
     </head>
     <body>
         <div id='ruffle'></div>
-        <script src='https://e9x.github.io/ruffle-example/ruffle.js'></script>
+        <script src='<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>'></script>
         <script>
 var swfobject = {};
 
@@ -20,7 +20,7 @@ swfobject.embedSWF = function(url, cont, width, height){
     player.load({ url: url });
 }
 
-swfobject.embedSWF('fancy-pants-adventures-world-3.swf', 'ruffle', 500, 500);
+swfobject.embedSWF('fancypantsworld3.swf', 'ruffle', 500, 500);
         </script>
     </body>
 </html>
