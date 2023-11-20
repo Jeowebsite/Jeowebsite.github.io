@@ -1,26 +1,11 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <meta charset='utf8'>
-    </head>
-    <body>
-        <div id='ruffle'></div>
-        <script src='<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>'></script>
-        <script>
-var swfobject = {};
+<!DOCTYPE html>
 
-swfobject.embedSWF = function(url, cont, width, height){
-    var ruffle = window.RufflePlayer.newest(),
-        player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
-            width: width,
-            height: height,
-            style: 'width: ' + width + 'px; height: ' + height + 'px',
-        });
-    
-    player.load({ url: url });
-}
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 
-swfobject.embedSWF('60secburger.swf', 'ruffle', 500, 500);
-        </script>
-    </body>
+<body>
+
+<embed src="60secburger.swf" width="500" height="500"></embed>
+
+<body>
+
 </html>
