@@ -1,42 +1,26 @@
-<!DOCTYPE html> 
-<html> 
-
-<head> 
-	<title>Jeo</title> 
-	<style type="text/css"> 
-		html { 
-			overflow: auto; 
-		} 
-		
-		html, 
-		body, 
-		div, 
-		iframe { 
-			margin: 0px; 
-			padding: 0px; 
-			height: 100%; 
-			border: none; 
-		} 
-		
-		iframe { 
-			display: block; 
-			width: 100%; 
-			border: none; 
-			overflow-y: auto; 
-			overflow-x: hidden; 
-		} 
-	</style> 
-</head> 
-
-<body> 
-	<iframe src="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2F1-on-1-football.xml"
-			marginheight="0"
-			marginwidth="0"
-			width="100%"
-			height="100%"
-			scrolling="auto"> 
-</iframe> 
-
-</body> 
-
-</html> 
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Soccer | Jeo</title>
+    <link rel="icon" type="image/x-icon" href="Screenshot 2023-11-05 6.30.06 PM.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="Screenshot 2023-11-05 6.30.06 PM.png" />
+  </head>
+  <body>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <div id="ruffle" width="100%" height="100%"></div>
+    <script src="ruffle.js"></script>
+    <script>
+      window.RufflePlayer = window.RufflePlayer || {};
+      window.addEventListener("load", (event) => {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        const container = document.getElementById("ruffle");
+        player.id = "player";
+        player.style.width = "100%";
+        player.style.height = "100%";
+        container.appendChild(player);
+        player.load("1on1soccer.swf");
+      });
+    </script>
+  </body>
+</html>
