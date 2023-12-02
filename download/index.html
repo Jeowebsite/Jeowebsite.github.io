@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Password Protected Download</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+    input[type="password"] {
+      padding: 10px;
+      font-size: 16px;
+    }
+    #download-link {
+      display: none;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Password Protected Download</h1>
+
+  <form id="password-form">
+    <input type="password" id="password" placeholder="Enter password">
+    <button type="submit">Download</button>
+  </form>
+
+  <a href="#" id="download-link" download="https://drive.google.com/uc?export=download&id=1qgFQWZt47jRYXIkO1n_TA1wQ2F-U1xfp">Click here to download</a>
+
+  <script>
+    document.getElementById('password-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      var password = document.getElementById('password').value;
+      // Replace 'your_password_here' with your desired password
+      if (password === '!@#$%^&*()GRIND@)!)') {
+        var fileLink = 'https://drive.google.com/uc?export=download&id=1qgFQWZt47jRYXIkO1n_TA1wQ2F-U1xfp'; // Replace with your link
+        document.getElementById('download-link').setAttribute('href', fileLink);
+        document.getElementById('download-link').style.display = 'block';
+      } else {
+        alert('Incorrect password. Please try again.');
+      }
+    });
+  </script>
+
+</body>
+</html>
