@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="minimal-ui, user-scalable=no, initial-scale=1, maximum-scale=1, width=device-width" />
+	<title>AdinPlay Ads</title>
+	<script>
+	window.aiptag = window.aiptag || {cmd: []};
+	aiptag.cmd.display = aiptag.cmd.display || [];
+	aiptag.cmd.player = aiptag.cmd.player || [];
+	//CMP tool settings
+	aiptag.cmp = {
+		show: true,
+		position: "centered",  //centered, bottom
+		button: true,
+		buttonText: "Privacy settings",
+		buttonPosition: "bottom-left" //bottom-left, bottom-right, top-left, top-right
+	}
+
+	aiptag.cmd.player.push(function() {
+		aiptag.adplayer = new aipPlayer({
+			AIP_REWARDEDCOMPLETE: function (state)  {
+				
+				//state can be: timeout, empty or closed
+				alert("Rewarded Ad Completed: " + state);
+			},
+			AIP_REWARDEDGRANTED: function ()  {
+				
+				//at this point the reward is granted, usually this will be just before or after AIP_REWARDEDCOMPLETE but this is not always the case
+				alert("Reward Granted");
+			},
+			AD_WIDTH: 960,
+			AD_HEIGHT: 540,
+			AD_DISPLAY: 'default', //default, fullscreen, center, fill
+			TRUSTED: true,
+			LOADING_TEXT: 'loading advertisement',
+			PREROLL_ELEM: function(){return document.getElementById('preroll')},
+			AIP_COMPLETE: function (state)  {
+				/*******************
+				 ***** WARNING *****
+				 *******************
+				 Please do not remove the PREROLL_ELEM
+				 from the page, it will be hidden automaticly.
+				 If you do want to remove it use the AIP_REMOVE callback.
+				*/
+				
+				alert("Preroll Ad Completed: " + state);
+			},
+			AIP_REMOVE: function ()  {
+				// Here it's safe to remove the PREROLL_ELEM from the page if you want. But it's not recommend.
+			}
+		});
+	});
+
+		function show_preroll() {
+		//check if the adslib is loaded correctly or blocked by adblockers etc.
+		if (typeof aiptag.adplayer !== 'undefined') {
+			aiptag.cmd.player.push(function() { aiptag.adplayer.startPreRoll(); });
+		} else {
+			//Adlib didnt load this could be due to an adblocker, timeout etc.
+			//Please add your script here that starts the content, this usually is the same script as added in AIP_COMPLETE or AIP_REMOVE.
+			alert("Ad Could not be loaded, load your content here");
+		}
+	}
+		</script>
+	<script async src="//api.adinplay.com/libs/aiptag/pub/SHK/smashkarts.io/tag.min.js"></script>
+</head>
+<body style="margin:0;padding:0;">
+	<p>Documentation: <a href="https://adinplay.com/api/" target="_blank">https://adinplay.com/api/</a></p>
+	AIP ID: SHK/smashkarts.io<br>
+	AIP PLACEMENT ID: smashkarts-io_300x250<br>
+	AIP PLACEMENT ID: smashkarts-io_300x250_2<br>
+	AIP PLACEMENT ID: smashkarts-io_728x90<br>
+	AIP PLACEMENT ID: smashkarts-io_728x90_2<br>
+	AIP PLACEMENT ID: smashkarts-io_728x90_3<br>
+	AIP PLACEMENT ID: smashkarts-io_728x90-new<br>
+	AIP PLACEMENT ID: smashkarts-io_320x100<br>
+	AIP PLACEMENT ID: smashkarts-io_970x90<br>
+	AIP PLACEMENT ID: smashkarts-io_970x250<br>
+	AIP PLACEMENT ID: smashkarts-io_970x250_2<br>
+	AIP PLACEMENT ID: smashkarts-io_336x1050<br>
+	AIP PLACEMENT ID: smashkarts-io_300x600<br>
+	AIP PLACEMENT ID: smashkarts-io_160x600<br>
+	AIP PLACEMENT ID: smashkarts-io_320x50<br>
+	<br>
+
+	<div id='smashkarts-io_300x250'>
+		<script type='text/javascript'>
+			aiptag.cmd.display.push(function() { aipDisplayTag.display('smashkarts-io_300x250'); });
+		</script>
+	</div>
+	<button onclick="aiptag.cmd.display.push(function() { aipDisplayTag.display('smashkarts-io_300x250'); });">Refresh Ad</button>
+	<div id='smashkarts-io_300x250_2'>
+		<script type='text/javascript'>
+			aiptag.cmd.display.push(function() { aipDisplayTag.display('smashkarts-io_300x250_2'); });
+		</script>
+	</div>
+	<button onclick="aiptag.cmd.display.push(function() { aipDisplayTag.display('smashkarts-io_300x250_2'); });">Refresh Ad</button>
+	<div id='smashkarts-io_728x90'>
+		<script type='text/javascript'>
+			aiptag.cmd.display.push(function() { aipDisplayTag.display('smashkarts-io_728x90'); });
+		</script>
+	</div>
+	<button onclick="aiptag.cmd.display.push(function() { aipDisplayTag.display('smashkarts-io_728x90'); });">Refresh Ad</button>
+	<div id='smashkarts-io_728x90_2'>
+		<script type='text/javascript'>
+			aiptag.cmd.display.push(function() { aipDisplayTag.display('smashkarts-io_728x90_2'); });
+		</script>
+	</div>
+	<button onclick="aiptag.cmd.display.push(function() { aipDisplayTag.display('smashkarts-io_728x90_2'); });">Refresh Ad</button>
+	<div id='smashkarts-io_728x90_3'>
+		<script type='text/javascript'>
+			aiptag.cmd.display.push(function() { aipDisplayTag.display('smashkarts-io_728x90_3'); });
+		</script>
+	</div>
+	<button onclick="aiptag.cmd.display.push(function() { aipDisplayTag.display('smashkarts-io_728x90_3'); });">Refresh Ad</button>
+	<div id='smashkarts-io_728x90-new'>
+		<script type='text/javascript'>
+			aiptag.cmd.display.push(function() { aipDisplayTag.display('smashkarts-io_728x90-new'); });
+		</script>
+	</div>
+	<button onclick="aiptag.cmd.display.push(function() { aipDisplayTag.display('smashkarts-io_728x90-new'); });">Refresh Ad</button>
+	<div id='smashkarts-io_320x100'>
+		<script type='text/javascript'>
+			aiptag.cmd.display.push(function() { aipDisplayTag.display('smashkarts-io_320x100'); });
+		</script>
+	</div>
+	<button onclick="aiptag.cmd.display.push(function() { aipDisplayTag.display('smashkarts-io_320x100'); });">Refresh Ad</button>
+	<div id='smashkarts-io_970x90'>
+		<script type='text/javascript'>
+			aiptag.cmd.display.push(function() { aipDisplayTag.display('smashkarts-io_970x90'); });
+		</script>
+	</div>
+	<button onclick="aiptag.cmd.display.push(function() { aipDisplayTag.display('smashkarts-io_970x90'); });">Refresh Ad</button>
+	<div id='smashkarts-io_970x250'>
+		<script type='text/javascript'>
+			aiptag.cmd.display.push(function() { aipDisplayTag.display('smashkarts-io_970x250'); });
+		</script>
+	</div>
+	<button onclick="aiptag.cmd.display.push(function() { aipDisplayTag.display('smashkarts-io_970x250'); });">Refresh Ad</button>
+	<div id='smashkarts-io_970x250_2'>
+		<script type='text/javascript'>
+			aiptag.cmd.display.push(function() { aipDisplayTag.display('smashkarts-io_970x250_2'); });
+		</script>
+	</div>
+	<button onclick="aiptag.cmd.display.push(function() { aipDisplayTag.display('smashkarts-io_970x250_2'); });">Refresh Ad</button>
+	<div id='smashkarts-io_336x1050'>
+		<script type='text/javascript'>
+			aiptag.cmd.display.push(function() { aipDisplayTag.display('smashkarts-io_336x1050'); });
+		</script>
+	</div>
+	<button onclick="aiptag.cmd.display.push(function() { aipDisplayTag.display('smashkarts-io_336x1050'); });">Refresh Ad</button>
+	<div id='smashkarts-io_300x600'>
+		<script type='text/javascript'>
+			aiptag.cmd.display.push(function() { aipDisplayTag.display('smashkarts-io_300x600'); });
+		</script>
+	</div>
+	<button onclick="aiptag.cmd.display.push(function() { aipDisplayTag.display('smashkarts-io_300x600'); });">Refresh Ad</button>
+	<div id='smashkarts-io_160x600'>
+		<script type='text/javascript'>
+			aiptag.cmd.display.push(function() { aipDisplayTag.display('smashkarts-io_160x600'); });
+		</script>
+	</div>
+	<button onclick="aiptag.cmd.display.push(function() { aipDisplayTag.display('smashkarts-io_160x600'); });">Refresh Ad</button>
+	<div id='smashkarts-io_320x50'>
+		<script type='text/javascript'>
+			aiptag.cmd.display.push(function() { aipDisplayTag.display('smashkarts-io_320x50'); });
+		</script>
+	</div>
+	<button onclick="aiptag.cmd.display.push(function() { aipDisplayTag.display('smashkarts-io_320x50'); });">Refresh Ad</button>
+	<br><br>
+	<button onclick="show_preroll();">Show Video Ad</button>	<div id="preroll"></div>
+	<br><br>
+	<script>
+	function show_rewarded() {
+		//check if the adslib is loaded correctly or blocked by adblockers etc.
+		if (typeof aiptag.adplayer !== 'undefined') {
+			aiptag.cmd.player.push(function() { aiptag.adplayer.startRewardedAd({preload: false, showLoading: true}); });
+		} else {
+			//Adlib didnt load this could be due to an adblocker, timeout etc.
+			//Please add your script here that starts the content, this usually is the same script as added in AIP_REWARDEDCOMPLETE.
+			alert("Rewarded Ad Could not be loaded, load your content here");
+		}
+	}
+	</script>
+	<button onclick="show_rewarded();">Show Rewarded Ad</button>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	The code below is to preload an rewarded ad, you can determine when you want to show the rewarded ad after the preloading.<br>
+	It's important the EventListener rewardedSlotReady is added only once.<br>
+	<script>
+	//The code below is to preload an rewarded ad, you can determine when you want to show the rewarded ad after the preloading
+	function preload_rewarded() {
+		//check if the adslib is loaded correctly or blocked by adblockers etc.
+		if (typeof aiptag.adplayer !== 'undefined') {
+			//It's important the EventListener rewardedSlotReady is added only once.
+			if(aipAPItag.rewardedSlotEventListener !== true) {
+				aipAPItag.rewardedSlotEventListener = true;
+				aiptag.events.addEventListener("rewardedSlotReady", function (e) {
+					if(e.detail.isEmpty !== true) {
+						//rewarded ad is ready to show
+						if(confirm("Rewarded ad is ready to show, do you want to show the rewarded ad?")) {
+							aiptag.adplayer.showRewardedAd();
+						}
+					} else {
+						//There is no rewarded ad available
+						//Please add your script here that handles the content, this usually is the same script as added in AIP_REWARDEDCOMPLETE.
+						alert("Rewarded Ad not available, handle your content here");
+					}
+				}, false);
+			}
+
+			//set the preload flag to true to use preloading of the rewarded ad
+			aiptag.cmd.player.push(function() { aiptag.adplayer.startRewardedAd({preload: true, showLoading: false}); });
+		} else {
+			//Adlib didnt load this could be due to an adblocker, timeout etc.
+			//Please add your script here that handles the content, this usually is the same script as added in AIP_REWARDEDCOMPLETE.
+			alert("Rewarded Ad Could not be loaded, handle your content here");
+		}
+	}
+	</script>
+	<button onclick="preload_rewarded();">Preload Rewarded Ad</button>
+<br><br>
+</body>
+</html>

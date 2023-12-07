@@ -1,0 +1,65 @@
+{
+  "project_info": {
+    "project_number": "480659433590",
+    "firebase_url": "https://webgltest-17af1.firebaseio.com",
+    "project_id": "webgltest-17af1",
+    "storage_bucket": "webgltest-17af1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480659433590:android:c652ed8da1b9b6bba0d757",
+        "android_client_info": {
+          "package_name": "com.tallteam.citychase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "480659433590-1bi0hhf4nhihf8us5hl01bc85gqu1gdv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tallteam.citychase",
+            "certificate_hash": "4cd609ababfbce2ccba8ca0fbdbd7b2825e04958"
+          }
+        },
+        {
+          "client_id": "480659433590-siuffae0dh9rfe8ogdrte18b28h6btb0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tallteam.citychase",
+            "certificate_hash": "1076e8422abdb0b94b841bc1b4757a27e62f4995"
+          }
+        },
+        {
+          "client_id": "480659433590-taggfgh36o2bo0tnv0teiictlllhl9ia.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChTmpDm02hGgErKjhcHpCkNNYGnp42fTc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "480659433590-taggfgh36o2bo0tnv0teiictlllhl9ia.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "480659433590-l5p8a1j4mrosprt53alcgegei6p8uijs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tallteam.citychase",
+                "app_store_id": "1473010859"
+              }
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-1463476156508236~1150509880"
+    }
+  ],
+  "configuration_version": "1"
+}
