@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap");
+
+body {
+	margin: 0;
+	background: #1b70f0;
+	background-image: url("../../images/overlay.png"), url("../../images/menuBGTile.png");
+	background-size: cover, 13vw;
+	background-repeat: no-repeat, repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 3%;
+	font-size: x-large;
+	font-family: 'Baloo 2', cursive;
+	color: white;
+}
+
+#logo
+{
+	width: 300px;
+}
+
+#homeLink, #homeLink:visited
+{
+	color: gold;
+}
+
+a:visited, li:visited
+{
+	color: white;
+}
+
+a:hover, li:hover
+{
+	color: gold;
+}
+
+#discordLink, #discordLink:visited
+{
+	color: rebeccapurple;
+}
+
+#footer
+{
+	text-decoration: none;
+}
+
+p
+{
+	text-align: center;
+}
+
+ul
+{
+	margin: 0px;
+}
