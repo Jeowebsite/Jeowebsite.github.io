@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Google</title>
+  <link rel="icon" href="https://www.google.com/favicon.ico" type="image/x-icon"> <!-- Add Google's favicon -->
+  <style>
+    /* Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: normal;
+      text-align: center;
+      margin: 20px 0;
+      color: #1a73e8;
+    }
+    h3 {
+      font-size: 32px;
+      font-weight: normal;
+      text-align: center;
+      margin: 20px 0;
+      color: #1a73e8;
+    }
+    h2 {
+      font-size: 32px;
+      font-weight: normal;
+      text-align: center;
+      margin: 20px 0;
+      color: #1a73e8;
+    }
+    #gif-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    #gif {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- Your main content -->
+  <h2>you are here because you have blocked pop ups</h2>
+
+  <div id="gif-container">
+    <img id="gif" src="" alt="GIF" loop />
+    <br>
+    <button onclick="playPause()">Play/Pause</button>
+  </div>
+
+  <script>
+    const gif = document.getElementById('gif');
+    let isPlaying = false;
+
+    function playPause() {
+      if (isPlaying) {
+        gif.pause();
+        isPlaying = false;
+      } else {
+        gif.play();
+        isPlaying = true;
+      }
+    }
+
+    gif.onload = function() {
+      playPause(); // Autoplay
+    }
+
+    gif.src = "pop up 1.gif"; // Replace 'path/to/your/gif.gif' with the path to your GIF file
+  </script>
+    
+  <!-- Other HTML elements -->
+
+  <!-- Your button (optional) -->
+  <button id="loadGameButton" style="display: none;">Load Game</button>
+
+  <script>
+       // Your JavaScript code
+       var urlObj = new window.URL(window.location.href);
+    var url = "index.html";
+
+    function openGame() {
+      var win;
+
+      var confirmation = confirm("Click ok to go into about blank to Jeo website");
+
+      if (confirmation) {
+        if (url) {
+          if (win) {
+            win.focus();
+          } else {
+            win = window.open();
+            win.document.body.style.margin = '0';
+            win.document.body.style.height = '100vh';
+            var iframe = win.document.createElement('iframe');
+            iframe.style.border = 'none';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.style.margin = '0';
+            iframe.src = url;
+            win.document.body.appendChild(iframe);
+          }
+          document.getElementById('loadGameButton').style.background='#ff5148';
+          document.getElementById('loadGameButton').innerHTML="Game Loaded!";
+        }
+      } else {
+        // If "Cancel" is clicked, redirect to index.html
+        window.location.href = url;
+      }
+    }
+
+    // Automatically invoke the confirmation message on page load
+    window.onload = openGame;
+  </script>
+</body>
+</html>
