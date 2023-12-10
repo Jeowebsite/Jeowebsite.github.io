@@ -2,31 +2,36 @@
     <button>About blank</button>
     <script>
         var urlObj = new window.URL(window.location.href);
-        var url = "index.html";
-     
-        if (url) {
-            var win;
-     
-            document.querySelector('button').onclick = function() {
-                if (win) {
-                    win.focus();
-                } 
-                else {
-                    win = window.open();
-                    win.document.body.style.margin = '0';
-                    win.document.body.style.height = '100vh';
-                    var iframe = win.document.createElement('iframe');
-                    iframe.style.border = 'none';
-                    iframe.style.width = '100%';
-                    iframe.style.height = '100%';
-                    iframe.style.margin = '0';
-                    iframe.src = url;
-                    win.document.body.appendChild(iframe);
-                }
-                document.querySelector('button').style.background='#ff5148';
-                document.querySelector('button').innerHTML="Game Loaded!";
-            };
+var url = "index.html";
+
+if (url) {
+    var win;
+
+    // Function to open the window and load the URL
+    function openWindow() {
+        if (win) {
+            win.focus();
+        } else {
+            win = window.open();
+            win.document.body.style.margin = '0';
+            win.document.body.style.height = '100vh';
+            var iframe = win.document.createElement('iframe');
+            iframe.style.border = 'none';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.style.margin = '0';
+            iframe.src = url;
+            win.document.body.appendChild(iframe);
         }
+        // Update button appearance (optional)
+        document.querySelector('button').style.background = '#ff5148';
+        document.querySelector('button').innerHTML = "Game Loaded!";
+    }
+
+    // Invoke the function to open the window automatically
+    openWindow();
+}
+
     </script>
     <style>
     * {
