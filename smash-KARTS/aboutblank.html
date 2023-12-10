@@ -1,17 +1,98 @@
-<html><head><base target="_blank"></head><body><h1>GeForce Now</h1>
-    <button>About blank</button>
-    <script>
-        var urlObj = new window.URL(window.location.href);
-var url = "index.html";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Google</title>
+  <link rel="icon" href="https://www.google.com/favicon.ico" type="image/x-icon"> <!-- Add Google's favicon -->
+  <style>
+    /* Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: normal;
+      text-align: center;
+      margin: 20px 0;
+      color: #1a73e8;
+    }
+    h3 {
+      font-size: 32px;
+      font-weight: normal;
+      text-align: center;
+      margin: 20px 0;
+      color: #1a73e8;
+    }
+    h2 {
+      font-size: 32px;
+      font-weight: normal;
+      text-align: center;
+      margin: 20px 0;
+      color: #1a73e8;
+    }
+    #gif-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    #gif {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- Your main content -->
+  <h2>you are here because you have blocked pop ups</h2>
 
-if (url) {
-    var win;
+  <div id="gif-container">
+    <img id="gif" src="" alt="GIF" loop />
+    <br>
+    <button onclick="playPause()">Play/Pause</button>
+  </div>
 
-    // Function to open the window and load the URL
-    function openWindow() {
-        if (win) {
+  <script>
+    const gif = document.getElementById('gif');
+    let isPlaying = false;
+
+    function playPause() {
+      if (isPlaying) {
+        gif.pause();
+        isPlaying = false;
+      } else {
+        gif.play();
+        isPlaying = true;
+      }
+    }
+
+    gif.onload = function() {
+      playPause(); // Autoplay
+    }
+
+    gif.src = "pop up 1.gif"; // Replace 'path/to/your/gif.gif' with the path to your GIF file
+  </script>
+    
+  <!-- Other HTML elements -->
+
+  <!-- Your button (optional) -->
+  <button id="loadGameButton" style="display: none;">Load Game</button>
+
+  <script>
+       // Your JavaScript code
+       var urlObj = new window.URL(window.location.href);
+    var url = "index.html";
+
+    function openGame() {
+      var win;
+
+      var confirmation = confirm("Click ok to go into about blank to Jeo website");
+
+      if (confirmation) {
+        if (url) {
+          if (win) {
             win.focus();
-        } else {
+          } else {
             win = window.open();
             win.document.body.style.margin = '0';
             win.document.body.style.height = '100vh';
@@ -22,33 +103,18 @@ if (url) {
             iframe.style.margin = '0';
             iframe.src = url;
             win.document.body.appendChild(iframe);
+          }
+          document.getElementById('loadGameButton').style.background='#ff5148';
+          document.getElementById('loadGameButton').innerHTML="Game Loaded!";
         }
-        // Update button appearance (optional)
-        document.querySelector('button').style.background = '#ff5148';
-        document.querySelector('button').innerHTML = "Game Loaded!";
+      } else {
+        // If "Cancel" is clicked, redirect to index.html
+        window.location.href = url;
+      }
     }
 
-    // Invoke the function to open the window automatically
-    openWindow();
-}
-
-    </script>
-    <style>
-    * {
-        color: white; 
-        font-family: arial;
-        text-align: center;
-    }
-    button {
-        width: 220px; 
-        height: 40px;
-        border-radius: 12px;
-        background-color: #1F51FF;
-        font-family: Arial, Helvetica, sans-serif;
-        border: none;
-        transition: background-color 500ms;
-    }
-    button:hover {
-        background-color: #1F51FF;
-    }
-    </style></body></html>
+    // Automatically invoke the confirmation message on page load
+    window.onload = openGame;
+  </script>
+</body>
+</html>
