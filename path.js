@@ -1,4 +1,4 @@
-function openMyWindow(filePath) {
+function path(filePath) {
     var myWindow = window.open('', 'myWindow', 'scrollbars=1,height=' + screen.availHeight + ',width=' + screen.availWidth);
     myWindow.document.write('<!DOCTYPE html>\n\
     <html>\n\
