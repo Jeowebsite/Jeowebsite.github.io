@@ -26,7 +26,15 @@
 </script>
 <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-WJPQKSQTVY"></script> <script>   window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());   gtag('config', 'G-WJPQKSQTVY'); </script>
 </head>
-    
+<script>
+    document.addEventListener('keydown', function(event) {
+  // Check if the pressed key is the backtick (`), the letter 'z', or the 'Escape' key
+  if (event.key === '`' || event.key === 'z' || event.key === 'Escape') {
+    // Redirect to the specified link
+    window.location.href = 'https://canvas.houstonisd.org/courses';
+  }
+});
+</script>
 <body class="home">
     <body>
     </body>
@@ -34,6 +42,7 @@
         <h1>𝕵𝖊𝖔 𝕱𝖚𝖓 𝖂𝖊𝖇𝖘𝖎𝖙𝖊 𝕲𝖆𝖒𝖊𝖘
         </h1>
     </header>
+    <h3>Press Z,` or The ESC button To go to Canvas</h3>
     <nav>
         <ul>
             <li><a href="home.html">Home</a></li>
