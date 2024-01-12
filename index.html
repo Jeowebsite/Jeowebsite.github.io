@@ -34,6 +34,25 @@
   }
 });
 </script>
+
+<script>
+     // Function to filter game cards based on the search input
+     function filterGames() {
+            var input, filter, gameCards, i, title;
+            input = document.getElementById('searchInput');
+            filter = input.value.toUpperCase();
+            gameCards = document.getElementsByClassName('game-card');
+
+            for (i = 0; i < gameCards.length; i++) {
+                title = gameCards[i].getElementsByTagName('h3')[0];
+                if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+                    gameCards[i].style.display = '';
+                } else {
+                    gameCards[i].style.display = 'none';
+                }
+            }
+        }
+</script>
 <body class="home">
     <body>
     </body>
@@ -67,11 +86,9 @@
     <h4>
         Change Your Backround Color
     </h4>
-  </div>
-        <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Search for a game...">
-            <button onclick="searchGame()">Search</button>
-        </div>
+    <div class="search-container">
+        <input type="text" id="searchInput" onkeyup="filterGames()" placeholder="Search for game titles...">
+    </div>
         <section class="All Games">
             <h2>Games</h2>
             <div class="game-card">
