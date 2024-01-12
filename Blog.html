@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Update</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #c2b2021d;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .blog-update {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-title {
+            color: #1e88e5;
+        }
+
+        .update-section {
+            margin-top: 20px;
+        }
+
+        .update-content {
+            margin-top: 10px;
+            display: none;
+        }
+
+        a {
+            color: #1e88e5;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="blog-update">
+    <h1 class="blog-title">Blog Update: [Date]</h1>
+
+    <div class="update-section">
+        <h2>January 11 2024</h2>
+        <div class="update-content">
+            <h3>🚀 Added This Blog Post And Fixed Search Bar to Work on all Games.</h3>
+            <p> </p>
+        </div>
+    </div>
+
+    <!-- Repeat similar structure for other sections/categories -->
+
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const updateContent = document.querySelectorAll('.update-content');
+
+        updateContent.forEach(content => {
+            content.previousElementSibling.addEventListener('click', function () {
+                content.style.display = (content.style.display === 'none') ? 'block' : 'none';
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
