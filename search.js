@@ -274,8 +274,6 @@ const games = [
 { title: "Color Water Sort", onclick: "openMyWindow('https://h5cdn.github.io/s3/water-color-sort/')" },
 { title: "Fancy Pants 2", onclick: "openMyWindow('https://h5cdn.github.io/s4/fancy-pants-2/')" },
 { title: "Fancy Pants 3", onclick: "openMyWindow('https://h5cdn.github.io/s4/fancy-pants-3/')" },
-
-
     // Add more game objects...
 ];
 // Sample array of game objects (replace this with your actual game data)
