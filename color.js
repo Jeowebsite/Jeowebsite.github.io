@@ -4,13 +4,7 @@
   localStorage.setItem('selectedColor', color);
 }
 
-// Retrieve selected color from local storage
-window.onload = function() {
-  const selectedColor = localStorage.getItem('selectedColor');
-  if (selectedColor) {
-    document.body.style.backgroundColor = selectedColor;
-  }
-};
+
 
 // Add click event listeners to color boxes
 const colorBoxes = document.querySelectorAll('.color-box');
