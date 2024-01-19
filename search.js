@@ -288,7 +288,23 @@ const games = [
 { title: "Idle Startup Tycoon", description: "Description for Idle Startup Tycoon game.", url: "zhtml-games/idle-startup.html" },
 { title: "Color Water Sort", description: "Description for Color Water Sort game.", url: "zhtml-games/color-water.html" },
 { title: "Fancy Pants 2", description: "Description for Fancy Pants 2 game.", url: "zhtml-games/fancy2.html" },
-{ title: "Fancy Pants 3", description: "Description for Fancy Pants 3 game.", url: "zhtml-games/fancy3.html" }
+{ title: "Fancy Pants 3", description: "Description for Fancy Pants 3 game.", url: "zhtml-games/fancy3.html" },
+{ title: "Hobo 1", description: "Description for Hobo 1 game.", url: "hobo1/index.html" },
+{ title: "Hobo 2", description: "Description for Hobo 2 game.", url: "hobo2/index.html" },
+{ title: "Hobo 3", description: "Description for Hobo 3 game.", url: "hobo3/index.html" },
+{ title: "Hobo 4", description: "Description for Hobo 4 game.", url: "hobo4/index.html" },
+{ title: "Hobo 5", description: "Description for Hobo 5 game.", url: "hobo5/index.html" },
+{ title: "Hobo 6", description: "Description for Hobo 6 game.", url: "hobo6/index.html" },
+{ title: "Hobo 7", description: "Description for Hobo 7 game.", url: "hobo7/index.html" },
+{ title: "Super Smash Flash", description: "Description for Super Smash Flash game.", url: "super-smash-flash/index.html" },
+{ title: "Booty Rider", description: "Description for Booty Rider game.", url: "booty-rider/index.html" },
+{ title: "Robo Kill", description: "Description for Robo Kill game.", url: "robo-kill/index.html" },
+{ title: "Last Stand 2", description: "Description for Last Stand 2 game.", url: "last-stand2/index.html" },
+{ title: "3D Ping Pong", description: "Description for 3D Ping Pong game.", url: "3d-ping/index.html" },
+{ title: "Thing Thing Arena 1", description: "Description for Thing Thing Arena 1 game.", url: "thing1/index.html" },
+{ title: "Thing Thing Arena 2", description: "Description for Thing Thing Arena 2 game.", url: "thing2/index.html" },
+{ title: "Thing Thing Arena 3", description: "Description for Thing Thing Arena 3 game.", url: "thing3/index.html" },
+
     // Add more game objects...
 ];
 // Sample array of game objects (replace this with your actual game data)
