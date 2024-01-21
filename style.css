@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f8f8;
+    background-color: #a64b00; /* Light gray background for a cozy feel */
     color: #333;
     margin: 0;
     padding: 0;
@@ -10,7 +10,8 @@ body {
 .blog-update {
     max-width: 800px;
     margin: 20px auto;
-    background-color: #fff;
+    background-color: #ffffff;
+    color: #555; /* Slightly darker text color for warmth */
     padding: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -18,7 +19,7 @@ body {
 
 .update-section {
     margin-top: 30px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #E0E0E0; /* Light gray border */
     padding: 20px;
     border-radius: 8px;
     transition: transform 0.3s;
@@ -35,15 +36,15 @@ body {
 }
 
 h1, h2, h3 {
-    color: #1976D2;
+    color: #6D4C41; /* Brownish heading colors for a cozy touch */
 }
 
 .update-date {
-    color: #009688;
+    color: #4CAF50;
 }
 
 a {
-    color: #1976D2;
+    color: #6D4C41;
     text-decoration: none;
     font-weight: bold;
 }
@@ -53,8 +54,8 @@ a:hover {
 }
 
 button {
-    background-color: #1976D2;
-    color: #fff;
+    background-color: #6D4C41;
+    color: #FFF;
     border: none;
     padding: 12px 20px;
     font-size: 16px;
@@ -64,5 +65,5 @@ button {
 }
 
 button:hover {
-    background-color: #155fa0;
+    background-color: #4E342E; /* Darker brown on hover */
 }

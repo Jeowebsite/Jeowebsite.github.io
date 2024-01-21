@@ -440,7 +440,7 @@ img {
 /* Search Container Styles */
 .search-container {
   display: flex;
-  max-width: 500px; /* Adjusted maximum width */
+  max-width: 770px; /* Adjusted maximum width */
   margin: 20px auto; /* Center the search bar */
   border-radius: 50px; /* Increased border-radius for a rounder look */
   overflow: hidden; /* Hide overflowing content */
@@ -512,4 +512,42 @@ img {
   margin: 5px;
   cursor: pointer;
   border: 2px solid rgb(0, 0, 0); /* Added white border */
+}
+
+.text {
+  top: 1px; /* Adjust as needed */
+  left: 50%; /* Center the text */
+  transform: translateX(-50%); /* Center the text */
+}
+
+#button-container {
+  margin-top: 20px;
+}
+
+#saveColorBtn,
+#removeColorBtn {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+#saveColorBtn {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+#removeColorBtn {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+#saveColorBtn:hover {
+  background-color: #45a049;
+}
+
+#removeColorBtn:hover {
+  background-color: #e60000;
 }

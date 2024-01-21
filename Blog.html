@@ -26,14 +26,16 @@
         <div class="update-section">
             <h2 class="update-date">January 11, 2024</h2>
             <h3>Made this Blog Post</h3>
+            <p><a href="https://jeowebsite-github-gz8uzr0ex-jeos-projects-f4e335e2.vercel.app/" target="_blank">Blog Snapshot</a></p>
             <div class="update-content">
-                <p>🚀 Added this blog post and fixed the search bar to work on all games.</p>
+                <p>🚀 Fixed a glitch and ensured the search bar works for every game.</p>
             </div>
         </div>
 
         <div class="update-section">
             <h2 class="update-date">January 13, 2024</h2>
             <h3>Fixed the Glitch and the Search Bar Works for Every Game</h3>
+            <p><a href="https://jeowebsite-github-kp0x1mr42-jeos-projects-f4e335e2.vercel.app/" target="_blank">Blog Snapshot</a></p>
             <div class="update-content">
                 <p>🚀 Fixed a glitch and ensured the search bar works for every game.</p>
             </div>
@@ -42,42 +44,63 @@
         <div class="update-section">
             <h2 class="update-date">January 16, 2024</h2> <!-- Corrected the space after January 16 -->
             <h3>Added Shortcuts to Popular and Retro games</h3>
+            <p><a href="https://jeowebsite-github-pqoyopbma-jeos-projects-f4e335e2.vercel.app/" target="_blank">Blog Snapshot</a></p>
             <div class="update-content">
-                <p>Content for the update...</p>
+                <p>🚀 I added The Scroll Mechanism to The Popular And Retto Games For Accessibility </p>
             </div>
         </div>
 
         <div class="update-section">
             <h2 class="update-date">January 17, 2024</h2> <!-- Corrected the space after January 17 -->
             <h3>Added The Hobo Series</h3>
+            <p><a href="https://jeowebsite-github-f1fe5q1vk-jeos-projects-f4e335e2.vercel.app/" target="_blank">Blog Snapshot</a></p>
             <div class="update-content">
-                <p>Content for the update...</p>
+                <p>🚀 I added A Great Game Searies About A homeless Man Fighting</p>
             </div>
         </div>
 
         <div class="update-section">
             <h2 class="update-date">January 18, 2024</h2> <!-- Corrected the space after January 18 -->
             <h3>Added Random Ruffle Games</h3>
+            <p><a href="https://jeowebsite-github-jaoe2rd5n-jeos-projects-f4e335e2.vercel.app/" target="_blank">Blog Snapshot</a></p>
             <div class="update-content">
-                <p>Content for the update...</p>
+                <p>🚀 I added Move OG Games</p>
             </div>
         </div>
 
         <div class="update-section">
             <h2 class="update-date">January 19, 2024</h2> <!-- Corrected the space after January 19 -->
-            <h3>Updated Ruffle Engine To be Faster And More Responsive using ruffle-nightly-2024_01_19-web-selfhosted version of ruffle</h3>
+            <h3>Updated The Ruffle Engine</h3>
+            <p><a href="https://jeowebsite-github-g6x9w60o0-jeos-projects-f4e335e2.vercel.app/" target="_blank">Blog Snapshot</a></p>
             <div class="update-content">
-                <p>Content for the update...</p>
+                <p>Updated Ruffle Engine To be Faster And More Responsive using ruffle-nightly-2024_01_19-web-selfhosted version of ruffle
+                </p>
             </div>
         </div>
         <div class="update-section">
             <h2 class="update-date">January 20, 2024</h2> <!-- Corrected the space after January 19 -->
             <h3>Update It This Blog Post In looking Better</h3>
+            <p><a href="https://jeowebsite-github-bjyg4dwt5-jeos-projects-f4e335e2.vercel.app/Blog.html" target="_blank">Blog Snapshot</a></p>
             <div class="update-content">
-                <p>Content for the update...</p>
+                <p>🚀 Made The Blog Post Look Better</p>
             </div>
         </div>
-
+        <div class="update-section">
+            <h2 class="update-date">January 21, 2024</h2> <!-- Corrected the space after January 19 -->
+            <h3>Updated The Color Box So it Saves Your Color</h3>
+            <p><a href="" target="_blank">Blog Snapshot</a></p>
+            <div class="update-content">
+                <p>Added More Colors to Choose From And Now It saves Your Color Using Local Storage</p>
+            </div>
+        </div>
+        <div class="update-section">
+            <h2 class="update-date">January 21, 2024</h2> <!-- Corrected the space after January 19 -->
+            <h3>Added A Update Countdown</h3>
+            <p><a href="" target="_blank">Blog Snapshot</a></p>
+            <div class="update-content">
+                <p>Now You are able to expect When there will be a update</p>
+            </div>
+        </div>
         <!-- Repeat similar structure for other sections/categories -->
 
         <button id="scrollButton">Scroll to Updates</button>
@@ -97,32 +120,36 @@
     <script src="cursorEffectSetup.js"></script>
     <script src="trailingCursor.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const updateSections = document.querySelectorAll('.update-section');
+       document.addEventListener('DOMContentLoaded', function () {
+    const updateSections = document.querySelectorAll('.update-section');
 
-            updateSections.forEach(section => {
-                section.addEventListener('mouseenter', function () {
-                    section.style.transform = 'scale(1.05)';
-                });
+    updateSections.forEach(section => {
+        section.addEventListener('mouseenter', function () {
+            section.style.transform = 'scale(1.05)';
+        });
 
-                section.addEventListener('mouseleave', function () {
-                    section.style.transform = 'scale(1)';
-                });
+        section.addEventListener('mouseleave', function () {
+            section.style.transform = 'scale(1)';
+        });
 
-                const updateContent = section.querySelector('.update-content');
-                section.addEventListener('click', function () {
-                    updateContent.style.display = (updateContent.style.display === 'none') ? 'block' : 'none';
-                });
-            });
+        const updateContent = section.querySelector('.update-content');
+        section.addEventListener('click', function () {
+            updateContent.style.display = (updateContent.style.display === 'none') ? 'block' : 'none';
+        });
+    });
 
-            const scrollButton = document.getElementById('scrollButton');
-            scrollButton.addEventListener('click', function () {
-                window.scrollTo({
-                    top: document.body.scrollHeight,
-                    behavior: 'smooth'
-                });
+    const scrollButton = document.getElementById('scrollButton');
+    if (scrollButton) {
+        scrollButton.addEventListener('click', function () {
+            const scrollHeight = document.body.scrollHeight;
+            window.scrollTo({
+                top: scrollHeight,
+                behavior: 'smooth'
             });
         });
+    }
+});
+
     </script>
 </body>
 <h3>About Jeowebsite</h3>
