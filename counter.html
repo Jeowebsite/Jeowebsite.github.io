@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unblocked Games Clock Counter</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to right, #2c3e50, #000000);
+            color: #ecf0f1;
+            font: bold 16px 'Courier New', monospace;
+            overflow: hidden;
+        }
+
+        #clockCounter {
+            border: 5px solid #fff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 300px;
+            margin: 0 auto;
+            background: linear-gradient(to right, #34495e, #000000);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: pulse 2s infinite;
+        }
+
+        .game {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #ffffff;
+            animation: rotateColor 5s infinite;
+        }
+
+        #counterValue {
+            font-size: 2.5rem;
+            margin-top: 10px;
+            color: #ffffff;
+            animation: scaleCounter 3s infinite alternate;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes rotateColor {
+            0% {
+                color: #df3effd1;
+            }
+            25% {
+                color: #d400ffa7;
+            }
+            50% {
+                color: #c800ff;
+            }
+            75% {
+                color: #d400ffa7;
+            }
+            100% {
+                color: #e874ffa7;
+            }
+        }
+
+        @keyframes scaleCounter {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Additional Styles and Animations Below */
+
+        #clockCounter:hover {
+            transform: rotate(360deg);
+            transition: transform 1s ease;
+        }
+
+        .game::after {
+            content: '🎮';
+            display: inline-block;
+            margin-left: 5px;
+            transform: scale(0);
+            animation: heartBeat 1s infinite;
+        }
+
+        @keyframes heartBeat {
+            0%, 100% {
+                transform: scale(0);
+            }
+            50% {
+                transform: scale(1.3);
+            }
+        }
+
+        body:before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, #000000, #580277);
+            pointer-events: none;
+            z-index: -1;
+            opacity: 0.5;
+            animation: gradientAnimation 10s infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 0%;
+            }
+            50% {
+                background-position: 100% 100%;
+            }
+            100% {
+                background-position: 0% 0%;
+            }
+        }
+
+        .fireworks {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1000;
+        }
+
+        .firework {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #fff;
+            border-radius: 50%;
+            opacity: 0;
+            transform: scale(0);
+            animation: explode 1s ease-out;
+        }
+
+        .firework1 { left: 50%; top: 50%; animation-delay: 0.2s; }
+        .firework2 { left: 30%; top: 20%; animation-delay: 0.5s; }
+        .firework3 { left: 70%; top: 80%; animation-delay: 0.7s; }
+        .firework4 { left: 10%; top: 90%; animation-delay: 1s; }
+        .firework5 { left: 90%; top: 10%; animation-delay: 1.2s; }
+
+        @keyframes explode {
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            overflow: hidden;
+        }
+
+        .background-shapes {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100vmax;
+            height: 100vmax;
+            z-index: -1;
+        }
+
+        .shape {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #fff;
+            border-radius: 50%;
+            opacity: 0.8;
+            animation: moveShape 4s infinite alternate;
+        }
+
+        .shape1 { left: 25%; top: 10%; }
+        .shape2 { left: 70%; top: 40%; }
+        .shape3 { left: 10%; top: 80%; }
+        .shape4 { left: 90%; top: 20%; }
+
+        @keyframes moveShape {
+            to {
+                transform: translateX(30px);
+            }
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -3;
+        }
+
+        .content {
+            z-index: 1;
+        }
+        .fireworks {
+            display: none;
+        }
+
+        .background-container {
+            display: none;
+        }
+
+        .overlay {
+            display: none;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="background-container">
+    <div class="background-shapes">
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+        <div class="shape shape4"></div>
+    </div>
+</div>
+
+<div class="overlay"></div>
+
+<div class="content">
+    <div id="clockCounter">
+        <div class="game">Game Counter</div>
+        <div id="counterValue">354
+            
+        </div>
+    </div>
+
+    <div class="fireworks">
+        <div class="firework firework1"></div>
+        <div class="firework firework2"></div>
+        <div class="firework firework3"></div>
+        <div class="firework firework4"></div>
+        <div class="firework firework5"></div>
+    </div>
+</div>
+
+<script>
+    // JavaScript functions remain unchanged
+    updateCounter();
+</script>
+
+</body>
+</html>
