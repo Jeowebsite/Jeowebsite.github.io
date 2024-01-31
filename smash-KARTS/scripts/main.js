@@ -139,8 +139,8 @@ function toggleFullscreen()
   }
   else
   {
-    console.log("setElementFullScreen");    
-    var elem = document.getElementById("mainContainer");
+    console.log("setElementFullScreen");
+    var elem = document.documentElement; //document.getElementById("mainContainer");
     setElementFullScreen(elem);
   }
   fs = !fs;

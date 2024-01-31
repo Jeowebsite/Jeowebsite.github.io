@@ -26,20 +26,20 @@ function showAd(adElementId)
     {
         ad.style.display = "block";
     }
-    
-    currShownAdElementIds.push(adElementId);
 }
 
 function requestAd(adElementId, adShownTimestamp)
 {
     if(currShownAdElementIds.includes(adElementId))
         return;
-    
+
     if(Date.now() >= (adShownTimestamp.val + bannerMinRefreshDelayMillisecs) || !hasAdContent(adElementId))
     {
         adShownTimestamp.val = Date.now();
 
         destroyAd(adElementId);
+
+        currShownAdElementIds.push(adElementId);
 
         aiptag.cmd.display.push(function()
         {
@@ -55,7 +55,7 @@ function hideAd(adElementId)
     {
         //for adinplay we dont distingush between hiding and destroying
         destroyAd(adElementId);
-        
+
         //if we were hiding you would need to reset the currShownAdElement
         //currShownAdElementId = null;
     }
@@ -69,14 +69,14 @@ function destroyAd(adElementId)
     {
         ad.style.display = "none";
         //ad.innerHTML = "";
-        aiptag.cmd.display.push(function() 
-        { 
-            aipDisplayTag.destroy(adElementId); 
+        aiptag.cmd.display.push(function()
+        {
+            aipDisplayTag.destroy(adElementId);
         });
     }
-    
+
     const indexToRemove = currShownAdElementIds.indexOf(adElementId);
-    
+
     if(indexToRemove >= 0)
     {
         currShownAdElementIds.splice(indexToRemove, 1);
@@ -137,19 +137,15 @@ function requestDeathAd()
 
 function hideDeathAd()
 {
-    if(isMobile())
-    {
-        hideAd(adTagDeathBannerMobile);
-    }
-    else
-    {
-        hideAd(adTagDeathBannerWeb);
-    }
+    hideAd(adTagDeathBannerMobile);
+    hideAd(adTagDeathBannerWeb);
 }
 
 function requestOffCanvasAd(adResArrayToHide, adTagIdToShow)
 {
     hideOffCanvasAds(adResArrayToHide);
+
+    currShownAdElementIds.push(adTagIdToShow);
 
     aiptag.cmd.display.push(function()
     {

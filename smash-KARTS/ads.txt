@@ -1,5 +1,5 @@
 ##################################
-# AdinPlay.com ads.txt - 2023-11-30
+# AdinPlay.com ads.txt - 2024-01-17
 ##################################
 
 OWNERDOMAIN=smashkarts.io
@@ -126,6 +126,9 @@ adyoulike.com,7463c359225e043c111036d7a29affa5,RESELLER
 minutemedia.com,01gya4708ddm,RESELLER
 visiblemeasures.com,1052,RESELLER
 undertone.com,4205,RESELLER,d954590d0cb265b9
+admedia.com,AM1601,RESELLER
+triplelift.com,8472,DIRECT,6c33edb13117fd86
+kargo.com,8824,RESELLER
 
 
 
@@ -892,6 +895,7 @@ adform.com, 2657, RESELLER, 9f5210a2f0999e32
 pubmatic.com, 160557, RESELLER, 5d62403b186f2ace
 indexexchange.com, 206233, RESELLER, 50b1c356f2c5c8fc
 themediagrid.com, 1J3ZI6, DIRECT, 35d5010d7789b49d
+themediagrid.com, WF71T3, DIRECT, 35d5010d7789b49d
 
 #Rise
 risecodes.com, 643813aab7212c00011c3f28, DIRECT
@@ -931,5 +935,5 @@ smartadserver.com, 4485-OB, RESELLER, 060d053dcf45cbf3
 Contextweb.com, 562926, RESELLER, 89ff185a4c4e857c
 
 ##################################
-# AdinPlay.com ads.txt - 2023-11-30
+# AdinPlay.com ads.txt - 2024-01-17
 ##################################

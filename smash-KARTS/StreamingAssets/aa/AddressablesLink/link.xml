@@ -85,6 +85,7 @@
     <type fullname="PressAnyKeyToDisable" preserve="all" />
     <type fullname="ProgressBar" preserve="all" />
     <type fullname="SeasonWidget" preserve="all" />
+    <type fullname="SkipTutorialPopup" preserve="all" />
     <type fullname="SmashKartsTeamsManager" preserve="all" />
     <type fullname="SnowArenaGlowPulse" preserve="all" />
     <type fullname="SpawnManager" preserve="all" />
@@ -216,6 +217,7 @@
     <type fullname="UnityEngine.UI.Mask" preserve="all" />
     <type fullname="UnityEngine.UI.Scrollbar" preserve="all" />
     <type fullname="UnityEngine.UI.ScrollRect" preserve="all" />
+    <type fullname="UnityEngine.UI.Shadow" preserve="all" />
     <type fullname="UnityEngine.UI.Slider" preserve="all" />
     <type fullname="UnityEngine.UI.Toggle" preserve="all" />
     <type fullname="UnityEngine.UI.VerticalLayoutGroup" preserve="all" />
