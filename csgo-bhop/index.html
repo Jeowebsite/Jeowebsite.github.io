@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CCSGO BHOP</title>
+  <link rel="icon" href="/img/JMWfavicon.png" />
+    <link rel="shortcut icon" href="/img/JMWfavicon.png" />
+    <link rel="stylesheet" href="/style.css">
+  <style>
+    .controlimg {
+      width: 350px;
+      width: 250px;
+      border-radius: 15px;
+    }
+  </style>
+</head>
+<body theme="classic">
+      <br>
+       <img src="/assets/img/gameimg/bhop.png" class="gameimg" alt="bhop">
+  <h6>controls:</h6>
+  <img src="/gs/src/csgo:bhop/Screenshot 2024-01-24 10.21.22 AM.png" class="controlimg" alt="controls">
+     <p>CS:GO BHOP</p>
+      <button onclick="ab()" class="btn">Open.</button>
+    </div>
+    <script>
+      function ab() {
+          var urlObj = new window.URL(window.location.href);
+            win = window.open();
+            win.document.body.style.margin = "0";
+            win.document.body.style.height = "100vh";
+            var iframe = document.createElement("iframe");
+            iframe.style.border = "none";
+            iframe.style.width = "100%";
+            iframe.style.height = "100%";
+            iframe.style.margin = "0";
+            iframe.referrerpolicy = "no-referrer";
+            iframe.allow = "fullscreen";
+            iframe.src = "https://app-203069.games.s3.yandex.net/203069/w2oybzij1fm8eibx2mh3ijh7tvs5ilb6/index.html?sdk=%2Fsdk%2F_%2Fv2.c10822f5f42a784ba7cb.js#origin=https%3A%2F%2Fplayhop.com&amp;app-id=203069&amp;device-type=desktop";
+            win.document.body.appendChild(iframe);
+      }
+
+    </script>
+</body>
+</html>
