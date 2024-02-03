@@ -1,0 +1,29 @@
+name: Push to GitHub Pages every 4 days
+
+on:
+  schedule:
+    - cron: '0 0 */4 * *'
+
+jobs:
+  push_to_pages:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Configure Git
+      run: |
+        git config --global user.name 'Jeowebsite'
+        git config --global user.email 'thehub190493@gmail.com'
+
+    - name: Make changes (update your GitHub Pages content)
+      run: |
+        # Add your commands to update GitHub Pages content here
+        # For example, build Jekyll site, generate documentation, etc.
+
+    - name: Commit and push to GitHub Pages
+      run: |
+        git add .
+        git commit -m "Automated commit - $(date +'%Y-%m-%d %H:%M:%S')"
+        git push origin HEAD:main  # Assuming your GitHub Pages branch is 'main'
