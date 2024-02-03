@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeo</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="counter.js"></script>
-    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" media="screen and (max-width: 767px)" href="styles-mobile.css">
+  <link rel="stylesheet" media="screen and (min-width: 768px)" href="styles.css">
     <button id="scrollButton">​🇨​​🇱​​🇮​​🇨​​🇰​ ​🇲​​🇪​ ​🇹​​🇴​ ​🇸​​🇪​​🇪​ ​🇳​​🇪​​🇼​ ​🇬​​🇦​​🇲​​🇪​​🇸​
         😊</button>
     <button id="redirectButton">🇷​​🇪​​🇹​​🇷​​🇴​ ​🇬​​🇦​​🇲​​🇪​​🇸​​ 🎮</button>
@@ -19,8 +19,6 @@
     <script async src="https://fundingchoicesmessages.google.com/i/pub-3788774762807047?ers=1" nonce="IYqMtb9OWYXRY3F12awmSQ"></script><script nonce="IYqMtb9OWYXRY3F12awmSQ">(function() {function signalGooglefcPresent() {if (!window.frames['googlefcPresent']) {if (document.body) {const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe);} else {setTimeout(signalGooglefcPresent, 0);}}}signalGooglefcPresent();})();</script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3788774762807047"
     crossorigin="anonymous"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3788774762807047"
-     crossorigin="anonymous"></script>
 <script>
     (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
@@ -77,223 +75,47 @@
 </div>
 
   <style>
-    .game-container {
-        width: 100%;
-        overflow-x: scroll; /* Added scroll property */
-        white-space: nowrap;
-        border: 1px solid #ccc;
-        display: flex; /* Added flex property for better alignment */
-    }
-
-    .retro-cards {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .retro-card {
-        background-color: rgb(255, 255, 255);
-        border-radius: 50px;
-        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-direction: column;
-        margin: 1em 0.5em;
-        overflow: hidden;
-        width: 350px;
-    }
-
-    .retro-card img {
-        max-width: 100%;
-        height: 300px;
-        object-fit: cover;
-        border-radius: 10px;
-        border: 10px solid #000000;
-        transition: transform 0.3s ease;
-    }
-
-    .retro-card:hover img {
-        transform: scale(1.05);
-    }
-
-    .retro-card h3 {
-        background-color: #000000;
-        color: rgb(235, 230, 230);
-        font-family: sans-serif;
-        font-size: 1.1em;
-        margin: 0;
-        padding: 1.5em;
-        text-align: center;
-        text-transform: uppercase;
-        border-top-left-radius: 4px;
-        border-top-right-radius: 4px;
-        border-bottom-left-radius: 100px;
-        border-bottom-right-radius: 100px;
-        font-weight: bold;
-        letter-spacing: 1px;
-        line-height: 2.0;
-        transition: color 0.3s;
-    }
-
-    .retro-card:hover h3 {
-        color: #ffffff;
-    }
-
-    .retro-card p {
-        font-family: sans-serif;
-        font-size: 1em;
-        margin: 1em;
-    }
-
-    .retro-card a {
-        background-color: #000000;
-        color: white;
-        margin: 1em;
-        padding: 0.5em;
-        text-align: center;
-        text-decoration: none;
-        transition: background-color 0.2s;
-    }
-
-    .retro-card:hover {
-        transform: translateY(-10px);
-    }
-
-    .retro-card a:hover {
-        background-color: rgb(0, 0, 0);
-    }
-
-    .button {
-        text-decoration: none;
-        display: inline-block;
-        background: linear-gradient(135deg, #000000, #511e66);
-        color: #fff;
-        font-weight: 600;
-        font-size: 16px;
-        padding: 10px 45px;
-        border-radius: 30px;
-        margin-top: 15px;
-        transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        text-align: center;
-        border: 2px solid transparent;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .button:hover {
-        background: linear-gradient(135deg, #000000, #6d6d6d);
-        transform: scale(1.05);
-        box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
-    }
-    #ret{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-style: bold;
-    }
-        .iframe-container {
-        position: absolute; /* Change from relative to absolute */
-        top: 226px; /* Adjust the top position as needed */
-        left: 1px; /* Adjust the left position as needed */
-        width: 300px;
-        height: 150px;
-        overflow: hidden;
-        border-radius: 15px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: box-shadow 0.3s ease;
-    }
-
-    .iframe-container:hover {
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-
-  .iframe-container iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-    transition: transform 0.3s ease;
-  }
-
-  .iframe-container:hover iframe {
-    transform: scale(1.05);
-  }
-
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7));
-    pointer-events: none;
-  }
-  .iframe {
-        position: absolute; /* Change from relative to absolute */
-        top: 230px; /* Adjust the top position as needed */
-        right: 5px; /* Adjust the left position as needed */
-        width: 300px;
-        height: 200px;
-        overflow: hidden;
-        border-radius: 15px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: box-shadow 0.3s ease;
-    }
-
-    .iframe:hover {
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-
-  .iframe iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-    transition: transform 0.3s ease;
-  }
-
-  .iframe:hover iframe {
-    transform: scale(1.05);
-  }
 
 </style>
-
-
-<div class="iframe-container">
+<div class="iframe-container desktop-only">
     <iframe src="timer.html" title="Until Next Update"></iframe>
     <div class="overlay"></div>
   </div>
-  <div class="iframe">
+  
+  <div class="iframe desktop-only">
     <iframe src="counter.html" title="Until Next Update"></iframe>
     <div class="overlay"></div>
   </div>
-  
         <div class="search-container">
             <input type="text" id="searchInput" placeholder="Search for a game...">
             <button onclick="searchGame()">Search</button>
         </div>
-       
         <h1 id="ret">Popular Games</h1>
         <div class="game-container">
             <div class="retro-cards">
-                <div class="game-card">
+                <div class="retro-card">
                     <img src="1v1lol/splash.png">
                     <h3>1v1.lol</h3>
                     <button class="button" onclick="openFileInWindow('1v1lol/index.html')">Play Game</button>
                 </div>
-                <div class="game-card">
+                <div class="retro-card">
                     <img src="smash-KARTS/images/SmashKartsPoster.jpg">
                     <h3>SmashKarts</h3>
                     <p>New version</p>
                     <button class="button" onclick="openFileInWindow('smash-KARTS/index.html')">Play Game</button>
                 </div>
-                <div class="game-card">
+                <div class="retro-card">
                     <img src="0v0/download (2).png" alt="Game 25">
                     <h3>OvO</h3>
                     <button class="button" onclick="openFileInWindow('0v0/index.html')">Play Game</button>
                 </div>
-                <div class="game-card">
+                <div class="retro-card">
                     <img src="Retro-bowl/download (8).jpeg">
                     <h3>Retro Bowl</h3>
                     <p>I am sorry if you loss your progress the other game file got blocked </p>
                     <button class="button" onclick="openFileInWindow('Retro-bowl/index.html')">Play Game</button>
                 </div>
-                <div class="game-card">
+                <div class="retro-card">
                     <img src="papa-freezeria/freeze.jpeg">
                     <h3>Papa's Freezearia</h3>
                     <button class="button" onclick="openFileInWindow('papa-freezeria/index.html')">Play Game</button>
@@ -433,121 +255,121 @@
         <h1 id="ret">FNF Mods</h1>
         <div class="game-container">
             <div class="retro-cards">
-                <div class="game-card">
+                <div class="retro-card">
                     <img
                         src="fnf-stick-man/pqgaW4qd1gNazQqho2Him0h5E8ntJuI37OOQpAo4t9aV5-jpLXLk6yYgbbn9ZrzWtIFs5wQeNBKEJRxNs99J1c-56KIu9bUXUe0lA_g=s2048.jpg">
                     <h3>Friday Night Funking Stick Man Mod</h3>
                     <button class="button" onclick="openFileInWindow('fnf-stick-man/ndex.html')">Play Game</button>
                 </div>
-                <div class="game-card">
+                <div class="retro-card">
                     <img
                         src="fnf-hex/U6UErGZwrI-yA1AbE5r97Hnd4CkMQ7fNuHUQ1t-6PUy3-mxRqEBO6hGn67LZ2drmhxiAILeU7z5X2VuPRx9--DMQR9nD3wD0p97xy7cefI3KmDUnGnF3RPzM9E0W66qmYxN-nFFw3g=s2048.jpg">
                     <h3>Friday Night Funking Hex Mod</h3>
                     <button class="button" onclick="openFileInWindow('fnf-hex/index.html')">Play Game</button>
                 </div>
-                <div class="game-card">
+                <div class="retro-card">
                     <img
                         src="fnf-mobile/6sGAZ1Z0MVgqvqq949cUPnVgNaW-PDCpl6SveSkaE40tuH-jcnop6Li2Lb5DjE908PVOwuDUAkX4PFdQaAeOGpuDDX4u9xpEoFdkITlhVcJzoSv_GCMg74DxEVQsAjm3JKBf25BP8EimdPPCdmi1DcvYmLfqTUO4zso6_2Fj=s2048.jpg">
                     <h3>Friday Night Funking Mobile</h3>
                     <button class="button" onclick="openFileInWindow('fnf-mobile/index.html')">Play Game</button>
                 </div>
-                <div class="game-card">
+                <div class="retro-card">
                     <img src="fnf-imposter/amonus.jpg">
                     <h3>Friday Night Funking Imposter</h3>
                     <button class="button" onclick="openFileInWindow('fnf-imposter/index.html')">Play Game</button>
                 </div>
-                <div class="game-card">
+                <div class="retro-card">
                     <img
                         src="fnf-slender/eJ_PiiaJAiPL4CfT5Ka5hoELPozEGVsMchpS6PniENbtswf18HWSsNoNfgcCelXbhBRM-X7Inb8pHYza1GjnnWQTctnvfv53RRb28bcwSN2ZQFeVQrW80nJdnjEt4nEVvyUOzsL8VMwNfUaeO1PVutFLhIH5AoH4wCPUKOvVUsiDZ-jnvZuOaTicnKz4FcQo5VwCsbA3RBxZ_O7fBQ=s2048.png">
                     <h3>Friday Night Funking Slender</h3>
                     <button class="button" onclick="openFileInWindow('fnf-slender/index.html')">Play Game</button>
                 </div>
-                <div class="game-card">
+                <div class="retro-card">
                     <img src="fnf-sonic.exe/sonic.jpg">
                     <h3>Friday Night Funking Sonic.exe</h3>
                     <button class="button" onclick="openFileInWindow('fnf-sonic/index.html')">Play Game</button>
                 </div>
-                <div class="game-card">
+                <div class="retro-card">
                     <img src="fnf-shaggy/shaggy.jpg">
                     <h3>Friday Night Funking Shaggy</h3>
                     <button class="button" onclick="openFileInWindow('fnf-shaggy/index.html')">Play Game</button>
                 </div>
-                <div class="game-card">
+                <div class="retro-card">
                     <img src="zimages/smokeemoutstrugglefnf.png">
                     <h3>Smokeout Struggle FNF</h3>
                     <button class="button" onclick="openMyWindow('https://levixddlmao.github.io/smokeemoutstrugglefnf/')">Play Game</button>
                 </div>
-                <div class="game-card">
+                <div class="retro-card">
                     <img src="zimages/bsides.jpeg">
                     <h3>Bsides FNF</h3>
                     <button class="button" onclick="openMyWindow('https://d3monslay3r101.github.io/FNFatSchool1/bsides/index.html')">Play Game</button>
                 </div>
-                <div class="game-card">
+                <div class="retro-card">
                     <img src="zimages/week 6.jpeg">
                     <h3>Week 6 FNF</h3>
                     <button class="button" onclick="openMyWindow('https://sonicisbest.github.io/hellbeats/new-week6/index.html')">Play Game</button>
                 </div>
-                <div class="game-card">
+                <div class="retro-card">
                     <img src="zimages/sky.jpeg">
                     <h3>Sky FNF</h3>
                     <button class="button" onclick="openMyWindow('https://thebrettyt.github.io/sky/index.html')">Play Game</button>
                 </div>
-                <div class="game-card">
+                <div class="retro-card">
                     <img src="zimages/sarventes.jpeg">
                     <h3>Sarventes FNF</h3>
                     <button class="button" onclick="openMyWindow('https://juicekidd.github.io/funkin/sarventes/index.html')">Play Game</button>
                 </div>
-                <div class="game-card">
+                <div class="retro-card">
                     <img src="zimages/x event.jpeg">
                     <h3>X Event FNF</h3>
                     <button class="button" onclick="openMyWindow('https://juicekidd.github.io/funkin/x-event/index.html')">Play Game</button>
                 </div>
-                <div class="game-card">
+                <div class="retro-card">
                     <img src="zimages/VsCassandra.png">
                     <h3>Vs Cassandra</h3>
                     <button class="button" onclick="openMyWindow('https://derpy-jacob-903.github.io/projectfnfweb/VsCassandra/index.html')">Play Game</button>
                 </div>
-                <div class="game-card">
+                <div class="retro-card">
                     <img src="zimages/vs NONSENSE.jpeg">
                     <h3>NONSENCE FNF</h3>
                     <button class="button" onclick="openMyWindow('https://levixddlmao.github.io/NONSENSE/')">Play Game</button>
                 </div>
-                <div class="game-card">
+                <div class="retro-card">
                     <img src="zimages/lullaby.jpeg">
                     <h3>Lullaby FNF</h3>
                     <button class="button" onclick="openMyWindow('https://levixddlmao.github.io/lub/')">Play Game</button>
                 </div>
-                <div class="game-card">
+                <div class="retro-card">
                     <img src="zimages/doki doki take over.png">
                     <h3>Doki Doki Takeover FNF</h3>
                     <button class="button" onclick="openMyWindow('https://levixddlmao.github.io/DOKI-DOKI/')">Play Game</button>
                 </div>
-                <div class="game-card">
+                <div class="retro-card">
                     <img src="zimages/holo live.jpeg">
                     <h3>Holo Live FNF</h3>
                     <button class="button" onclick="openMyWindow('https://sonicisbest.github.io/HoloFunk/')">Play Game</button>
                 </div>
-                <div class="game-card">
+                <div class="retro-card">
                     <img src="zimages/cassette girl.png">
                     <h3>Cassette Girl FNF<h3>
                     <button class="button" onclick="openMyWindow('https://sonicisbest.github.io/cassette-girl/')">Play Game</button>
                 </div>
-                <div class="game-card">
+                <div class="retro-card">
                     <img src="zimages/tourture mod.jpeg">
                     <h3>Tourture Mod FNF</h3>
                     <button class="button" onclick="openMyWindow('https://sonicisbest.github.io/VS-Mag-Agent-Torture/')">Play Game</button>
                 </div>
-                <div class="game-card">
+                <div class="retro-card">
                     <img src="zimages/ww 3.jpeg">
                     <h3>Wii Mod FNF</h3>
                     <button class="button" onclick="openMyWindow('https://mr-funkinguy.github.io/wiik3/')">Play Game</button>
                 </div>
-                <div class="game-card">
+                <div class="retro-card">
                     <img src="zimages/Gunter.jpeg">
                     <h3>Grunter FNF Mod</h3>
                     <button class="button" onclick="openMyWindow('https://sonicisbest.github.io/Vs-Gunter/')">Play Game</button>
                 </div>
-                <div class="game-card">
+                <div class="retro-card">
                     <img src="zimages/trool.jpeg">
                     <h3>Vs Mr.trollolo week 2 web</h3>
                     <button class="button" onclick="openMyWindow('https://memeee310.github.io/Vs-Mr.trollolo-week-2-web/')">Play Game</button>
