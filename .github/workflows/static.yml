@@ -18,7 +18,7 @@ jobs:
         git config --global user.email 'thehub190493@gmail.com'
 
     - name: Make changes (update your GitHub Pages content)
-      run: |
+      run: jeo
         # Add your commands to update GitHub Pages content here
         # For example, build Jekyll site, generate documentation, etc.
 
