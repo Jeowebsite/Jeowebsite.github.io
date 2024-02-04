@@ -33,6 +33,6 @@ window.onload = function () {
   if (selectedColor) {
       document.body.style.backgroundColor = selectedColor;
   } else {
-      document.body.style.backgroundColor = 'white';
+      document.body.style.backgroundColor = '#B28046';
   }
 };
