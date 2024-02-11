@@ -761,12 +761,3 @@ transform: scale(1.05);
 --barn-red: hsla(11, 88%, 23%, 1);
 --bistre: hsla(28, 28%, 13%, 1);
  }
- body {
-  zoom: 90%;
-  -moz-transform: scale(0.9);
-  -moz-transform-origin: 0 0;
-  -o-transform: scale(0.9);
-  -o-transform-origin: 0 0;
-  -webkit-transform: scale(0.9);
-  -webkit-transform-origin: 0 0;
-}
