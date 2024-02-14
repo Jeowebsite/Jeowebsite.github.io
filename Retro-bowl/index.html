@@ -163,19 +163,43 @@
 
 <script>
     <script>
-    function login() {
-        // Implement login functionality
-        // Example:
-        // var provider = new firebase.auth.GoogleAuthProvider();
-        // firebase.auth().signInWithPopup(provider);
-    }
+   function login() {
+    var provider = new firebase.auth.GoogleAuthProvider();
+    firebase.auth().signInWithPopup(provider)
+        .then(function(result) {
+            // This gives you a Google Access Token.
+            var token = result.credential.accessToken;
+            // The signed-in user info.
+            var user = result.user;
+            // You can handle the user login here, such as redirecting to another page.
+            console.log("User logged in:", user.displayName);
+        })
+        .catch(function(error) {
+            // Handle errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            console.error("Login error:", errorMessage);
+        });
+}
 
-    function signup() {
-        // Implement signup functionality
-        // Example:
-        // var provider = new firebase.auth.GoogleAuthProvider();
-        // firebase.auth().signInWithPopup(provider);
-    }
+function signup() {
+    var provider = new firebase.auth.GoogleAuthProvider();
+    firebase.auth().signInWithPopup(provider)
+        .then(function(result) {
+            // This gives you a Google Access Token.
+            var token = result.credential.accessToken;
+            // The signed-in user info.
+            var user = result.user;
+            // You can handle the user signup here, such as redirecting to another page.
+            console.log("User signed up:", user.displayName);
+        })
+        .catch(function(error) {
+            // Handle errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            console.error("Signup error:", errorMessage);
+        });
+}
 </script>
 </body>
 </html>
