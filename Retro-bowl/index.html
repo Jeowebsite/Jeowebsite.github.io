@@ -86,7 +86,6 @@
         }
     </style>
 </head>
-
 <body>
 <div class="gm4html5_div_class" id="gm4html5_div_id">
     <img src="html5game/splash.png" id="GM4HTML5_loadingscreen" alt="GameMaker:HTML5 loading screen" style="display: none;" />
@@ -96,65 +95,38 @@
     </canvas>
 </div>
 
+<!-- Firebase login form -->
+<div id="login-container" class="gm4html5_login" style="display:none;">
+    <div class="gm4html5_login_header">Firebase Authentication</div>
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="signIn()">Sign In</button>
+    <button onclick="signUp()">Sign Up</button>
+</div>
+
 <!-- Notification -->
 <div id="notification" class="notification">Game progress saved successfully</div>
 
-<!-- Include SQLite library -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.1/sql-wasm.js"></script>
+<!-- Include Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-auth.js"></script>
+<script src="firebase-config.js"></script>
+<script src="firebase-auth.js"></script>
 
 <!-- Run the game code -->
 <script type="text/javascript" src="html5game/RetroBowl.js?WAEAC=1633155445"></script>
 <script>
-    // Initialize SQLite
-    var SQL = window.SQL;
+const firebaseConfig = {
+  apiKey: "AIzaSyBaqyCHImGihZNe5b-_7woiKMkutwXgvVA",
+  authDomain: "retro--bowl.firebaseapp.com",
+  projectId: "retro--bowl",
+  storageBucket: "retro--bowl.appspot.com",
+  messagingSenderId: "963161813343",
+  appId: "1:963161813343:web:83baea5e7bab6f7983c6ea",
+  measurementId: "G-EKXPQBZHV3"
+};
 
-    window.onload = function() {
-        // Run the game initialization
-        GameMaker_Init();
-
-        // Open or create SQLite database
-        var db = new SQL.Database();
-
-        // Create table if not exists
-        db.run("CREATE TABLE IF NOT EXISTS gameData (id TEXT PRIMARY KEY, data TEXT)");
-
-        // Retrieve saved game data
-        var savedData = db.exec("SELECT * FROM gameData WHERE id = 'saveData'");
-
-        if (savedData.length > 0 && savedData[0].values.length > 0) {
-            // If there's saved data, load it into the game
-            LoadGameFromSQLite(JSON.parse(savedData[0].values[0][1]));
-        }
-
-        // Listen for when the game wants to save its progress
-        window.addEventListener('retroBowlSave', function(event) {
-            var stmt = db.prepare("INSERT OR REPLACE INTO gameData (id, data) VALUES (?, ?)");
-            stmt.run("saveData", JSON.stringify(event.detail));
-            
-            // Show notification
-            showNotification();
-
-            console.log("Game progress saved successfully");
-        });
-    };
-
-    // Function to load game data from SQLite
-    function LoadGameFromSQLite(data) {
-        // Implement loading game data and updating game state here
-        // For simplicity, let's assume we directly update the gameData object
-        gameData = data;
-    }
-
-    // Function to show notification
-    function showNotification() {
-        var notification = document.getElementById('notification');
-        notification.style.display = 'block';
-
-        // Hide notification after 3 seconds
-        setTimeout(function() {
-            notification.style.display = 'none';
-        }, 3000);
-    }
+    firebase.initializeApp(firebaseConfig);
 </script>
 </body>
 </html>
