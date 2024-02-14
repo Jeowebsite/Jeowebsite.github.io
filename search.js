@@ -86,7 +86,7 @@ const games = [
     { title: "papa suchiria", description: "", url: "papa-suchiria/index.html" },
     { title: "papa tacomia", description: "", url: "papa-tacomia/index.html" },
     { title: "papa wingaria", description: "", url: "papa-wingaria/index.html" },
-    { title: "retro bowl", description: "", url: "retro-bowl/index.html" },
+    { title: "retro bowl", description: "", url: "Retro-bowl/index.html" },
     { title: "tanuki sunset", description: "", url: "tanuki-sunset/index.html" },
     { title: "world hardest-game2", description: "", url: "world-hardest-game2/index.html" },
     { title: "world hardest-game", description: "", url: "world-hardest-game/index.html" },

@@ -77,7 +77,83 @@
     <!-- Run the game code -->
     <script type="text/javascript" src="html5game/RetroBowl.js?WAEAC=1633155445"></script>
     <script>
-      window.onload = GameMaker_Init;
+      window.onload = function() {
+        // Run the game initialization
+        GameMaker_Init();
+
+        // Check if the browser supports IndexedDB
+        if (!window.indexedDB) {
+          console.error("IndexedDB is not supported in this browser");
+          return;
+        }
+
+        // Open (or create) the IndexedDB database
+        var request = window.indexedDB.open('RetroBowlSaveData', 1);
+
+        // Handle database open success
+        request.onsuccess = function(event) {
+          var db = event.target.result;
+
+          // Check if there's saved game data in IndexedDB
+          var transaction = db.transaction(['gameData'], 'readonly');
+          var objectStore = transaction.objectStore('gameData');
+          var getRequest = objectStore.get('saveData');
+
+          getRequest.onsuccess = function(event) {
+            if (event.target.result) {
+              // If there's saved data, load it into the game
+              LoadGameFromIndexedDB(event.target.result.data);
+            }
+          };
+        };
+
+        // Handle database open error
+        request.onerror = function(event) {
+          console.error("Error opening IndexedDB database");
+        };
+
+        // Listen for when the game wants to save its progress
+        window.addEventListener('retroBowlSave', function(event) {
+          // Open (or create) the IndexedDB database
+          var saveRequest = window.indexedDB.open('RetroBowlSaveData', 1);
+
+          // Handle database open success
+          saveRequest.onsuccess = function(event) {
+            var db = event.target.result;
+
+            // Create a transaction and object store for saving data
+            var transaction = db.transaction(['gameData'], 'readwrite');
+            var objectStore = transaction.objectStore('gameData');
+
+            // Save the game data to IndexedDB
+            var saveData = {
+              id: 'saveData',
+              data: event.detail
+            };
+            var putRequest = objectStore.put(saveData);
+
+            putRequest.onsuccess = function(event) {
+              console.log("Game progress saved successfully");
+            };
+
+            putRequest.onerror = function(event) {
+              console.error("Error saving game progress");
+            };
+          };
+
+          // Handle database open error
+          saveRequest.onerror = function(event) {
+            console.error("Error opening IndexedDB database for saving");
+          };
+        });
+      };
+
+      // Function to load game data from IndexedDB
+      function LoadGameFromIndexedDB(data) {
+        // Implement loading game data and updating game state here
+        // For simplicity, let's assume we directly update the gameData object
+        gameData = data;
+      }
     </script>
   </body>
 </html>
