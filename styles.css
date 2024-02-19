@@ -762,15 +762,19 @@ transform: scale(1.05);
 --bistre: hsla(28, 28%, 13%, 1);
  }
 .link-button{
-  width: 320px;
-  border-radius: 30px;
-  color:var(--copper);
+  text-decoration: none;
+  display: inline-block;
+  background: linear-gradient(135deg, #000000, #511e66);
+  color: #fff;
   font-weight: 600;
-  padding: 12px 40px;
+  font-size: 16px;
+  padding: 10px 45px; /* Reduced vertical padding for a smaller height */
   border-radius: 30px;
   margin-top: 15px;
-  transition: background 0.3s, transform 0.3s;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
+  border: 2px solid transparent;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
