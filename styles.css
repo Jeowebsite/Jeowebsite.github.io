@@ -761,3 +761,16 @@ transform: scale(1.05);
 --barn-red: hsla(11, 88%, 23%, 1);
 --bistre: hsla(28, 28%, 13%, 1);
  }
+.link-button{
+  width: 320px;
+  border-radius: 30px;
+  color:var(--copper);
+  font-weight: 600;
+  padding: 12px 40px;
+  border-radius: 30px;
+  margin-top: 15px;
+  transition: background 0.3s, transform 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
