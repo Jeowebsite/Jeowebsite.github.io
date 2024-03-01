@@ -13,6 +13,15 @@
     <button id="redirectButton">🇷​​🇪​​🇹​​🇷​​🇴​ ​🇬​​🇦​​🇲​​🇪​​🇸​​ 🎮</button>
     <button id="proxy" onclick="redirectToWebsite()">​​🇵​​🇷​​🇴​​🇽​​🇾​ ​🇱​​🇮​​🇳​​🇰​​🇸🌐​ </button>
     <meta name="google-site-verification" content="AEDdz9XcY3x0M9T7nN3N5C0jDTqfXBeSObY9oFh1xP4" />
+    <script>
+        // Function to set zoom level to 90%
+        function setZoom() {
+          document.body.style.zoom = "90%";
+        }
+        
+        // Call the function when the page loads
+        window.onload = setZoom;
+        </script>
     <link rel="icon" type="image/x-icon" href="https://www.google.com/favicon.ico">
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3788774762807047"
      crossorigin="anonymous"></script>
@@ -39,15 +48,15 @@
         <h1>𝕵𝖊𝖔 𝕱𝖚𝖓 𝖂𝖊𝖇𝖘𝖎𝖙𝖊 𝕲𝖆𝖒𝖊𝖘
         </h1>
     </header>
-    <h3>Press Z,` or The ESC button To go to Canvas</h3>
+    <h3 id="canvas">Press Z,` or The ESC button To go to Canvas</h3>
+    <style>
+        #canvas{
+            color: aliceblue;
+        }
+    </style>
     <nav>
         <ul>
-            <li id="ui"><a id="ui"href="home.html">Home</a></li>
-            <li id="ui"><a id="ui"href="index.html">Games</a></li>
-            <li id="ui"><a id="ui"href="Retro-Games.html">Retro Games</a></li>
-            <li id="ui"><a id="ui"href="browser.html">Proxy's</a></li>
-            <li id="ui"><a id="ui"href="Blog.html">Blog Post</a></li>
-            <li id="ui"><a id="ui" href="https://sites.google.com/online.houstonisd.org/jeo/home">Other Games</a></li>
+
         </ul>
     </nav>
     <main>
@@ -91,14 +100,19 @@
             <input type="text" id="searchInput" placeholder="Search for a game...">
             <button onclick="searchGame()">Search</button>
         </div>
+       <script>
+         function goToAnotherPage() {
+        // Redirect to another page
+        window.location.href = "https://sites.google.com/online.houstonisd.org/mmsl/home";
+    }
+        </script>
         <h1 id="ret">Popular Games</h1>
         <div class="game-container">
             <div class="retro-cards">
                 <div class="retro-card">
                     <img src="smash-KARTS/images/SmashKartsPoster.jpg">
                     <h3>SmashKarts</h3>
-                    <p>SmashKarts League Website </p>
-                    <p><a href="https://sites.google.com/online.houstonisd.org/mmsl/home" class="button">MPVA Smash Kart League</a></p>
+                    <p onclick="goToAnotherPage()" class="mpva">Smash Karts League</p>
                     <button class="button" onclick="openFileInWindow('smash-KARTS/index.html')">Play Game</button>
                     <a href="smash-KARTS/index.html" class="link-button" target="_blank">Open In A New Tab</a>
                 </div>
@@ -145,7 +159,7 @@
                     <button class="button" onclick="openFileInWindow('0v0/index.html')">Play Game</button>
                     <a href="0v0/index.html" class="link-button" target="_blank">Open In A New Tab</a>
                 </div>
-                <div class="game-card">
+                <div class="retro-card">
                     <img src="trap-the-cat/trap the cat.png">
                     <h3>Trap The Cat</h3>
                     <button class="button" onclick="openFileInWindow('trap-the-cat/index.html')">Play Game</button>
@@ -426,8 +440,7 @@
                 </div>
             </div>            
         </div>
-        <section class="All Games">
-            <h2>All Games</h2>
+        <div id="all-games">
             <div class="game-card">
                 <img src="adgames/plus.png">
                 <h3>Game Request</h3>
@@ -2610,7 +2623,7 @@
             <a href="push-your-luck/index.html" class="link-button" target="_blank">Open In A New Tab</a>
         </div>
         <div class="game-card">
-            <img src="push-the-square/img/icon.png">
+            <img src="push-the-square/img/splash.png">
             <h3>Push The Square</h3>
             <button class="button" onclick="openFileInWindow('push-the-square/index.html')">Play Game</button>
             <a href="push-the-square/index.html" class="link-button" target="_blank">Open In A New Tab</a>
@@ -2621,7 +2634,7 @@
             <button class="button" onclick="openFileInWindow('minecraft-recent/index.html')">Play Game</button>
             <a href="minecraft-recent/index.html" class="link-button" target="_blank">Open In A New Tab</a>
         </div>
-        </section>
+    </div>
     </main>
     <script src="sc.js"></script>
     <script src="button.js"></script>
