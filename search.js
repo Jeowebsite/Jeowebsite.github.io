@@ -375,6 +375,10 @@ const games = [
 { title: "Johhny Upgrade", description: "Description for Johhny Upgrade game.", url: "jonny-upgrades/index.html" },
 { title: "Dig To China", description: "Description for Dig To China game.", url: "dig-to-china/index.html" },
 { title: "Trap The Cat", description: "Description for Trap The Cat game.", url: "trap-the-cat/index.html" },
+{ title: "Push Your Luck", description: "i love Gambiling", url: "push-your-luck/index.html" },
+{ title: "Push The Square", description: "Description for Push The Square game.", url: "push-the-square/index.html" },
+{ title: "Recent Minecraft", description: "Description for Recent Minecraft game.", url: "minecraft-recent/index.html" },
+
     // Add more game objects...
 ];
 // Sample array of game objects (replace this with your actual game data)
