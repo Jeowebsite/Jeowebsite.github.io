@@ -1,39 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<html>
 
-        <title>Temple Run  | Jeo</title>
+<head>
+    <title>Recent Client | Jeo</title>
+    <style type="text/css">
+        html {
+            overflow: auto;
+        }
 
-        <link rel="stylesheet" type="text/css" href="global.css" />
-        <link rel="manifest" href="appmanifest.json">
-        <link rel="icon" href="img/og-icon.png">
-        <!-- <link rel='stylesheet' type="text/css" href='./bundle.css'> -->
-        <style>
-            html,
-            body {
-                overflow: hidden;
-                width: 100%;
-                height: 100%;
-                min-height: 100%;
-                max-height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                margin: 0;
-                padding: 0;
-                -webkit-text-size-adjust: none;
-                touch-action: pan-x pan-y;
-            }
-            /* @media only screen and (orientation:landscape) {
-			body {
-				transform: rotate(90deg);
-			}
-		} */
-        </style>
-        <script defer src="bundle.js"></script>
-        <script type="application/javascript" src="/js/main.js"></script>
-    </head>
-    <body></body>
+        html,
+        body,
+        div,
+        iframe {
+            margin: 0px;
+            padding: 0px;
+            height: 100%;
+            border: none;
+        }
+
+        iframe {
+            display: block;
+            width: 100%;
+            border: none;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <iframe src="https://raw.githack.com/Jeowebsite/sorry-for-stealing-baby-gurl/main/projects/temple-run-2/index.html"
+        marginheight="0"
+        marginwidth="0"
+        width="100%"
+        height="100%"
+        scrolling="auto">
+    </iframe>
+</body>
+
 </html>
