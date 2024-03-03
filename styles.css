@@ -175,6 +175,7 @@ main {
   position: relative;
   overflow: hidden;
   width: auto;
+  height: 570px;
 }
 
 .game-card:hover {
@@ -453,7 +454,7 @@ img {
 /* Search Container Styles */
 .search-container {
   display: flex;
-  max-width: 770px; /* Adjusted maximum width */
+  max-width: 900px; /* Adjusted maximum width */
   margin: 20px auto; /* Center the search bar */
   border-radius: 50px; /* Increased border-radius for a rounder look */
   overflow: hidden; /* Hide overflowing content */
@@ -648,7 +649,8 @@ transform: scale(1.05);
   flex-direction: column;
   margin: 1em 0.5em;
   overflow: hidden;
-  width: 350px;
+  width: 370px;
+  height: 600px;
 }
 
 .retro-card img {
