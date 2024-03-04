@@ -115,53 +115,72 @@
         window.location.href = "https://sites.google.com/online.houstonisd.org/mmsl/home";
     }
         </script>
-         <script>
-            // Load favorites from local storage
-            document.addEventListener('DOMContentLoaded', function() {
-                var favorites = JSON.parse(localStorage.getItem('favorites')) || [];
-                favorites.forEach(function(favoriteId) {
-                    var gameCard = document.getElementById(favoriteId);
-                    if (gameCard) {
-                        gameCard.classList.add('favorited');
-                        document.querySelector('.retro-cards').appendChild(gameCard.cloneNode(true));
-                    }
-                });
-            });
-    
-            function toggleFavorite(gameId) {
-                var gameCard = document.getElementById(gameId);
-                var favoriteContainer = document.querySelector('.retro-cards');
-                var heartIcon = gameCard.querySelector('.heart-icon');
-                var favorites = JSON.parse(localStorage.getItem('favorites')) || [];
-    
-                if (gameCard.classList.contains('favorited')) {
-                    // Remove from favorites
-                    gameCard.classList.remove('favorited');
-                    favorites = favorites.filter(function(id) {
-                        return id !== gameId;
-                    });
-                    localStorage.setItem('favorites', JSON.stringify(favorites));
-                    var existingFavorite = favoriteContainer.querySelector('#' + gameId);
-                    if (existingFavorite) {
-                        favoriteContainer.removeChild(existingFavorite);
-                    }
-                } else {
-                    // Add to favorites
+      <!-- JavaScript for dynamic functionality -->
+      <script>
+        // Load favorites from local storage
+        document.addEventListener('DOMContentLoaded', function() {
+            var favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+            favorites.forEach(function(favoriteId) {
+                var gameCard = document.getElementById(favoriteId);
+                if (gameCard) {
                     gameCard.classList.add('favorited');
-                    favorites.push(gameId);
-                    localStorage.setItem('favorites', JSON.stringify(favorites));
-                    favoriteContainer.appendChild(gameCard.cloneNode(true));
+                    document.querySelector('.game-containers').appendChild(gameCard); // Append directly, without cloning
                 }
+            });
+        });
+
+        function toggleFavorite(gameId) {
+            var gameCard = document.getElementById(gameId);
+            var favoriteContainer = document.querySelector('.game-containers');
+            var heartIcon = gameCard.querySelector('.heart-icon');
+            var favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+
+            if (gameCard.classList.contains('favorited')) {
+                // Remove from favorites
+                gameCard.classList.remove('favorited');
+                favorites = favorites.filter(function(id) {
+                    return id !== gameId;
+                });
+                localStorage.setItem('favorites', JSON.stringify(favorites));
+                var existingFavorite = favoriteContainer.querySelector('#' + gameId);
+                if (existingFavorite) {
+                    favoriteContainer.removeChild(existingFavorite);
+                }
+            } else {
+                // Add to favorites
+                gameCard.classList.add('favorited');
+                favorites.push(gameId);
+                localStorage.setItem('favorites', JSON.stringify(favorites));
+                favoriteContainer.appendChild(gameCard);
             }
-    
-            function openFileInWindow(url) {
-                // Your code to open the game in a new window
-            }
-        </script>
+        }
+
+        function openFileInWindow(url) {
+            // Your code to open the game in a new window
+        }
+    </script>
          <h1 id="ret">Your favorites</h1>
-         <div class="retro-cards">
+        <div class="game-containers">
+            <div id="all-game">
 
          </div>
+        </div> 
+         <style>
+            .game-containers {
+            max-height: 600px; /* Adjust the maximum height as needed */
+            overflow-y: auto; /* Enable vertical scrolling */
+            display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Aligns items in four columns */
+            }
+          /* Target every fourth game card */
+/* A to Z Sorting */
+   /* Target every fourth game card */
+      </style>
         <h1 id="ret">Popular Games</h1>
         <div class="game-container">
             <div class="retro-cards">
@@ -515,39 +534,40 @@
                 <a href="slope/index.html" class="link-button" target="_blank">Open In A New Tab</a>
                 <span class="heart-icon" onclick="toggleFavorite('game1')">❤️</span>
             </div>                     
-            <div class="game-card">
+            <div class="game-card" id="game2">
                 <img src="Slope3/download (13).jpeg" id="game2">
                 <h3>Slope 3</h3>
                 <button class="button" onclick="openFileInWindow('Slope3/index.html')">Play Game</button>
                 <a href="Slope3/index.html" class="link-button" target="_blank">Open In A New Tab</a>
                 <span class="heart-icon" onclick="toggleFavorite('game2')">❤️</span>
             </div>
-            <div class="game-card">
+            <div class="game-card" id="game3">
                 <img src="0v0/download (2).png" id="game3">
                 <h3>OvO</h3>
                 <button class="button" onclick="openFileInWindow('0v0/index.html')">Play Game</button>
                 <a href="0v0/index.html" class="link-button" target="_blank">Open In A New Tab</a>
                 <span class="heart-icon" onclick="toggleFavorite('game3')">❤️</span>
             </div>
-            <div class="game-card">
+            <div class="game-card" id="game4">
                 <img src="Retro-bowl/download (8).jpeg" id="game4">
                 <h3>Retro Bowl</h3>
                 <button class="button" onclick="openFileInWindow('Retro-bowl/index.html')">Play Game</button>
                 <a href="Retro-bowl/index.html" class="link-button" target="_blank">Open In A New Tab</a>
                 <span class="heart-icon" onclick="toggleFavorite('game4')">❤️</span>
             </div>
-            <div class="game-card">
+            <div class="game-card" id="game5">
                 <img src="fnf/download (9).jpeg" id="game5">
                 <h3>Friday Night Funking</h3>
                 <button class="button" onclick="openFileInWindow('fnf/index.html')">Play Game</button>
                 <a href="fnf/index.html" class="link-button" target="_blank">Open In A New Tab</a>
                 <span class="heart-icon" onclick="toggleFavorite('game5')">❤️</span>
             </div>
-            <div class="game-card">
+            <div class="game-card" id="game6">
                 <img src="deathrun3d/banner-death-run-3d.jpg">
                 <h3>Death Run 3D</h3>
                 <button class="button" onclick="openFileInWindow('deathrun3d/index.html')">Play Game</button>
                 <a href="deathrun3d/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <span class="heart-icon" onclick="toggleFavorite('game6')">❤️</span>
             </div>
             <div class="game-card">
                 <img src="bloxors/favicon.ico">
@@ -2705,6 +2725,7 @@
         </div>
 
     </div>
+</div>   
     </main>
     <script src="sc.js"></script>
     <script src="button.js"></script>
