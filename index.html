@@ -1,4 +1,4 @@
- bc<!DOCTYPE html>
+bc<!DOCTYPE html>
 <html lang="en">
 <head>
     <script>
@@ -139,6 +139,22 @@
             <input type="text" id="searchInput" placeholder="Search for a game...">
             <button onclick="searchGame()">Search</button>
         </div>
+        <div class="ads">
+            <iframe src="https://starkattack.com/bI3.Vz0-PU3kp/vEbSmpVXJ/ZMDM0p1hMnjaQ/4YOaDbkT0pLZT_UIy/N/D/gP4sOzTqUy"></iframe>
+        </div>
+<style>
+    .ads {
+position: absolute; /* Change from relative to absolute */
+top: 300px; /* Adjust the top position as needed */
+right: 5px; /* Adjust the left position as needed */
+width: 250px;
+height: 300px;
+overflow: hidden;
+border-radius: 15px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transition: box-shadow 0.3s ease;
+}
+</style>
        <script>
          function goToAnotherPage() {
         // Redirect to another page
@@ -293,13 +309,22 @@
             <button class="button" onclick="openFileInWindow('pacman/index.html')">Play Game</button>
         </div>
         <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
-        <div>
+        <div class="game-ad-container">
             <script type="text/javascript">
                 aclib.runBanner({
                     zoneId: '8178510',
                 });
             </script>
-        </div>        
+        </div>   
+        <style>
+            .game-ad-container {
+        width: 970px;
+        height: 100px;
+        outline: 10px;
+        outline-color: black;
+    }
+    
+        </style>     
             </div>
         </div>
         <h1 id="ret">Retro Games</h1>
@@ -446,13 +471,13 @@
             </div>
         </div>
         <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
-        <div>
+        <div class="game-ad-container">
             <script type="text/javascript">
                 aclib.runBanner({
                     zoneId: '8178510',
                 });
             </script>
-        </div>   
+        </div>    
         <h1 id="ret">FNF Mods</h1>
         <div class="game-container">
             <div class="retro-cards">
@@ -574,13 +599,13 @@
             </div>            
         </div>
         <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
-        <div>
+        <div class="game-ad-container">
             <script type="text/javascript">
                 aclib.runBanner({
                     zoneId: '8178510',
                 });
             </script>
-        </div>   
+        </div>    
         <div id="all-games">
             <div class="game-card">
                 <img src="adgames/plus.png">
@@ -623,13 +648,13 @@
                 <span class="heart-icon" onclick="toggleFavorite('game5')">❤️</span>
             </div>
             <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
-            <div>
+            <div class="game-ad-container">
                 <script type="text/javascript">
                     aclib.runBanner({
                         zoneId: '8178510',
                     });
                 </script>
-            </div>   
+            </div>     
             <div class="game-card" id="game6">
                 <img src="deathrun3d/banner-death-run-3d.jpg">
                 <h3>Death Run 3D</h3>
@@ -673,13 +698,13 @@
                 <span class="heart-icon" onclick="toggleFavorite('game11')">❤️</span>
             </div>
             <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
-            <div>
+            <div class="game-ad-container">
                 <script type="text/javascript">
                     aclib.runBanner({
                         zoneId: '8178510',
                     });
                 </script>
-            </div>   
+            </div>    
             <div class="game-card" id="game12">
                 <img src="My-rusty-submarine/splash.png">
                 <h3>My rusty submarine</h3>
@@ -723,13 +748,13 @@
                 <span class="heart-icon" onclick="toggleFavorite('game17')">❤️</span>
             </div>
             <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
-            <div>
+            <div class="game-ad-container">
                 <script type="text/javascript">
                     aclib.runBanner({
                         zoneId: '8178510',
                     });
                 </script>
-            </div>   
+            </div>     
             <div class="game-card" id="game18">
                 <img src="justfall.lol/splash.jpg" id="game18">
                 <h3>JustFall.lol</h3>
@@ -772,13 +797,13 @@
                 <span class="heart-icon" onclick="toggleFavorite('game23')">❤️</span>
             </div>
             <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
-            <div>
+            <div class="game-ad-container">
                 <script type="text/javascript">
                     aclib.runBanner({
                         zoneId: '8178510',
                     });
                 </script>
-            </div>   
+            </div>    
             <div class="game-card" id="game24">
                 <img src="10-minutes-till-dawn/splash.png" id="game24">
                 <h3>10-minutes-till-dawn</h3>
@@ -2824,7 +2849,6 @@
             <button class="button" onclick="openFileInWindow('3-boblets/index.html')">Play Game</button>
             <a href="3-boblets/index.html" class="link-button" target="_blank">Open In A New Tab</a>
         </div>
-        
     </div>
 </div>   
     </main>
