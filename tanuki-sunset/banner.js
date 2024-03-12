@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (timeLeft < 0) {
             clearInterval(countdown);
-            document.getElementById("ad-banner").style.display = "none";
+            document.getElementById("game-ad-container").style.display = "none";
         }
     }, 1000);
 });
