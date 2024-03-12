@@ -13,7 +13,9 @@ body {
   text-align: center;
 
 }
-
+#counter {
+  font-size: 24px;
+}
 /* Dark Mode Styles */
 body.dark-mode {
   background: #222;
