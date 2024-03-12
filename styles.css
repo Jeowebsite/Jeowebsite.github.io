@@ -11,10 +11,17 @@ body {
   background:var(--copper);
   color: #000000;
   text-align: center;
-
+/* Game ads */
 }
 #counter {
   font-size: 24px;
+}
+.visible {
+  display: block;
+}
+
+.not-visible {
+  display: none;
 }
 /* Dark Mode Styles */
 body.dark-mode {

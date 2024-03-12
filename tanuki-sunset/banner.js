@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     var counterElement = document.getElementById("counter");
-    var timeLeft = 60; // 3 minutes in seconds
+    var adBanner = document.getElementById("ad-banner");
+    var timeLeft = 60; // 1 minute in seconds
 
     var countdown = setInterval(function() {
         var minutes = Math.floor(timeLeft / 60);
@@ -10,7 +11,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (timeLeft < 0) {
             clearInterval(countdown);
-            document.getElementById("game-ad-container").style.display = "none";
+            adBanner.classList.remove("visible");
+            adBanner.classList.add("not-visible");
         }
     }, 1000);
 });
