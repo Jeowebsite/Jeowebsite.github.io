@@ -1,0 +1,47 @@
+####################################################
+#     GameMonetize.com - HTML5 SDK Integration:    #
+####################################################
+
+STEP 1:
+Add following rows into your index.html file, this will initialize GameMonetize.com SDK.
+Fill gameId and and use SDK events (mute audio, pause game and after that resume game logic).
+
+<script type = "text/javascript" >
+   window.SDK_OPTIONS = {
+      gameId: "your_game_id_here", // Fill the game_id
+      onEvent: function (a) {
+         switch (a.name) {
+            case "SDK_GAME_PAUSE":
+               // pause game logic / mute audio
+               break;
+            case "SDK_GAME_START":
+               // advertisement done, resume game logic and unmute audio
+               break;
+            case "SDK_READY":
+               // when sdk is ready
+               break;
+            case "SDK_ERROR":
+               // when sdk get error
+               break;
+         }
+      }
+   };
+(function (a, b, c) {
+   var d = a.getElementsByTagName(b)[0];
+   a.getElementById(c) || (a = a.createElement(b), a.id = c, 
+   a.src = "https://api.gamemonetize.com/sdk.js", d.parentNode.insertBefore(a, d))
+})(document, "script", "gamemonetize-sdk"); 
+</script>
+
+STEP 2:
+Invoke an advertisement in your game on following states: "play button", "continue game" , "new level" or when user complete every level:
+sdk.showBanner();
+
+TIPS:
+# Call the sdk.showBanner(); method as often as you want
+# Adding sdk.showBanner(); on every user state you can increase your revenue highly!
+
+
+#####################################################
+#         GameMonetize.com - Copyright 2019         #
+#####################################################
