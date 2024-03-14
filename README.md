@@ -1,5 +1,6 @@
 <h1 align="center">Hi 👋, I'm Jeo</h1>
-<h3 align="center">I am a 13yr shity html coder</h3>
+<h3 align="center">Thank you Echo/3kh0 for most of your games <3</h3>
+<h4 align="center">I am a 13yr and i am a shity coder</h4>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=jeowebsite&label=Profile%20views&color=0e75b6&style=flat" alt="jeowebsite" /> </p>
                    
