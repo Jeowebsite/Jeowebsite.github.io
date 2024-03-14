@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+    <div id="content" style="display: none;">
 <head>
+    <script>
+        window.addEventListener('load', function() {
+  var progressBar = document.querySelector('.progress-bar');
+  var progressText = document.getElementById('progress-text');
+
+  var interval = setInterval(function() {
+    progressBar.style.width = progressBar.offsetWidth + 1 + 'px'; // Increment progress bar width
+    var progressPercent = Math.round((progressBar.offsetWidth / progressBar.parentElement.offsetWidth) * 100);
+    progressText.textContent = 'Loading... ' + progressPercent + '%';
+
+    if (progressBar.offsetWidth >= progressBar.parentElement.offsetWidth) {
+      clearInterval(interval); // Stop the interval when loading is complete
+      document.querySelector('.loading-screen').style.display = 'none'; // Hide loading screen
+      document.getElementById('content').style.display = 'block'; // Show content
+    }
+  }, 10);
+});
+
+    </script>
     <script type="text/javascript">
     aclib.runAutoTag({
         zoneId: 'ihelvqj5il',
     });
 </script>
+<div class="loading-screen">
+    <div class="progress-bar-container">
+      <div class="progress-bar"></div>
+    </div>
+    <p id="progress-text">Loading...</p>
+  </div>
    <script type="text/javascript" data-cfasync="false">
 /*<![CDATA[/* */
 (function(){var v=window,t="ec540efb91006fb9ed93c1cc3a87cff4",g=[["siteId",217+938+390*21+5071631],["minBid",0],["popundersPerIP","0"],["delayBetween",30],["default",false],["defaultPerDay",0],["topmostLayer","auto"]],o=["d3d3LnhhZHNtYXJ0LmNvbS9hcGkvd2Jhc2lsLm1pbi5qcw==","ZDExZW5xMnJ5bXkweWwuY2xvdWRmcm9udC5uZXQvYXNzZXRzL3NjcmlwdHMvYW1vZGVybml6ci5taW4uY3Nz","d3d3LndtZHltbnF6aGJvLmNvbS9hcGkvdWJhc2lsLm1pbi5qcw==","d3d3LmlicHR1dGxnb2xvcXkuY29tL2Fzc2V0cy9zY3JpcHRzL3Jtb2Rlcm5penIubWluLmNzcw=="],y=-1,a,w,p=function(){clearTimeout(w);y++;if(o[y]&&!(1736356256000<(new Date).getTime()&&1<y)){a=v.document.createElement("script");a.type="text/javascript";a.async=!0;var i=v.document.getElementsByTagName("script")[0];a.src="https://"+atob(o[y]);a.crossOrigin="anonymous";a.onerror=p;a.onload=function(){clearTimeout(w);v[t.slice(0,16)+t.slice(0,16)]||p()};w=setTimeout(p,5E3);i.parentNode.insertBefore(a,i)}};if(!v[t]){try{Object.freeze(v[t]=g)}catch(e){}p()}})();
@@ -3268,7 +3294,9 @@ transition: box-shadow 0.3s ease;
             <a href="townscraper/index.html" class="link-button" target="_blank">Open In A New Tab</a>
         </div>
     </div>
-</div>   
+</div> 
+</div>  
+</html>
     </main>
     <script src="sc.js"></script>
     <script src="button.js"></script>
