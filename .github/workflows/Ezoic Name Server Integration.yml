@@ -17,7 +17,7 @@ jobs:
 
       - name: Run Script to Change Name Servers
         run: |
-          ./change_nameservers.sh $DOMAIN "$EZOID_NAMESERVER1,$EZOID_NAMESERVER2,$EZOID_NAMESERVER3,$EZOID_NAMESERVER4"
+          ./change_nameservers.sh "$DOMAIN" "$EZOID_NAMESERVER1,$EZOID_NAMESERVER2,$EZOID_NAMESERVER3,$EZOID_NAMESERVER4"
         env:
           DOMAIN: "https://jeowebsite.github.io"  # Your domain name
           EZOID_NAMESERVER1: "falcon.ezoicns.com"
