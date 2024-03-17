@@ -1,4 +1,12 @@
 /* Reset some default styles */
+body {
+  font-size: 90%; /* Reducing font size by 10% */
+
+}
+/* Optionally, you may want to adjust other elements */
+
+/* You may need to adjust other elements as needed depending on your webpage structure */
+
 * {
   margin: 0;
   padding: 0;
