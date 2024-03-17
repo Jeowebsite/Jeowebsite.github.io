@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset='utf8'>
+    <title>Launchpad</title>
+    <style>
+        #loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+        }
+
+        #loadButton {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Game Launchpad</h1>
+    <button id="loadButton">Load Game</button>
+    <div id="loading" style="display: none;">Loading...</div>
+    <div id='ruffle'></div>
+    <script src='../zzruffle/ruffle.js'></script>
+    <script>
+        var loadButton = document.getElementById("loadButton");
+        var loadingDiv = document.getElementById("loading");
+
+        loadButton.addEventListener("click", function() {
+            loadingDiv.style.display = "block";
+            loadButton.style.display = "none";
+
+            var params = new URLSearchParams(window.location.search);
+            var selectedGame = params.get('game');
+
+            if (selectedGame) {
+                var url = 'swf/' + selectedGame;
+                var ruffle = window.RufflePlayer.newest(),
+                    player = Object.assign(document.getElementById('ruffle').appendChild(ruffle.createPlayer()), {
+                        width: 500,
+                        height: 500,
+                        style: 'width: 100%; height: 100%;',
+                    });
+
+                player.load({ url: url });
+
+                player.addEventListener("complete", function() {
+                    loadingDiv.style.display = "none";
+                });
+            } else {
+                document.getElementById('ruffle').innerText = "FILE NOT FOUND";
+            }
+        });
+    </script>
+</body>
+</html>
