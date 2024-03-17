@@ -1,0 +1,1486 @@
+[
+  {
+   "console": "gba",
+   "game": "007"
+  },
+  {
+   "console": "gba",
+   "game": "0994"
+  },
+  {
+   "console": "gba",
+   "game": "advancewars"
+  },
+  {
+   "console": "gba",
+   "game": "advancewars2"
+  },
+  {
+   "console": "gba",
+   "game": "adventure-blue-chapter-b1"
+  },
+  {
+   "console": "gba",
+   "game": "adventure-gold-chapter-b1"
+  },
+  {
+   "console": "gba",
+   "game": "adventure-green-chapter-b3"
+  },
+  {
+   "console": "gba",
+   "game": "adventure-red-chapter-b15-exp-fix-c"
+  },
+  {
+   "console": "gba",
+   "game": "adventure-to-empire-isle-v0"
+  },
+  {
+   "console": "gba",
+   "game": "adventure-yellow-chapter-demo-fixed"
+  },
+  {
+   "console": "gba",
+   "game": "Aero_the_Acrobat__Rascal_Rival_Revenge"
+  },
+  {
+   "console": "gba",
+   "game": "aladdin"
+  },
+  {
+   "console": "gba",
+   "game": "alienhominid"
+  },
+  {
+   "console": "gba",
+   "game": "altair-2020-09-04"
+  },
+  {
+   "console": "gba",
+   "game": "altered-v1"
+  },
+  {
+   "console": "gba",
+   "game": "alternate-evolutions-final"
+  },
+  {
+   "console": "gba",
+   "game": "aluminum-v0"
+  },
+  {
+   "console": "gba",
+   "game": "another-emerald-v1"
+  },
+  {
+   "console": "gba",
+   "game": "ash-hoenn-2021-06-08"
+  },
+  {
+   "console": "gba",
+   "game": "ash-johto-2021-01-17"
+  },
+  {
+   "console": "gba",
+   "game": "ash-kanto-2020-05-27"
+  },
+  {
+   "console": "gba",
+   "game": "ash-kanto-msb-2021-07-15"
+  },
+  {
+   "console": "gba",
+   "game": "ash-orange-league-2020-08-17"
+  },
+  {
+   "console": "gba",
+   "game": "ashgray-b4"
+  },
+  {
+   "console": "gba",
+   "game": "Astro_Boy__Omega_Factor"
+  },
+  {
+   "console": "gba",
+   "game": "atari"
+  },
+  {
+   "console": "gba",
+   "game": "Atari_Anniversary_Advance_(USA)"
+  },
+  {
+   "console": "gba",
+   "game": "Banjo_Kazooie__Gruntys_Revenge"
+  },
+  {
+   "console": "gba",
+   "game": "Banjo_Pilot"
+  },
+  {
+   "console": "gba",
+   "game": "blazing-emerald-v1"
+  },
+  {
+   "console": "gba",
+   "game": "bomberman_max2blue"
+  },
+  {
+   "console": "gba",
+   "game": "Bomberman_Max_2__Red_(E)"
+  },
+  {
+   "console": "gba",
+   "game": "bomberman_tournament"
+  },
+  {
+   "console": "gba",
+   "game": "Breath_of_Fire_(E)"
+  },
+  {
+   "console": "gba",
+   "game": "Breath_of_Fire_II_(USA)"
+  },
+  {
+   "console": "gba",
+   "game": "Broken_Sword__the_Shadow_of_the_Templars"
+  },
+  {
+   "console": "gba",
+   "game": "bubblebobble"
+  },
+  {
+   "console": "gba",
+   "game": "Car_Battler_Joe_(USA)"
+  },
+  {
+   "console": "gba",
+   "game": "Castlevania__Aria_of_Sorrow_(USA)"
+  },
+  {
+   "console": "gba",
+   "game": "Castlevania__Circle_of_the_Moon"
+  },
+  {
+   "console": "gba",
+   "game": "Castlevania__Harmony_Of_Dissonance"
+  },
+  {
+   "console": "gba",
+   "game": "cb2"
+  },
+  {
+   "console": "gba",
+   "game": "cbha"
+  },
+  {
+   "console": "gba",
+   "game": "cbprr"
+  },
+  {
+   "console": "gba",
+   "game": "cfpt"
+  },
+  {
+   "console": "gba",
+   "game": "Chu_Chu_Rocket!"
+  },
+  {
+   "console": "gba",
+   "game": "clays-calamity-1-v10"
+  },
+  {
+   "console": "gba",
+   "game": "clays-calamity-2-v5"
+  },
+  {
+   "console": "gba",
+   "game": "clays-calamity-3-v3"
+  },
+  {
+   "console": "gba",
+   "game": "cloud-white-3-v277"
+  },
+  {
+   "console": "gba",
+   "game": "cloud-white-v515"
+  },
+  {
+   "console": "gba",
+   "game": "cnk"
+  },
+  {
+   "console": "gba",
+   "game": "cosmicemerald-2019-12-24"
+  },
+  {
+   "console": "gba",
+   "game": "Crash_Bandicoot_2__N-Tranced"
+  },
+  {
+   "console": "gba",
+   "game": "Crash_Bandicoot__Purple_Riptos_Rampage"
+  },
+  {
+   "console": "gba",
+   "game": "Crash_Bandicoot__the_Huge_Adventure"
+  },
+  {
+   "console": "gba",
+   "game": "croket1"
+  },
+  {
+   "console": "gba",
+   "game": "croket2"
+  },
+  {
+   "console": "gba",
+   "game": "croket3"
+  },
+  {
+   "console": "gba",
+   "game": "croket4"
+  },
+  {
+   "console": "gba",
+   "game": "dark-rising-2-completed"
+  },
+  {
+   "console": "gba",
+   "game": "dark-rising-order-destroyed-completed"
+  },
+  {
+   "console": "gba",
+   "game": "dark-rising-origins-wc-final"
+  },
+  {
+   "console": "gba",
+   "game": "darkfire-b2"
+  },
+  {
+   "console": "gba",
+   "game": "darkrising-1-complete"
+  },
+  {
+   "console": "gba",
+   "game": "darkrising-kaizo-2017-04-27"
+  },
+  {
+   "console": "gba",
+   "game": "dbz_supersonic"
+  },
+  {
+   "console": "gba",
+   "game": "delta-emerald-v1"
+  },
+  {
+   "console": "gba",
+   "game": "delta-fusion"
+  },
+  {
+   "console": "gba",
+   "game": "Denki_Blocks!_(USA)_(En,Es)"
+  },
+  {
+   "console": "gba",
+   "game": "Densetsu_no_Stafy"
+  },
+  {
+   "console": "gba",
+   "game": "Densetsu_no_Stafy_2"
+  },
+  {
+   "console": "gba",
+   "game": "Densetsu_no_Stafy_3"
+  },
+  {
+   "console": "gba",
+   "game": "digimon_racing"
+  },
+  {
+   "console": "gba",
+   "game": "Disneys_Kim_Possible_2__Drakkens_Demise_(U)"
+  },
+  {
+   "console": "gba",
+   "game": "dkc"
+  },
+  {
+   "console": "gba",
+   "game": "dkc2"
+  },
+  {
+   "console": "gba",
+   "game": "dkc3"
+  },
+  {
+   "console": "gba",
+   "game": "dkkos"
+  },
+  {
+   "console": "gba",
+   "game": "dm"
+  },
+  {
+   "console": "gba",
+   "game": "dm2"
+  },
+  {
+   "console": "gba",
+   "game": "dmpl"
+  },
+  {
+   "console": "gba",
+   "game": "dna"
+  },
+  {
+   "console": "gba",
+   "game": "dnd"
+  },
+  {
+   "console": "gba",
+   "game": "Donkey_Kong_Country"
+  },
+  {
+   "console": "gba",
+   "game": "Donkey_Kong_Country_2_(U)"
+  },
+  {
+   "console": "gba",
+   "game": "Donkey_Kong_Country_3"
+  },
+  {
+   "console": "gba",
+   "game": "Donkey_Kong__King_of_Swing"
+  },
+  {
+   "console": "gba",
+   "game": "Dr"
+  },
+  {
+   "console": "gba",
+   "game": "Dragonball---Advanced-Adventure--GBA"
+  },
+  {
+   "console": "gba",
+   "game": "Dragonball-GT---Transformation--GBA"
+  },
+  {
+   "console": "gba",
+   "game": "Dragonball-Z---Buus-Fury--GBA"
+  },
+  {
+   "console": "gba",
+   "game": "Dragonball-Z---Supersonic-Warriors--GBA"
+  },
+  {
+   "console": "gba",
+   "game": "Dragonball-Z---Taiketsu--GBA"
+  },
+  {
+   "console": "gba",
+   "game": "Dragonball-Z---the-Legacy-of-Goku--GBA"
+  },
+  {
+   "console": "gba",
+   "game": "Dragonball-Z---the-Legacy-of-Goku-2--GBA"
+  },
+  {
+   "console": "gba",
+   "game": "dreams-v1"
+  },
+  {
+   "console": "gba",
+   "game": "drilldozer"
+  },
+  {
+   "console": "gba",
+   "game": "Drill_Dozer"
+  },
+  {
+   "console": "gba",
+   "game": "Duke_Nukem_Advance_(U)"
+  },
+  {
+   "console": "gba",
+   "game": "earthwormjim"
+  },
+  {
+   "console": "gba",
+   "game": "earthwormjim2"
+  },
+  {
+   "console": "gba",
+   "game": "Ecks_vs"
+  },
+  {
+   "console": "gba",
+   "game": "emerald-chaos-rush"
+  },
+  {
+   "console": "gba",
+   "game": "emerald-extreme-randomizer"
+  },
+  {
+   "console": "gba",
+   "game": "Emerald-Extreme-Rom"
+  },
+  {
+   "console": "gba",
+   "game": "emerald-genesis-b2"
+  },
+  {
+   "console": "gba",
+   "game": "emerald-multiplayer"
+  },
+  {
+   "console": "gba",
+   "game": "emerald-negative-exp"
+  },
+  {
+   "console": "gba",
+   "game": "emerald-randomizer"
+  },
+  {
+   "console": "gba",
+   "game": "eprp"
+  },
+  {
+   "console": "gba",
+   "game": "fan4"
+  },
+  {
+   "console": "gba",
+   "game": "fan4fo"
+  },
+  {
+   "console": "gba",
+   "game": "ff1and2"
+  },
+  {
+   "console": "gba",
+   "game": "ff4"
+  },
+  {
+   "console": "gba",
+   "game": "ff4S"
+  },
+  {
+   "console": "gba",
+   "game": "ff6"
+  },
+  {
+   "console": "gba",
+   "game": "ffeud"
+  },
+  {
+   "console": "gba",
+   "game": "fifa4"
+  },
+  {
+   "console": "gba",
+   "game": "fifa5"
+  },
+  {
+   "console": "gba",
+   "game": "fifa6"
+  },
+  {
+   "console": "gba",
+   "game": "fifa7"
+  },
+  {
+   "console": "gba",
+   "game": "fifawc6"
+  },
+  {
+   "console": "gba",
+   "game": "final_fantasy_tactics"
+  },
+  {
+   "console": "gba",
+   "game": "Final_Fight_One_(U)"
+  },
+  {
+   "console": "gba",
+   "game": "firered-chaos-rush"
+  },
+  {
+   "console": "gba",
+   "game": "fire_emblem"
+  },
+  {
+   "console": "gba",
+   "game": "fr3"
+  },
+  {
+   "console": "gba",
+   "game": "frogger1"
+  },
+  {
+   "console": "gba",
+   "game": "frogger2"
+  },
+  {
+   "console": "gba",
+   "game": "frogger3"
+  },
+  {
+   "console": "gba",
+   "game": "fused-dimensions-v1"
+  },
+  {
+   "console": "gba",
+   "game": "Fusion-3-Red-Blue"
+  },
+  {
+   "console": "gba",
+   "game": "fusion-3"
+  },
+  {
+   "console": "gba",
+   "game": "fusion-origins-v3"
+  },
+  {
+   "console": "gba",
+   "game": "fzero_gp"
+  },
+  {
+   "console": "gba",
+   "game": "fzero_max"
+  },
+  {
+   "console": "gba",
+   "game": "gamewatch4"
+  },
+  {
+   "console": "gba",
+   "game": "gb"
+  },
+  {
+   "console": "gba",
+   "game": "gba"
+  },
+  {
+   "console": "gba",
+   "game": "gba_bios"
+  },
+  {
+   "console": "gba",
+   "game": "gba_video_pokemon_1"
+  },
+  {
+   "console": "gba",
+   "game": "gba_video_pokemon_2"
+  },
+  {
+   "console": "gba",
+   "game": "gba_video_pokemon_3"
+  },
+  {
+   "console": "gba",
+   "game": "gba_video_pokemon_4"
+  },
+  {
+   "console": "gba",
+   "game": "goldensun"
+  },
+  {
+   "console": "gba",
+   "game": "Goomba-V2"
+  },
+  {
+   "console": "gba",
+   "game": "Gradius_Galaxies_(USA)"
+  },
+  {
+   "console": "gba",
+   "game": "gta"
+  },
+  {
+   "console": "gba",
+   "game": "gunstar_super_heroes"
+  },
+  {
+   "console": "gba",
+   "game": "hamtaro_heartbreak"
+  },
+  {
+   "console": "gba",
+   "game": "here"
+  },
+  {
+   "console": "gba",
+   "game": "hmfmt"
+  },
+  {
+   "console": "gba",
+   "game": "hmmfmt"
+  },
+  {
+   "console": "gba",
+   "game": "iridion"
+  },
+  {
+   "console": "gba",
+   "game": "jbn"
+  },
+  {
+   "console": "gba",
+   "game": "jca"
+  },
+  {
+   "console": "gba",
+   "game": "jlc"
+  },
+  {
+   "console": "gba",
+   "game": "jlhth"
+  },
+  {
+   "console": "gba",
+   "game": "jlifa"
+  },
+  {
+   "console": "gba",
+   "game": "jp3dna"
+  },
+  {
+   "console": "gba",
+   "game": "jp3ia"
+  },
+  {
+   "console": "gba",
+   "game": "jp3pb"
+  },
+  {
+   "console": "gba",
+   "game": "Karnaaj_Rally_(U)"
+  },
+  {
+   "console": "gba",
+   "game": "khcom"
+  },
+  {
+   "console": "gba",
+   "game": "King_of_Fighters_EX,_The__NeoBlood_(U)_(V1"
+  },
+  {
+   "console": "gba",
+   "game": "King_of_Fighters_EX_2__Howling_Blood"
+  },
+  {
+   "console": "gba",
+   "game": "kirbymirror"
+  },
+  {
+   "console": "gba",
+   "game": "kirbynightmare"
+  },
+  {
+   "console": "gba",
+   "game": "Klonoa_2__Dream_Champ_Tournament"
+  },
+  {
+   "console": "gba",
+   "game": "Klonoa__Empire_of_Dreams"
+  },
+  {
+   "console": "gba",
+   "game": "Konami_Krazy_Racers_(Europe)"
+  },
+  {
+   "console": "gba",
+   "game": "Kururin_Paradise_(Japan)"
+  },
+  {
+   "console": "gba",
+   "game": "Kuru_Kuru_Kururin"
+  },
+  {
+   "console": "gba",
+   "game": "lb"
+  },
+  {
+   "console": "gba",
+   "game": "league-of-legends-2017-09-12"
+  },
+  {
+   "console": "gba",
+   "game": "LEGO__Star_Wars_2__the_Original_Trilogy"
+  },
+  {
+   "console": "gba",
+   "game": "LEGO__Star_Wars__the_Video_Game"
+  },
+  {
+   "console": "gba",
+   "game": "li2"
+  },
+  {
+   "console": "gba",
+   "game": "Lilo_&_Stitch"
+  },
+  {
+   "console": "gba",
+   "game": "lotr2"
+  },
+  {
+   "console": "gba",
+   "game": "lotr3"
+  },
+  {
+   "console": "gba",
+   "game": "lotrtta"
+  },
+  {
+   "console": "gba",
+   "game": "lr2"
+  },
+  {
+   "console": "gba",
+   "game": "lsw"
+  },
+  {
+   "console": "gba",
+   "game": "Lunar_Legend_(U)_[!]"
+  },
+  {
+   "console": "gba",
+   "game": "lyp"
+  },
+  {
+   "console": "gba",
+   "game": "m3"
+  },
+  {
+   "console": "gba",
+   "game": "mariokart"
+  },
+  {
+   "console": "gba",
+   "game": "marioland"
+  },
+  {
+   "console": "gba",
+   "game": "marioparty"
+  },
+  {
+   "console": "gba",
+   "game": "mariopinball"
+  },
+  {
+   "console": "gba",
+   "game": "Mario_and_Luigi__Superstar_Saga"
+  },
+  {
+   "console": "gba",
+   "game": "Mario_Golf__Advance_Tour"
+  },
+  {
+   "console": "gba",
+   "game": "Mario_Tennis__Power_Tour"
+  },
+  {
+   "console": "gba",
+   "game": "Mario_vs"
+  },
+  {
+   "console": "gba",
+   "game": "Max_Payne_(USA)"
+  },
+  {
+   "console": "gba",
+   "game": "Medal_of_Honor__Infiltrator_(U)"
+  },
+  {
+   "console": "gba",
+   "game": "mega-evolution"
+  },
+  {
+   "console": "gba",
+   "game": "Mega-Man_Battle_Network"
+  },
+  {
+   "console": "gba",
+   "game": "Mega-Man_Battle_Network_2"
+  },
+  {
+   "console": "gba",
+   "game": "Mega-Man_Battle_Network_3__Blue"
+  },
+  {
+   "console": "gba",
+   "game": "Mega-Man_Battle_Network_3__White"
+  },
+  {
+   "console": "gba",
+   "game": "Mega-Man_Battle_Network_4__Blue_Moon"
+  },
+  {
+   "console": "gba",
+   "game": "Mega-Man_Battle_Network_4__Red_Sun"
+  },
+  {
+   "console": "gba",
+   "game": "Mega-Man_Battle_Network_5__Team_Colonel"
+  },
+  {
+   "console": "gba",
+   "game": "Mega-Man_Battle_Network_5__Team_Proto-Man"
+  },
+  {
+   "console": "gba",
+   "game": "Mega-Man_Battle_Network_6__Cybeast_Falzar"
+  },
+  {
+   "console": "gba",
+   "game": "Mega-Man_Battle_Network_6__Cybeast_Gregar"
+  },
+  {
+   "console": "gba",
+   "game": "megamanbass"
+  },
+  {
+   "console": "gba",
+   "game": "megaman_battle1"
+  },
+  {
+   "console": "gba",
+   "game": "megaman_battle2"
+  },
+  {
+   "console": "gba",
+   "game": "megaman_battle3_blue"
+  },
+  {
+   "console": "gba",
+   "game": "megaman_battle4_blue"
+  },
+  {
+   "console": "gba",
+   "game": "megaman_battle4_red"
+  },
+  {
+   "console": "gba",
+   "game": "megaman_battle5"
+  },
+  {
+   "console": "gba",
+   "game": "megaman_battle6"
+  },
+  {
+   "console": "gba",
+   "game": "megaman_zero1"
+  },
+  {
+   "console": "gba",
+   "game": "megaman_zero2"
+  },
+  {
+   "console": "gba",
+   "game": "megaman_zero3"
+  },
+  {
+   "console": "gba",
+   "game": "megaman_zero4"
+  },
+  {
+   "console": "gba",
+   "game": "metalslug"
+  },
+  {
+   "console": "gba",
+   "game": "metroid_fusion"
+  },
+  {
+   "console": "gba",
+   "game": "momotarou_dentetsu"
+  },
+  {
+   "console": "gba",
+   "game": "Monkey_Ball_Jr"
+  },
+  {
+   "console": "gba",
+   "game": "monopoly"
+  },
+  {
+   "console": "gba",
+   "game": "monster_force"
+  },
+  {
+   "console": "gba",
+   "game": "Monster_Rancher_Advance_(USA)"
+  },
+  {
+   "console": "gba",
+   "game": "Monster_Rancher_Advance_2_(USA)"
+  },
+  {
+   "console": "gba",
+   "game": "moon-demo"
+  },
+  {
+   "console": "gba",
+   "game": "mortal_kombat"
+  },
+  {
+   "console": "gba",
+   "game": "Mother_3_(Japan)"
+  },
+  {
+   "console": "gba",
+   "game": "Mother_3_(Translated)"
+  },
+  {
+   "console": "gba",
+   "game": "mvsdk"
+  },
+  {
+   "console": "gba",
+   "game": "mysteryred"
+  },
+  {
+   "console": "gba",
+   "game": "mzm"
+  },
+  {
+   "console": "gba",
+   "game": "nbaj"
+  },
+  {
+   "console": "gba",
+   "game": "nesgh1"
+  },
+  {
+   "console": "gba",
+   "game": "nfrp"
+  },
+  {
+   "console": "gba",
+   "game": "nfsu"
+  },
+  {
+   "console": "gba",
+   "game": "nfsu2"
+  },
+  {
+   "console": "gba",
+   "game": "Ninja_Cop"
+  },
+  {
+   "console": "gba",
+   "game": "onepiece"
+  },
+  {
+   "console": "gba",
+   "game": "pacman_world"
+  },
+  {
+   "console": "gba",
+   "game": "pacman_world2"
+  },
+  {
+   "console": "gba",
+   "game": "pmc"
+  },
+  {
+   "console": "gba",
+   "game": "pmpa"
+  },
+  {
+   "console": "gba",
+   "game": "Pocky_&_Rocky_with_Becky"
+  },
+  {
+   "console": "gba",
+   "game": "pokeland-0-ep-1-v1"
+  },
+  {
+   "console": "gba",
+   "game": "pokemal-beta"
+  },
+  {
+   "console": "gba",
+   "game": "pokemblem-2021-10-09"
+  },
+  {
+   "console": "gba",
+   "game": "pokemet-v2"
+  },
+  {
+   "console": "gba",
+   "game": "Pokemon---Liquid-Crystal-(v3"
+  },
+  {
+   "console": "gba",
+   "game": "Pokemon-A-Grand-Day-Out"
+  },
+  {
+   "console": "gba",
+   "game": "Pokemon-Adventure---Red-Chapter-(Beta-15-+-Expansion-Fix)"
+  },
+  {
+   "console": "gba",
+   "game": "Pokemon-Altered-Emerald-(v4"
+  },
+  {
+   "console": "gba",
+   "game": "Pokemon-Radical-Red-v3.1"
+  },
+  {
+   "console": "gba",
+   "game": "Pokemon-Sors-Patched"
+  },
+  {
+   "console": "gba",
+   "game": "Pokemon-Ultra-Shiny-Gold-Sigma-(Hack-v1"
+  },
+  {
+   "console": "gba",
+   "game": "Pokemon-Ultra-Violet-(1"
+  },
+  {
+   "console": "gba",
+   "game": "pokemonek"
+  },
+  {
+   "console": "gba",
+   "game": "pokemonemerald"
+  },
+  {
+   "console": "gba",
+   "game": "pokemonflorasky"
+  },
+  {
+   "console": "gba",
+   "game": "pokemongb"
+  },
+  {
+   "console": "gba",
+   "game": "pokemongreen"
+  },
+  {
+   "console": "gba",
+   "game": "pokemonlp"
+  },
+  {
+   "console": "gba",
+   "game": "pokemonred"
+  },
+  {
+   "console": "gba",
+   "game": "pokemonruby"
+  },
+  {
+   "console": "gba",
+   "game": "pokemonsapphire"
+  },
+  {
+   "console": "gba",
+   "game": "Pokemon_Emerald_Rogue_EX_(v1"
+  },
+  {
+   "console": "gba",
+   "game": "pokemon_fire_red_randomizer_version_demo"
+  },
+  {
+   "console": "gba",
+   "game": "pokes-bizarre-adventure-v1"
+  },
+  {
+   "console": "gba",
+   "game": "pokewb"
+  },
+  {
+   "console": "gba",
+   "game": "ppf"
+  },
+  {
+   "console": "gba",
+   "game": "pprs"
+  },
+  {
+   "console": "gba",
+   "game": "prs"
+  },
+  {
+   "console": "gba",
+   "game": "puyopop"
+  },
+  {
+   "console": "gba",
+   "game": "Puyo_Pop"
+  },
+  {
+   "console": "gba",
+   "game": "Puzzle_Fighter_2_Turbo"
+  },
+  {
+   "console": "gba",
+   "game": "pvzgba-2020-11-16"
+  },
+  {
+   "console": "gba",
+   "game": "r3hh"
+  },
+  {
+   "console": "gba",
+   "game": "ra"
+  },
+  {
+   "console": "gba",
+   "game": "Racing_Gears_Advance_(U)"
+  },
+  {
+   "console": "gba",
+   "game": "Ray-Man_3__Hoodlum_Havoc"
+  },
+  {
+   "console": "gba",
+   "game": "Ray-Man_Advance"
+  },
+  {
+   "console": "gba",
+   "game": "Rhythm_Tengoku_(Japan)"
+  },
+  {
+   "console": "gba",
+   "game": "rsrs"
+  },
+  {
+   "console": "gba",
+   "game": "rtpl"
+  },
+  {
+   "console": "gba",
+   "game": "ruby-destiny-bt-b1"
+  },
+  {
+   "console": "gba",
+   "game": "ruby-destiny-log-2017v1"
+  },
+  {
+   "console": "gba",
+   "game": "ruby-destiny-rol-2016v4"
+  },
+  {
+   "console": "gba",
+   "game": "ruby-destiny-rol-remake-b1"
+  },
+  {
+   "console": "gba",
+   "game": "ruby-destiny-rr-hrm-2021-07-08"
+  },
+  {
+   "console": "gba",
+   "game": "ruby-wonder-guard"
+  },
+  {
+   "console": "gba",
+   "game": "sag"
+  },
+  {
+   "console": "gba",
+   "game": "sc"
+  },
+  {
+   "console": "gba",
+   "game": "simpsons"
+  },
+  {
+   "console": "gba",
+   "game": "sims2"
+  },
+  {
+   "console": "gba",
+   "game": "sims_bustin_out"
+  },
+  {
+   "console": "gba",
+   "game": "sirius-2020-09-04"
+  },
+  {
+   "console": "gba",
+   "game": "sma4+"
+  },
+  {
+   "console": "gba",
+   "game": "sonicbattle"
+  },
+  {
+   "console": "gba",
+   "game": "sonicpinball"
+  },
+  {
+   "console": "gba",
+   "game": "sonic_advance"
+  },
+  {
+   "console": "gba",
+   "game": "sonic_advance2"
+  },
+  {
+   "console": "gba",
+   "game": "sonic_advance3"
+  },
+  {
+   "console": "gba",
+   "game": "Spider-Man__Mysterios_Menace_(U)_[!]"
+  },
+  {
+   "console": "gba",
+   "game": "Spyro_3__Attack_of_the_Rhynocs"
+  },
+  {
+   "console": "gba",
+   "game": "spyro_adventure"
+  },
+  {
+   "console": "gba",
+   "game": "spyro_flame"
+  },
+  {
+   "console": "gba",
+   "game": "spyro_ice"
+  },
+  {
+   "console": "gba",
+   "game": "Spyro_Orange__the_Cortex_Conspiracy"
+  },
+  {
+   "console": "gba",
+   "game": "sthg"
+  },
+  {
+   "console": "gba",
+   "game": "stranded-v0"
+  },
+  {
+   "console": "gba",
+   "game": "Summon_Night__Swordcraft_Story"
+  },
+  {
+   "console": "gba",
+   "game": "Summon_Night__Swordcraft_Story_2"
+  },
+  {
+   "console": "gba",
+   "game": "supermarioadvance"
+  },
+  {
+   "console": "gba",
+   "game": "supermarioadvance2"
+  },
+  {
+   "console": "gba",
+   "game": "supermarioadvance3"
+  },
+  {
+   "console": "gba",
+   "game": "supermarioadvance4"
+  },
+  {
+   "console": "gba",
+   "game": "supermonkeyballjr"
+  },
+  {
+   "console": "gba",
+   "game": "superstar"
+  },
+  {
+   "console": "gba",
+   "game": "Super_Bust-A-Move_(USA)_(En,Fr,Es)"
+  },
+  {
+   "console": "gba",
+   "game": "Super_Dodge_Ball_Advance_(Europe)"
+  },
+  {
+   "console": "gba",
+   "game": "Super_Ghouls_N_Ghosts_(U)"
+  },
+  {
+   "console": "gba",
+   "game": "super_street_fighter_2_turbo_revival"
+  },
+  {
+   "console": "gba",
+   "game": "super_street_fighter_3_alpha"
+  },
+  {
+   "console": "gba",
+   "game": "Sword_of_Mana_(USA,_Australia)"
+  },
+  {
+   "console": "gba",
+   "game": "Tactics_Ogre__the_Knight_of_Lodis"
+  },
+  {
+   "console": "gba",
+   "game": "tak2_staff_of_dreams"
+  },
+  {
+   "console": "gba",
+   "game": "tales_of_phantasia"
+  },
+  {
+   "console": "gba",
+   "game": "team-training-v8"
+  },
+  {
+   "console": "gba",
+   "game": "Tekken_Advance_(U)_[!]"
+  },
+  {
+   "console": "gba",
+   "game": "tetris_worlds"
+  },
+  {
+   "console": "gba",
+   "game": "tggtc"
+  },
+  {
+   "console": "gba",
+   "game": "tgr"
+  },
+  {
+   "console": "gba",
+   "game": "thas"
+  },
+  {
+   "console": "gba",
+   "game": "thps2"
+  },
+  {
+   "console": "gba",
+   "game": "thps3"
+  },
+  {
+   "console": "gba",
+   "game": "thps4"
+  },
+  {
+   "console": "gba",
+   "game": "thu"
+  },
+  {
+   "console": "gba",
+   "game": "thu2"
+  },
+  {
+   "console": "gba",
+   "game": "tmnt"
+  },
+  {
+   "console": "gba",
+   "game": "Tony_Hawks_Downhill_Jam"
+  },
+  {
+   "console": "gba",
+   "game": "Touhou-Puppet-Play-Enhanced-(Reloaded-v4"
+  },
+  {
+   "console": "gba",
+   "game": "Touhou-Puppet-Play-Enhanced-v1"
+  },
+  {
+   "console": "gba",
+   "game": "Touhou-Puppet-Play-Enhanced-v1"
+  },
+  {
+   "console": "gba",
+   "game": "Touhoumon-Purple-(Difficulty---Hard)"
+  },
+  {
+   "console": "gba",
+   "game": "Touhoumon-Purple-(Difficulty---Ultimate)"
+  },
+  {
+   "console": "gba",
+   "game": "Touhoumon-Purple-(Difficulty---Very-Hard)"
+  },
+  {
+   "console": "gba",
+   "game": "Touhoumon-Purple-(Original)"
+  },
+  {
+   "console": "gba",
+   "game": "Touhoumon-Purple-(Sandbox)"
+  },
+  {
+   "console": "gba",
+   "game": "Turbo-Turtle-Adventure-(USA)"
+  },
+  {
+   "console": "gba",
+   "game": "turok_evolution"
+  },
+  {
+   "console": "gba",
+   "game": "twenty50-v0"
+  },
+  {
+   "console": "gba",
+   "game": "ty2"
+  },
+  {
+   "console": "gba",
+   "game": "ty3"
+  },
+  {
+   "console": "gba",
+   "game": "Ultimate_Brain_Games_(U)"
+  },
+  {
+   "console": "gba",
+   "game": "Ultimate_Card_Games_(U)"
+  },
+  {
+   "console": "gba",
+   "game": "unbound-v2"
+  },
+  {
+   "console": "gba",
+   "game": "unsb"
+  },
+  {
+   "console": "gba",
+   "game": "V-Rally_3_(U)"
+  },
+  {
+   "console": "gba",
+   "game": "Virtua_Tennis_(U)"
+  },
+  {
+   "console": "gba",
+   "game": "Wade_Hixtons_Counter_Punch_(USA,_Europe)"
+  },
+  {
+   "console": "gba",
+   "game": "warioland4"
+  },
+  {
+   "console": "gba",
+   "game": "wario_ware"
+  },
+  {
+   "console": "gba",
+   "game": "ygo-pokeduel-v3"
+  },
+  {
+   "console": "gba",
+   "game": "ynfa"
+  },
+  {
+   "console": "gba",
+   "game": "Yu-Gi-Oh!__The_Eternal_Duelist_Soul_(U)_[!]"
+  },
+  {
+   "console": "gba",
+   "game": "zelda_minish"
+  },
+  {
+   "console": "gba",
+   "game": "zelda_past"
+  }
+ ]

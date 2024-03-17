@@ -1,0 +1,56 @@
+.extra-content {
+    text-align: center;
+}
+
+.extra-content h1{
+    font: 1.5vw "Space Grotesk";
+}
+
+.extra-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.extra-button {
+    background: linear-gradient(
+      to right,
+      #37afff 0%,
+      #2f9ffb 20.83%,
+      #575afb 48.96%,
+      #4929ff 75%,
+      #8707ff 100%
+    );
+    border-radius: 1vw;
+    height: 8vh;
+    font-family: "Space Grotesk";
+    border: none;
+    font-weight: bold;
+    font-size: 2vw;
+    width: 14vw;
+    margin: 1vw;
+    cursor: pointer;
+  }
+
+  .extra-button:hover {
+    background: linear-gradient(
+      to right,
+      #59def5 0%,
+      #1d04ff 20.83%,
+      #f050ff 48.96%,
+      #cd9bf9 75%,
+      #ff95fa 100%
+    );
+    color: black;
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 2s ease;
+    transition: 1s ease;
+    box-shadow: 0 0 1vw var(--primary-accent);
+    transform: scale(1.05);
+  }
+
+  #game {
+    height: 60vh;
+  }

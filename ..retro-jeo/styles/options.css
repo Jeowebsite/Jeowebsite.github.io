@@ -1,0 +1,140 @@
+*{
+    transition-duration: 0.1s;
+}
+
+.title-text {
+    font-family: "Space Grotesk";
+    font-size: 4vw;
+    text-align: center;
+    text-transform: capitalize;
+    
+    color: var(--primary-accent);
+    margin: 10px;
+}
+
+/* Theme Container + Styles */
+
+.theme-ss-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    background: var(--bg-color);
+}
+
+.theme-ss {
+    border: 1px solid var(--primary-accent);
+    margin: 1vh;
+}
+
+.theme-img {
+    width: 30vw;
+    margin: 2vh;
+    border-bottom: 3px solid var(--link-color);
+}
+
+.theme-title {
+    font-family: "Space Grotesk";
+    font-weight: bold;
+    font-size: 1.5vw;
+    text-align: center;
+    text-transform: capitalize;
+    
+    color: var(--primary-accent);
+    margin: 10px;
+}
+
+.theme-text {
+    font-family: "Inter";
+    font-weight: bold;
+    font-size: 1vw;
+    text-align: center;
+    text-transform: capitalize;
+    
+    color: var(--secondary-accent);
+    margin: 10px;
+}
+
+.theme-ss:hover {
+    transform: scale(1.02);
+    border: 1px solid var(--secondary-accent);
+}
+
+
+.selection-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+.selection-container div a {
+    font-family: "Chakra Petch";
+    font-size: 1.8vw;
+  
+    text-decoration-line: underline;
+    text-transform: capitalize;
+    color: #000;
+  }
+  
+  .selection-box {
+    background: var(--primary-accent);
+    border-radius: 5px;
+    width: 20vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3vw;
+    filter: brightness(1.1)
+  }
+  
+  .selection-box.gba {
+    background: var(--gba) !important;
+    box-shadow: 0 0 0.2vw var(--primary-accent) !important;
+  }
+  
+  .selection-box.nes {
+    background: var(--nes) !important;
+    box-shadow: 0 0 0.2vw var(--primary-accent) !important;
+  }
+  
+  .selection-box.ds {
+    background: var(--ds) !important;
+    box-shadow: 0 0 0.2vw var(--primary-accent) !important;
+  }
+  
+  .selection-box.sega {
+    background: var(--sega) !important;
+    box-shadow: 0 0 0.2vw var(--primary-accent) !important;
+  }
+  
+  .selection-box:hover {
+    transform: scale(1.05);
+    transition: 1s ease;
+    box-shadow: 0 0 0.2vw var(--secondary-accent) !important;
+    filter: brightness(1.2);
+  }
+
+
+.icon-box {
+    background-color: #81e8ff;
+    color: #000;
+    margin: 1vw;
+    width: 10vw;
+    height: 5vw;
+    font-size: 1.2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vw;
+    font-family: "Chakra Petch";
+    cursor: pointer;
+}
+
+.icon-box:hover {
+    transform: scale(1.05);
+    transition: 1s ease;
+    filter: brightness(1.2);
+}

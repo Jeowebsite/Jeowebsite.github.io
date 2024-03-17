@@ -1,0 +1,216 @@
+/* 
+    This is a Global file for general styling, such as fonts, colors, etc. (Also Themes)
+    This file is loaded on every page. 
+    Do not put page-specific styles in this file. 
+*/
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap");
+/* ---- */
+
+/* Themes */
+
+:root {
+  --bg-color: rgb(0, 0, 0);
+  --primary-accent: #81e8ff;
+  --secondary-accent: rgb(251, 29, 29);
+  --text-color: #ffffff;
+  --link-color: #7b66ff;
+
+
+  --gba: var(--primary-accent);
+  --nes: var(--secondary-accent);
+  --ds: var(--link-color);
+  --sega: var(--text-color);
+}
+
+[data-theme="dark"] {
+  --bg-color: rgb(0, 0, 0);
+  --primary-accent: #81e8ff;
+  --secondary-accent: rgb(251, 29, 29);
+  --text-color: #ffffff;
+  --link-color: #7b66ff;
+}
+
+[data-theme="sunset"] {
+  --bg-color: rgb(0, 0, 0);
+  --primary-accent: #ff7f00;
+  --secondary-accent: #7a000a;
+  --text-color: #ffffff;
+  --link-color: #fff566;
+}
+
+[data-theme="synthwave"] {
+  --bg-color: #000000FF;
+  --primary-accent: #B63F83FF;
+  --secondary-accent: #9E2083FF;
+  --text-color: #731F7AFF;
+  --link-color: #6EBDEAFF;
+}
+
+[data-theme="red"] {
+  --bg-color: #000000FF;
+  --primary-accent: #830000FF;
+  --secondary-accent: #C00000FF;
+  --text-color: #D43333FF;
+  --link-color: #4C4CA9FF;
+}
+
+[data-theme="green"] {
+  --bg-color: #000000FF;
+  --primary-accent: #00ff90;
+  --secondary-accent: #00b264;
+  --text-color: #00b264;
+  --link-color: #4C4CA9FF;
+}
+
+[data-theme="legacy-green"] {
+  --bg-color: #06b44e;
+  --primary-accent: #063810;
+  --secondary-accent: #0a5e1a;
+  --text-color: #056546 ;
+  --link-color: #4C4CA9FF;
+}
+
+/* Icon Color Theme */
+
+[data-icon-theme="new"] {
+  --gba: var(--primary-accent);
+  --nes: var(--secondary-accent);
+  --ds: var(--link-color);
+  --sega: var(--text-color);
+}
+
+[data-icon-theme="old"] {
+  --gba: #6ba263;
+  --nes: #b54c4c;
+  --ds: #bc3baf;
+  --sega: #6480ab;
+}
+
+
+/* Main Page Styling */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-accent) var(--bg-color);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--primary-accent);
+  border-radius: 10px;
+  border: 3px solid var(--bg-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-button {
+  color: var(--text-color);
+  width: 6vh;
+}
+
+.nav-button:hover svg path {
+  fill: var(--primary-accent);
+  transform-origin: bottom;
+  animation-name: fill-blue;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fill-blue {
+  0% {
+    transform: scaleX(0.9);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.topbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  background: var(--bg-color);
+  box-shadow: 5px 0 5px 0 var(--primary-accent);
+}
+
+.page-title {
+  font-family: "Chakra Petch";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2vw;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: var(--primary-accent);
+  flex: 1;
+}
+
+.topleft-name {
+  font-family: "Chakra Petch";
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2vw;
+  text-align: left;
+  text-transform: capitalize;
+
+  color: var(--link-color);
+  margin: 10px;
+}
+
+.copyright {
+  font-family: "Chakra Petch";
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1vw;
+  text-align: left;
+  text-transform: capitalize;
+
+  color: var(--link-color);
+  margin: 10px;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  left: 0;
+}
+
+.ghLogo {
+  width: 4vh;
+  margin: 10px;
+  color: white;
+}

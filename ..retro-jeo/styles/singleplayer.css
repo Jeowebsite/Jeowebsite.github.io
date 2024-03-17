@@ -1,0 +1,72 @@
+.selection-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.selection-image {
+  justify-content: left;
+  width: 50vw;
+}
+
+.selection-title {
+  font-family: "Chakra Petch";
+  font-style: italic;
+  font-weight: bold;
+  font-size: 4vw;
+  text-align: center;
+
+  text-transform: capitalize;
+}
+
+.selection-container div a {
+  font-family: "Chakra Petch";
+  font-size: 1.8vw;
+
+  text-transform: capitalize;
+  color: #000;
+}
+
+.selection-box {
+  background: var(--primary-accent);
+  border-radius: 5px;
+  width: 20vw;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3vw;
+  filter: brightness(1.1)
+}
+
+.selection-box.gba {
+  background: var(--gba) !important;
+  box-shadow: 0 0 0.2vw var(--primary-accent) !important;
+}
+
+.selection-box.nes {
+  background: var(--nes) !important;
+  box-shadow: 0 0 0.2vw var(--primary-accent) !important;
+}
+
+.selection-box.ds {
+  background: var(--ds) !important;
+  box-shadow: 0 0 0.2vw var(--primary-accent) !important;
+}
+
+.selection-box.sega {
+  background: var(--sega) !important;
+  box-shadow: 0 0 0.2vw var(--primary-accent) !important;
+}
+
+.selection-box:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+  box-shadow: 0 0 0.2vw var(--secondary-accent) !important;
+  filter: brightness(1.4);
+}
+
+hr {
+  border: var(--primary-accent) 1px solid;
+}

@@ -1,0 +1,98 @@
+.rom-title {
+    font-family: 'Inter';
+    font-size: 1.6vw;
+    font-weight: lighter;
+    text-align: center;
+    text-decoration-line: underline;
+    margin-top: 0.5vh;
+    color: var(--text-color);
+    text-decoration-color: var(--primary-accent);
+    cursor: pointer;
+  }
+  
+  .rom-title:hover {
+    text-decoration-color: var(--secondary-accent);
+    transition: 0.3s;
+  }
+
+.search {
+    text-align: center;
+    background-color: transparent;
+    border: 3px solid #FFFFFF;
+    border-radius: 2vh;
+    height: 5vh;
+    width: 30vw;
+    color: var(--text-color);
+}
+
+.search-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.filter {
+    background-color: rgb(74, 74, 74);
+    border: none;
+    color: var(--text-color);
+    font-size: 1.5vw;
+    padding: 0.5vh;
+    margin: 0.5vh;
+}
+
+.filter:hover {
+    background-color: var(--primary-accent) !important;
+    border-radius: 0vh !important;
+    transition: 0.3s; 
+    color: black;
+}
+
+.filter.gba {
+    background-color: #84c87a;
+    border-radius: 1vh;
+    color: black;
+}
+
+.filter.nes {
+    background-color: #c88484;
+    border-radius: 1vh;
+    color: black;
+}
+
+.filter.snes {
+    background-color: #c884c8;
+    border-radius: 1vh;
+    color: black;
+}
+
+.filter.n64 {
+    background-color: #8484c8;
+    border-radius: 1vh;
+    color: black;
+}
+
+.filter.nds {
+    background-color: #c8c884;
+    border-radius: 1vh;
+    color: black;
+}
+
+.filter.gbc {
+    background-color: #c8c8c8;
+    border-radius: 1vh;
+    color: black;
+}
+
+.filter.gb {
+    background-color: #848484;
+    border-radius: 1vh;
+    color: black;
+}
+
+.filter.sega {
+    background-color: #fcc3fa;
+    border-radius: 1vh;
+    color: black;
+}

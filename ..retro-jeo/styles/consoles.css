@@ -1,0 +1,56 @@
+.rom-title {
+  font-family: 'Inter';
+  font-size: 1.6vw;
+  font-weight: lighter;
+  text-align: center;
+  text-decoration-line: underline;
+  margin-top: 0.5vh;
+  color: var(--text-color);
+  text-decoration-color: var(--primary-accent);
+  cursor: pointer;
+}
+
+.rom-title:hover {
+  text-decoration-color: var(--secondary-accent);
+  transition: 0.3s;
+}
+
+.search {
+  text-align: center;
+  background-color: transparent;
+  border: 3px solid #FFFFFF;
+  border-radius: 2vh;
+  height: 5vh;
+  width: 30vw;
+  color: var(--text-color);
+}
+
+.search-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.bubble-next {
+  background-color: var(--primary-accent);
+  border: none;
+  border-radius: 2vh;
+  margin: 0.6vw;
+}
+
+.bubble-next:hover {
+  background-color: var(--secondary-accent);
+  fill: #000000;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.page-text {
+  font-family: 'Inter';
+  font-size: 1.5vw;
+  font-weight: lighter;
+  text-align: center;
+  color: var(--text-color);
+}

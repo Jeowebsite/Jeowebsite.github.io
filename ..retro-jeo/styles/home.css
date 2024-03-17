@@ -1,0 +1,109 @@
+/* This sheet is for styling the homepage only. */
+
+.ready-txt {
+  font-family: "Chakra Petch";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3vw;
+
+  color: var(--primary-accent);
+
+  margin: 1vh;
+  text-align: center;
+}
+
+.ready-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+  height: 30vw;
+  flex-direction: column;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.alt-button {
+  background: linear-gradient(
+    to right,
+    #4bb4f4 0%,
+    #67b7f5 25%,
+    #7cbcf7 50%,
+    #91c1f9 75%,
+    #a6c6fa 100%
+  );
+  border-radius: 1vw;
+  height: 8vh;
+  font-family: "Space Grotesk";
+  border: none;
+  font-weight: bold;
+  font-size: 2vw;
+  width: 14vw;
+  margin: 1vw;
+  box-shadow: 0 0 0.4vw #9d95ff;
+}
+
+
+.alt-button:hover {
+  background: linear-gradient(
+    to right,
+    #69c8ff 0%,
+    #a297ff 20.83%,
+    #f69cff 48.96%,
+    #ffbeff 75%,
+    #ff5aff 100%
+  );
+  color: black;
+  background-size: 200% 100%;
+  background-position: right;
+  transition: background-position 2s ease, color 0.5s ease;
+  filter: blur(0vw);
+}
+
+.glow-1 {
+  height: 30vh;
+  width: 30vw;
+  background: var(--primary-accent);
+  filter: blur(12vw) brightness(0.4);
+  position: absolute;
+  top: 50vh;
+  left: 45vw;
+  z-index: -1;
+}
+
+.glow-2 {
+  height: 30vh;
+  width: 30vw;
+  background: var(--secondary-accent);
+  filter: blur(12vw) brightness(0.4);
+  position: absolute;
+  top: 50vh;
+  left: 25vw;
+  z-index: -1;
+}
+
+.glow-3 {
+  height: 30vh;
+  width: 30vw;
+  background: var(--link-color);
+  filter: blur(12vw) brightness(0.4);
+  position: absolute;
+  top: 25vh;
+  left: 35vw;
+  z-index: -1;
+}
+
+.main-img {
+  filter: brightness(0.8);
+  margin-top: 10vh;
+}
+
+.main-img:hover {
+  filter: brightness(1);
+  transition: 0.5s ease;
+}
