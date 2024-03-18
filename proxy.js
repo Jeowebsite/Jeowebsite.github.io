@@ -1,3 +1,3 @@
 function redirectToWebsite() {
-    window.location.href = "https://us1.cambrianscientific.com/";
+    window.location.href = "https://p.q.sagesinst.org/";
 }
