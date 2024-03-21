@@ -20,7 +20,7 @@ jobs:
           ./change_nameservers.sh "$DOMAIN" "$EZOID_NAMESERVER1,$EZOID_NAMESERVER2,$EZOID_NAMESERVER3,$EZOID_NAMESERVER4"
         env:
           DOMAIN: "https://jeowebsite.github.io"  # Your domain name
-          EZOID_NAMESERVER1: "falcon.ezoicns.com"
-          EZOID_NAMESERVER2: "rabbit.ezoicns.com"
+          EZOID_NAMESERVER1: "aron.ns.cloudflare.com"
+          EZOID_NAMESERVER2: "arturo.ns.cloudflare.com"
           EZOID_NAMESERVER3: "somali.ezoicns.com"
           EZOID_NAMESERVER4: "turkey.ezoicns.com"
