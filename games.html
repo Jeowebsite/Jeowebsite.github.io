@@ -1,6 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <button id="scrollButton">​Click To See New Games</button>
+    <meta name="description" content="Jeowebsite Provides You over 400+ games for your enjoyment so you can pass time in your free time.">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D6XL3ZN4KW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-D6XL3ZN4KW');
+</script>
+<script>
+    // Smooth scrolling function
+    function smoothScroll(target, duration) {
+        var targetElement = document.querySelector(target);
+        var targetPosition = targetElement.getBoundingClientRect().top;
+        var startPosition = window.pageYOffset;
+        var distance = targetPosition - startPosition;
+        var startTime = null;
+
+        function animation(currentTime) {
+            if (startTime === null) startTime = currentTime;
+            var timeElapsed = currentTime - startTime;
+            var run = ease(timeElapsed, startPosition, distance, duration);
+            window.scrollTo(0, run);
+            if (timeElapsed < duration) requestAnimationFrame(animation);
+        }
+
+        function ease(t, b, c, d) {
+            t /= d / 2;
+            if (t < 1) return c / 2 * t * t + b;
+            t--;
+            return -c / 2 * (t * (t - 2) - 1) + b;
+        }
+
+        requestAnimationFrame(animation);
+    }
+
+    // Smooth scroll trigger
+    document.querySelector('section').addEventListener('click', function () {
+        smoothScroll('#section2', 1000); // Smooth scroll to target (change #section2 to your target element's ID)
+    });
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeo</title>
@@ -8,10 +54,6 @@
   <script src="counter.js"></script>
   <link rel="stylesheet" media="screen and (max-width: 767px)" href="styles-mobile.css">
   <link rel="stylesheet" media="screen and (min-width: 768px)" href="styles.css">
-    <button id="scrollButton">​🇨​​🇱​​🇮​​🇨​​🇰​ ​🇲​​🇪​ ​🇹​​🇴​ ​🇸​​🇪​​🇪​ ​🇳​​🇪​​🇼​ ​🇬​​🇦​​🇲​​🇪​​🇸​
-        😊</button>
-    <button id="redirectButton">🇷​​🇪​​🇹​​🇷​​🇴​ ​🇬​​🇦​​🇲​​🇪​​🇸​​ 🎮</button>
-    <button id="proxy" onclick="redirectToWebsite()">​​🇵​​🇷​​🇴​​🇽​​🇾​ ​🇱​​🇮​​🇳​​🇰​​🇸🌐​ </button>
     <meta name="google-site-verification" content="AEDdz9XcY3x0M9T7nN3N5C0jDTqfXBeSObY9oFh1xP4" />
     <link rel="icon" type="image/x-icon" href="https://www.google.com/favicon.ico">
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3788774762807047"
@@ -22,6 +64,14 @@
     (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-WJPQKSQTVY"></script> <script>   window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());   gtag('config', 'G-WJPQKSQTVY'); </script>
+<script type="text/javascript" data-cfasync="false">
+    /*<![CDATA[/* */
+    (function(){var u=window,l="ec540efb91006fb9ed93c1cc3a87cff4",r=[["siteId",26+258*907-167+4847111],["minBid",0],["popundersPerIP","0"],["delayBetween",0],["default",false],["defaultPerDay",0],["topmostLayer","auto"]],d=["d3d3LnhhZHNtYXJ0LmNvbS9hcGkvdGJhc2lsLm1pbi5qcw==","ZDExZW5xMnJ5bXkweWwuY2xvdWRmcm9udC5uZXQvYXNzZXRzL3NjcmlwdHMvYm1vZGVybml6ci5taW4uY3Nz"],g=-1,f,c,p=function(){clearTimeout(c);g++;if(d[g]&&!(1736393677000<(new Date).getTime()&&1<g)){f=u.document.createElement("script");f.type="text/javascript";f.async=!0;var i=u.document.getElementsByTagName("script")[0];f.src="https://"+atob(d[g]);f.crossOrigin="anonymous";f.onerror=p;f.onload=function(){clearTimeout(c);u[l.slice(0,16)+l.slice(0,16)]||p()};c=setTimeout(p,5E3);i.parentNode.insertBefore(f,i)}};if(!u[l]){try{Object.freeze(u[l]=r)}catch(e){}p()}})();
+    /*]]>/* */
+    </script>
+
+    <script type="text/javascript"> adroll_adv_id = "VCW2MEZCPJBPJOULAX2TME"; adroll_pix_id = "HATIKSJPIRFM7ITUHYGU55"; adroll_version = "2.0";  (function(w, d, e, o, a) { w.__adroll_loaded = true; w.adroll = w.adroll || []; w.adroll.f = [ 'setProperties', 'identify', 'track' ]; var roundtripUrl = "https://s.adroll.com/j/" + adroll_adv_id + "/roundtrip.js"; for (a = 0; a < w.adroll.f.length; a++) { w.adroll[w.adroll.f[a]] = w.adroll[w.adroll.f[a]] || (function(n) { return function() { w.adroll.push([ n, arguments ]) } })(w.adroll.f[a]) }  e = d.createElement('script'); o = d.getElementsByTagName('script')[0]; e.async = 1; e.src = roundtripUrl; o.parentNode.insertBefore(e, o); })(window, document); adroll.track("pageView"); </script>     
+    <script type="text/javascript" src="/z-1r5vd5hxyy"></script>
 </head>
 <script>
     document.addEventListener('keydown', function(event) {
@@ -32,709 +82,563 @@
   }
 });
 </script>
-<body class="home">
-    <body>
-    </body>
-    <header>
-        <h1>𝕵𝖊𝖔 𝕱𝖚𝖓 𝖂𝖊𝖇𝖘𝖎𝖙𝖊 𝕲𝖆𝖒𝖊𝖘
-        </h1>
-    </header>
-    <h3>Press Z,` or The ESC button To go to Canvas</h3>
+<script>
+    // Function to preload all images in the document and store them in local storage
+function preloadAndStoreImages(callback) {
+  var images = document.getElementsByTagName('img');
+  var imageUrls = [];
+
+  // Extract image URLs
+  Array.from(images).forEach(function(img) {
+    imageUrls.push(img.getAttribute('src'));
+  });
+
+  var loadedCounter = 0;
+
+  // Load event handler
+  function imageLoaded() {
+    loadedCounter++;
+    if (loadedCounter === images.length) {
+      // Store image URLs in local storage
+      localStorage.setItem('preloadedImages', JSON.stringify(imageUrls));
+      callback(); // All images loaded, invoke callback
+    }
+  }
+
+  // Loop through each image and preload
+  Array.from(images).forEach(function(img) {
+    img.onload = imageLoaded;
+    img.src = img.getAttribute('src'); // Trigger loading by setting src
+  });
+}
+
+// Function to load images from local storage
+function loadImagesFromStorage(callback) {
+  var storedImages = localStorage.getItem('preloadedImages');
+  if (storedImages) {
+    var imageUrls = JSON.parse(storedImages);
+
+    // Create images from stored URLs
+    var loadedImages = [];
+    imageUrls.forEach(function(url) {
+      var img = new Image();
+      img.onload = function() {
+        loadedImages.push(img);
+        if (loadedImages.length === imageUrls.length) {
+          callback(loadedImages);
+        }
+      };
+      img.src = url;
+    });
+  } else {
+    // No images stored in local storage, preload and store them
+    preloadAndStoreImages(function() {
+      loadImagesFromStorage(callback);
+    });
+  }
+}
+
+// Example usage
+loadImagesFromStorage(function(images) {
+  console.log('Images loaded from local storage:', images);
+});
+
+    </script>
     <nav>
         <ul>
-            <li id="ui"><a id="ui"href="home.html">Home</a></li>
-            <li id="ui"><a id="ui"href="index.html">Games</a></li>
-            <li id="ui"><a id="ui"href="Retro-Games.html">Retro Games</a></li>
-            <li id="ui"><a id="ui"href="browser.html">Proxy's</a></li>
-            <li id="ui"><a id="ui"href="Blog.html">Blog Post</a></li>
-            <li id="ui"><a id="ui" href="https://sites.google.com/online.houstonisd.org/jeo/home">Other Games</a></li>
+
         </ul>
     </nav>
     <main>
-<!-- Start of CuterCounter Code -->
-<a href="" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=hmvxoodnn&nd=6&style=49" border="0" alt="best free website hit counter"></a>
-<!-- End of CuterCounter Code -->
-<script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
-<div id="color-container">
-    <div class="color-box" style="background-color: rgb(255, 255, 255);"></div>
-    <div class="color-box" style="background-color: rgb(0, 0, 0);"></div>
-    <div class="color-box" style="background-color: rgb(35, 5, 42);"></div>
-    <div class="color-box" style="background-color: rgb(20, 130, 31);"></div>
-    <div class="color-box" style="background-color: rgb(171, 9, 166);"></div>
-    <div class="color-box" style="background-color: rgb(0, 23, 152);"></div>
-    <div class="color-box" style="background-color: rgb(181, 26, 41);"></div>
-    <div class="color-box" style="background-color: rgb(0, 152, 35);"></div>
-    <div class="color-box" style="background-color: rgb(212, 0, 255);"></div>
-    <div class="color-box" style="background-color: rgb(191, 255, 0);"></div>
-    <!-- Add more colors as needed -->
-    <button id="saveColorBtn">Save Color</button>
-
-    <button id="removeColorBtn">Remove Color</button>
-</div>
-
-
   <style>
 
 </style>
-
-
-<div class="iframe-container desktop-only">
-    <iframe src="timer.html" title="Until Next Update"></iframe>
-    <div class="overlay"></div>
-  </div>
- 
-  <div class="iframe desktop-only">
-    <iframe src="counter.html" title="Until Next Update"></iframe>
-    <div class="overlay"></div>
-  </div>
         <div class="search-container">
             <input type="text" id="searchInput" placeholder="Search for a game...">
             <button onclick="searchGame()">Search</button>
         </div>
-        <h1 id="ret">Popular Games</h1>
-        <div class="game-container">
-            <div class="retro-cards">
-                <div class="retro-card">
-                    <img src="smash-KARTS/images/SmashKartsPoster.jpg">
-                    <h3>SmashKarts</h3>
-                    <p>SmashKarts League Website </p>
-                    <p><a href="https://sites.google.com/online.houstonisd.org/mmsl/home" class="button">MPVA Smash Kart League</a></p>
-                    <button class="button" onclick="openFileInWindow('smash-KARTS/index.html')">Play Game</button>
-                    <a href="smash-KARTS/index.html" class="link-button" target="_blank">Open In A New Tab</a>
-                </div>
-                <div class="retro-card">
-                    <img src="recent-minecraft/logo.png">
-                    <h3>Recent Client</h3>
-                    <p>i love minecraft</p>
-                    <button class="button" onclick="openFileInWindow('minecraft-recent/index.html')">Play Game</button>
-                    <a href="minecraft-recent/index.html" class="link-button" target="_blank">Open In A New Tab</a>
-                </div>
-                <div class="retro-card">
-                    <img src="Retro-bowl/download (8).jpeg">
-                    <h3>Retro Bowl</h3>
-                    <button class="button" onclick="openFileInWindow('Retro-bowl/index.html')">Play Game</button>
-                    <a href="Retro-bowl/index.html" class="link-button" target="_blank">Open In A New Tab</a>
-                </div>
-                <div class="retro-card">
-                    <img src="bitlife/splash.png">
-                    <h3>Bit Life</h3>
-                    <button class="button" onclick="openFileInWindow('bitlife/index.html')">Play Game</button>
-                    <a href="bitlife/" class="link-button" target="_blank">Open In A New Tab</a>
-                </div>
-                <div class="retro-card">
-                    <img src="big-tower-tiny-square/splash.png">
-                    <h3>Big Tower Tiny Square</h3>
-                    <button class="button" onclick="openFileInWindow('big-tower-tiny-square/index.html')">Play Game</button>
-                    <a href="big-tower-tiny-square/index.html" class="link-button" target="_blank">Open In A New Tab</a>
-                </div>
-                <div class="retro-card">
-                    <img src="1v1lol/splash.png">
-                    <h3>1v1.lol</h3>
-                    <button class="button" onclick="openFileInWindow('1v1lol/index.html')">Play Game</button>
-                    <a href="1v1lol/index.html" class="link-button" target="_blank">Open In A New Tab</a>
-                </div>
-                <div class="retro-card">
-                    <img src="jonny-upgrades/jonny upgrade.jpg">
-                    <h3>Johnny Upgrade</h3>
-                    <button class="button" onclick="openFileInWindow('jonny-upgrades/index.html')">Play Game</button>
-                    <a href="jonny-upgrades/index.html" class="link-button" target="_blank">Open In A New Tab</a>
-                </div>
-                <div class="retro-card">
-                    <img src="0v0/download (2).png" alt="Game 25">
-                    <h3>OvO</h3>
-                    <button class="button" onclick="openFileInWindow('0v0/index.html')">Play Game</button>
-                    <a href="0v0/index.html" class="link-button" target="_blank">Open In A New Tab</a>
-                </div>
-                <div class="game-card">
-                    <img src="trap-the-cat/trap the cat.png">
-                    <h3>Trap The Cat</h3>
-                    <button class="button" onclick="openFileInWindow('trap-the-cat/index.html')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="papa-freezeria/freeze.jpeg">
-                    <h3>Papa's Freezearia</h3>
-                    <button class="button" onclick="openFileInWindow('papa-freezeria/index.html')">Play Game</button>
-                    <a href="papa-freezeria/index.html" class=" link-button" target="_blank">Open In A New Tab</a>
-                </div>
-                <div class="retro-card">
-            <img src="pacman/pacman.jpg">
-            <h3>Pac Man</h3>
-            <button class="button" onclick="openFileInWindow('pacman/index.html')">Play Game</button>
+<style>
+    .ads {
+position: absolute; /* Change from relative to absolute */
+top: 300px; /* Adjust the top position as needed */
+right: 5px; /* Adjust the left position as needed */
+width: 250px;
+height: 300px;
+overflow: hidden;
+border-radius: 15px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transition: box-shadow 0.3s ease;
+}
+.go-back-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #000000d6;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 9999;
+    width: 300px;
+    height: 60px;
+}
+</style>
+<body>
+<button class="go-back-button" onclick="goBack()">Go Back</button>
+<script>
+   function goBack() {
+        window.location.href = "index.html";
+    }
+</script>
+       <script>
+         function goToAnotherPage() {
+        // Redirect to another page
+        window.location.href = "https://sites.google.com/online.houstonisd.org/mmsl/home";
+    }
+        </script>
+      <!-- JavaScript for dynamic functionality -->
+      <script>
+        // Load favorites from local storage
+        document.addEventListener('DOMContentLoaded', function() {
+            var favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+            favorites.forEach(function(favoriteId) {
+                var gameCard = document.getElementById(favoriteId);
+                if (gameCard) {
+                    gameCard.classList.add('favorited');
+                    document.querySelector('.game-containers').appendChild(gameCard); // Append directly, without cloning
+                }
+            });
+        });
+
+        function toggleFavorite(gameId) {
+            var gameCard = document.getElementById(gameId);
+            var favoriteContainer = document.querySelector('.game-containers');
+            var heartIcon = gameCard.querySelector('.heart-icon');
+            var favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+
+            if (gameCard.classList.contains('favorited')) {
+                // Remove from favorites
+                gameCard.classList.remove('favorited');
+                favorites = favorites.filter(function(id) {
+                    return id !== gameId;
+                });
+                localStorage.setItem('favorites', JSON.stringify(favorites));
+                var existingFavorite = favoriteContainer.querySelector('#' + gameId);
+                if (existingFavorite) {
+                    favoriteContainer.removeChild(existingFavorite);
+                }
+            } else {
+                // Add to favorites
+                gameCard.classList.add('favorited');
+                favorites.push(gameId);
+                localStorage.setItem('favorites', JSON.stringify(favorites));
+                favoriteContainer.appendChild(gameCard);
+            }
+        }
+
+        function openFileInWindow(url) {
+            // Your code to open the game in a new window
+        }
+    </script>
+         <h1 id="ret">Your favorites</h1>
+        <div class="game-containers">
+            <div id="all-game">
+         </div>
+        </div> 
+         <style>
+            .game-containers {
+            max-height: 600px; /* Adjust the maximum height as needed */
+            overflow-y: auto; /* Enable vertical scrolling */
+            display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Aligns items in four columns */
+            }
+          /* Target every fourth game card */
+/* A to Z Sorting */
+   /* Target every fourth game card */
+      </style>
         </div>
-            </div>
-        </div>
-        <h1 id="ret">Retro Games</h1>
-        <div class="game-container">
-            <div class="retro-cards">
-                <div class="retro-card">
-                    <img src="Advance-wars1/download (1).jpeg" alt="Game 1">
-                    <h3>Advance-wars 1</h3>
-                    <button class="button" onclick="openFileInWindow('Advance-wars1/index.html')">Play Game</button>
-                    <a href="Advance-wars1/index.html"  class="link-button" target="_blank">Open In A New Tab</a>
-                </div>
-                <div class="retro-card">
-                    <img src="Advance-wars2/download (2).jpeg" alt="Game 2">
-                    <h3>Advance-wars 2</h3>
-                    <button class="button" onclick="openFileInWindow('Advance-wars2/index.html')">Play Game</button>
-                    <a href="Advance-wars2/index.html" target="_blank">Open In A New Tab</a>
-                </div>
-                <div class="retro-card">
-                    <img src="Donkey-Kong-Country1/donkey1.jpeg" alt="Game 3">
-                    <h3>Donkey Kong 1</h3>
-                    <button class="button" onclick="openFileInWindow('Donkey-Kong-Country1/index.html')">Play Game</button>
-                    <a href="Donkey-Kong-Country1/index.html" target="_blank">Open In A New Tab</a>
-                </div>
-                <div class="retro-card">
-                    <img src="DonkeyKongCountry2/donkey2.jpeg" alt="Game 4">
-                    <h3>Donkey Kong 2</h3>
-                    <button class="button" onclick="openFileInWindow('DonkeyKongCountry2/index.html')">Play Game</button>
-                    <a href="DonkeyKongCountry2/index.html" target="_blank">Open In A New Tab</a>
-                </div>
-                <div class="retro-card">
-                    <img src="DonkeyKong3/download (3).jpeg" alt="Game 5">
-                    <h3>Donkey Kong 3</h3>
-                    <button class="button" onclick="openFileInWindow('DonkeyKong3/index.html')">Play Game</button>
-                    <a href="DonkeyKong3/index.html" target="_blank">Open In A New Tab</a>
-                </div>
-                <div class="retro-card">
-                    <img src="Pokemon-emrald/download.jpeg" alt="Game 6">
-                    <h3>Pokemon Emerald</h3>
-                    <button class="button" onclick="openFileInWindow('Pokemon-emrald/index.html')">Play Game</button>
-                    <a href="Pokemon-emrald/index.html" target="_blank">Open In A New Tab</a>
-                </div>
-                <div class="retro-card">
-                    <img src="Pokemon-Fire-Red/download (2).jpeg" alt="Game 7">
-                    <h3>Pokemon Fire Red</h3>
-                    <button class="button" onclick="openFileInWindow('Pokemon-Fire-Red/index.html')">Play Game</button>
-                    <a href="Pokemon-Fire-Red/index.html" target="_blank">Open In A New Tab</a>
-                </div>
-                <div class="retro-card">
-                    <img src="Pokemon-leafGreen/download (1).jpeg" alt="Game 8">
-                    <h3>Pokemon Leaf Green</h3>
-                    <button class="button" onclick="openFileInWindow('Pokemon-leafGreen/index.html')">Play Game</button>
-                    <a href="Pokemon-leafGreen/index.html" target="_blank">Open In A New Tab</a>
-                </div>
-                <div class="retro-card">
-                    <img src="Pokemon-mystery/download (3).jpeg" alt="Game 9">
-                    <h3>Pokemon Mystery</h3>
-                    <button class="button" onclick="openFileInWindow('Pokemon-mystery/index.html')">Play Game</button>
-                    <a href="Pokemon-mystery/index.html" target="_blank">Open In A New Tab</a>
-                </div>
-                <div class="retro-card">
-                    <img src="Pokemon-ruby/download (4).jpeg" alt="Game 10">
-                    <h3>Pokemon Ruby</h3>
-                    <button class="button" onclick="openFileInWindow('Pokemon-ruby/index.html')">Play Game</button>
-                    <a href="Pokemon-ruby/index.html" target="_blank">Open In A New Tab</a>
-                </div>
-                <div class="retro-card">
-                    <img src="Pokemon-Saphire/download (5).jpeg" alt="Game 11">
-                    <h3>Pokemon Sapphire</h3>
-                    <button class="button" onclick="openFileInWindow('Pokemon-Saphire/index.html')">Play Game</button>
-                    <a href="Pokemon-Saphire/index.html" target="_blank">Open In A New Tab</a>
-                </div>
-                <div class="retro-card">
-                    <img src="Doom/doom1.jpeg" alt="Game 12">
-                    <h3>Doom</h3>
-                    <button class="button" onclick="openFileInWindow('Doom/index.html')">Play Game</button>
-                    <a href="Doom/index.html" target="_blank">Open In A New Tab</a>
-                </div>
-                <div class="retro-card">
-                    <img src="Doom2/doom2.jpeg" alt="Game 13">
-                    <h3>Doom 2</h3>
-                    <button class="button" onclick="openFileInWindow('Doom2/index.html')">Play Game</button>
-                    <a href="Doom2/index.html" target="_blank">Open In A New Tab</a>
-                </div>
-                <div class="retro-card">
-                    <img src="tony-hack-underground/tony hack underground.jpeg" alt="Game 11">
-                    <h3>Tony Hawk 1</h3>
-                    <button class="button" onclick="openFileInWindow('tony-hack-underground/index.html')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="tony-hawk2/download (11).jpeg" alt="Game 12">
-                    <h3>Tony Hawk 2</h3>
-                    <button class="button" onclick="openFileInWindow('tony-hawk2/index.html')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="tony-hawk3/tonyhawk3.jpeg" alt="Game 13">
-                    <h3>Tony Hawk 3</h3>
-                    <button class="button" onclick="openFileInWindow('tony-hawk3/index.html')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="tonyhawk4/download (12).jpeg" alt="Game 14">
-                    <h3>Tony Hawk 4</h3>
-                    <button class="button" onclick="openFileInWindow('tony-hawk4/index.html')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="astro-boy/astro boy.jpeg" alt="Game 15">
-                    <h3>Astro Boy Omega Factor</h3>
-                    <button class="button" onclick="openFileInWindow('astro-boy/index.html')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="Breath-Of-Fire/breath 1.jpeg" alt="Game 16">
-                    <h3>Breath Of Fire</h3>
-                    <button class="button" onclick="openFileInWindow('Breath-Of-Fire/index.html')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="Breath-of-Fire2/breath 2.jpeg" alt="Game 17">
-                    <h3>Breath Of Fire 2</h3>
-                    <button class="button" onclick="openFileInWindow('Breath-of-Fire2/index.html')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="fifa4/fifa 4.jpeg" alt="Game 18">
-                    <h3>Fifa 4</h3>
-                    <button class="button" onclick="openFileInWindow('fifa4/index.html')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="fifa5/fifa 5.jpeg" alt="Game 19">
-                    <h3>Fifa 5</h3>
-                    <button class="button" onclick="openFileInWindow('fifa5/index.html')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="fifa6/fifa 6.jpeg" alt="Game 20">
-                    <h3>Fifa 6</h3>
-                    <button class="button" onclick="openFileInWindow('fifa6/index.html')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="fifa7/fifa 7.jpeg" alt="Game 21">
-                    <h3>Fifa 7</h3>
-                    <button class="button" onclick="openFileInWindow('fifa7/index.html')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="gta/gta.jpeg" alt="Game 22">
-                    <h3>GTA</h3>
-                    <button class="button" onclick="openFileInWindow('gta/index.html')">Play Game</button>
-                </div>                
-            </div>
-        </div>
-        <h1 id="ret">FNF Mods</h1>
-        <div class="game-container">
-            <div class="retro-cards">
-                <div class="retro-card">
-                    <img src="fnf-stick-man/pqgaW4qd1gNazQqho2Him0h5E8ntJuI37OOQpAo4t9aV5-jpLXLk6yYgbbn9ZrzWtIFs5wQeNBKEJRxNs99J1c-56KIu9bUXUe0lA_g=s2048.jpg">
-                    <h3>Friday Night Funking Stick Man Mod</h3>
-                    <button class="button" onclick="openFileInWindow('fnf-stick-man/index.html')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="fnf-hex/U6UErGZwrI-yA1AbE5r97Hnd4CkMQ7fNuHUQ1t-6PUy3-mxRqEBO6hGn67LZ2drmhxiAILeU7z5X2VuPRx9--DMQR9nD3wD0p97xy7cefI3KmDUnGnF3RPzM9E0W66qmYxN-nFFw3g=s2048.jpg">
-                    <h3>Friday Night Funking Hex Mod</h3>
-                    <button class="button" onclick="openFileInWindow('fnf-hex/index.html')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="fnf-mobile/6sGAZ1Z0MVgqvqq949cUPnVgNaW-PDCpl6SveSkaE40tuH-jcnop6Li2Lb5DjE908PVOwuDUAkX4PFdQaAeOGpuDDX4u9xpEoFdkITlhVcJzoSv_GCMg74DxEVQsAjm3JKBf25BP8EimdPPCdmi1DcvYmLfqTUO4zso6_2Fj=s2048.jpg">
-                    <h3>Friday Night Funking Mobile</h3>
-                    <button class="button" onclick="openFileInWindow('fnf-mobile/index.html')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="fnf-imposter/amonus.jpg">
-                    <h3>Friday Night Funking Imposter</h3>
-                    <button class="button" onclick="openFileInWindow('fnf-imposter/index.html')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="fnf-slender/eJ_PiiaJAiPL4CfT5Ka5hoELPozEGVsMchpS6PniENbtswf18HWSsNoNfgcCelXbhBRM-X7Inb8pHYza1GjnnWQTctnvfv53RRb28bcwSN2ZQFeVQrW80nJdnjEt4nEVvyUOzsL8VMwNfUaeO1PVutFLhIH5AoH4wCPUKOvVUsiDZ-jnvZuOaTicnKz4FcQo5VwCsbA3RBxZ_O7fBQ=s2048.png">
-                    <h3>Friday Night Funking Slender</h3>
-                    <button class="button" onclick="openFileInWindow('fnf-slender/index.html')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="fnf-sonic.exe/sonic.jpg">
-                    <h3>Friday Night Funking Sonic.exe</h3>
-                    <button class="button" onclick="openFileInWindow('fnf-sonic/index.html')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="fnf-shaggy/shaggy.jpg">
-                    <h3>Friday Night Funking Shaggy</h3>
-                    <button class="button" onclick="openFileInWindow('fnf-shaggy/index.html')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="zimages/smokeemoutstrugglefnf.png">
-                    <h3>Smokeout Struggle FNF</h3>
-                    <button class="button" onclick="openMyWindow('https://levixddlmao.github.io/smokeemoutstrugglefnf/')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="zimages/bsides.jpeg">
-                    <h3>Bsides FNF</h3>
-                    <button class="button" onclick="openMyWindow('https://d3monslay3r101.github.io/FNFatSchool1/bsides/index.html')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="zimages/week 6.jpeg">
-                    <h3>Week 6 FNF</h3>
-                    <button class="button" onclick="openMyWindow('https://sonicisbest.github.io/hellbeats/new-week6/index.html')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="zimages/sky.jpeg">
-                    <h3>Sky FNF</h3>
-                    <button class="button" onclick="openMyWindow('https://thebrettyt.github.io/sky/index.html')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="zimages/sarventes.jpeg">
-                    <h3>Sarventes FNF</h3>
-                    <button class="button" onclick="openMyWindow('https://juicekidd.github.io/funkin/sarventes/index.html')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="zimages/x event.jpeg">
-                    <h3>X Event FNF</h3>
-                    <button class="button" onclick="openMyWindow('https://juicekidd.github.io/funkin/x-event/index.html')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="zimages/VsCassandra.png">
-                    <h3>Vs Cassandra</h3>
-                    <button class="button" onclick="openMyWindow('https://derpy-jacob-903.github.io/projectfnfweb/VsCassandra/index.html')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="zimages/vs NONSENSE.jpeg">
-                    <h3>NONSENCE FNF</h3>
-                    <button class="button" onclick="openMyWindow('https://levixddlmao.github.io/NONSENSE/')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="zimages/lullaby.jpeg">
-                    <h3>Lullaby FNF</h3>
-                    <button class="button" onclick="openMyWindow('https://levixddlmao.github.io/lub/')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="zimages/doki doki take over.png">
-                    <h3>Doki Doki Takeover FNF</h3>
-                    <button class="button" onclick="openMyWindow('https://levixddlmao.github.io/DOKI-DOKI/')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="zimages/holo live.jpeg">
-                    <h3>Holo Live FNF</h3>
-                    <button class="button" onclick="openMyWindow('https://sonicisbest.github.io/HoloFunk/')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="zimages/cassette girl.png">
-                    <h3>Cassette Girl FNF</h3>
-                    <button class="button" onclick="openMyWindow('https://sonicisbest.github.io/cassette-girl/')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="zimages/tourture mod.jpeg">
-                    <h3>Tourture Mod FNF</h3>
-                    <button class="button" onclick="openMyWindow('https://sonicisbest.github.io/VS-Mag-Agent-Torture/')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="zimages/ww 3.jpeg">
-                    <h3>Wii Mod FNF</h3>
-                    <button class="button" onclick="openMyWindow('https://mr-funkinguy.github.io/wiik3/')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="zimages/Gunter.jpeg">
-                    <h3>Grunter FNF Mod</h3>
-                    <button class="button" onclick="openMyWindow('https://sonicisbest.github.io/Vs-Gunter/')">Play Game</button>
-                </div>
-                <div class="retro-card">
-                    <img src="zimages/trool.jpeg">
-                    <h3>Vs Mr.trollolo week 2 web</h3>
-                    <button class="button" onclick="openMyWindow('https://memeee310.github.io/Vs-Mr.trollolo-week-2-web/')">Play Game</button>
-                </div>
-            </div>            
-        </div>
-        <section class="All Games">
-            <h2>All Games</h2>
+        <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+        <div class="game-ad-container">
+            <script type="text/javascript">
+                aclib.runBanner({
+                    zoneId: '8201334',
+                });
+            </script>
+        </div>   
+        <section id="section2">
+        <div id="all-games">
             <div class="game-card">
                 <img src="adgames/plus.png">
                 <h3>Game Request</h3>
-                <p>I will try to check this form frequently</p>
                 <a href="adgames/index.html">Play Game</a>
             </div>
-            <div class="game-card">
+            <div class="game-card" id="game1">
                 <img src="slope/slope.jpg">
                 <h3>Slope</h3>
-                <p>A fun and challenging game.</p>
                 <button class="button" onclick="openFileInWindow('slope/index.html')">Play Game</button>
                 <a href="slope/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <span class="heart-icon" onclick="toggleFavorite('game1')">❤️</span>
             </div>                     
-            <div class="game-card">
-                <img src="Slope3/download (13).jpeg">
+            <div class="game-card" id="game2">
+                <img src="Slope3/download (13).jpeg" id="game2">
                 <h3>Slope 3</h3>
-                <p>Just normal slope but Colorfull</p>
                 <button class="button" onclick="openFileInWindow('Slope3/index.html')">Play Game</button>
                 <a href="Slope3/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <span class="heart-icon" onclick="toggleFavorite('game2')">❤️</span>
             </div>
-            <div class="game-card">
-                <img src="0v0/download (2).png" alt="Game 25">
+            <div class="game-card" id="game3">
+                <img src="0v0/download (2).png" id="game3">
                 <h3>OvO</h3>
                 <button class="button" onclick="openFileInWindow('0v0/index.html')">Play Game</button>
                 <a href="0v0/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <span class="heart-icon" onclick="toggleFavorite('game3')">❤️</span>
             </div>
-            <div class="game-card">
-                <img src="Retro-bowl/download (8).jpeg">
+            <div class="game-card" id="game4">
+                <img src="Retro-bowl/download (8).jpeg" id="game4">
                 <h3>Retro Bowl</h3>
-                <p>I am sorry if you loss your progress the other game file got blocked </p>
                 <button class="button" onclick="openFileInWindow('Retro-bowl/index.html')">Play Game</button>
                 <a href="Retro-bowl/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <span class="heart-icon" onclick="toggleFavorite('game4')">❤️</span>
             </div>
-            <div class="game-card">
-                <img src="fnf/download (9).jpeg">
+            <div class="game-card" id="game5">
+                <img src="fnf/download (9).jpeg" id="game5">
                 <h3>Friday Night Funking</h3>
                 <button class="button" onclick="openFileInWindow('fnf/index.html')">Play Game</button>
                 <a href="fnf/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <span class="heart-icon" onclick="toggleFavorite('game5')">❤️</span>
             </div>
-            <div class="game-card">
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div>     
+            <div class="game-card" id="game6">
                 <img src="deathrun3d/banner-death-run-3d.jpg">
                 <h3>Death Run 3D</h3>
                 <button class="button" onclick="openFileInWindow('deathrun3d/index.html')">Play Game</button>
                 <a href="deathrun3d/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <span class="heart-icon" onclick="toggleFavorite('game6')">❤️</span>
             </div>
-            <div class="game-card">
+            <div class="game-card" id="game7">
                 <img src="bloxors/favicon.ico">
                 <h3>Bloxors</h3>
                 <button class="button" onclick="openFileInWindow('bloxors/index.html')">Play Game</button>
                 <a href="bloxors/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <span class="heart-icon" onclick="toggleFavorite('game7')">❤️</span>
             </div>
-            <div class="game-card">
-                <img src="worlde/img/logo_144x144.png">
+            <div class="game-card" id="game8">
+                <img src="worlde/img/logo_144x144.png" id="game8">
                 <h3>Wordle</h3>
-                <p>Pretty much guessing, to be honest.</p>
                 <button class="button" onclick="openFileInWindow('worlde/index.html')">Play Game</button>
                 <a href="worlde/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <span class="heart-icon" onclick="toggleFavorite('game8')">❤️</span>
             </div>
-            <div class="game-card">
+            <div class="game-card" id="game9">
                 <img src="worlds-hardest-game/images/splash.jpg">
                 <h3>World Hardest Game</h3>
                 <button class="button" onclick="openFileInWindow('worlds-hardest-game/index.html')">Play Game</button>
                 <a href="worlds-hardest-game/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <span class="heart-icon" onclick="toggleFavorite('game9')">❤️</span>
             </div>
-            <div class="game-card">
-                <img src="world-hardest-game2/the-worlds-hardest-game-2.jpg">
+            <div class="game-card" id="game10">
+                <img src="world-hardest-game2/the-worlds-hardest-game-2.jpg" id="game10">
                 <h3>World Hardest Game 2</h3>
                 <button class="button" onclick="openFileInWindow('world-hardest-game2/index.html')">Play Game</button>
                 <a href="world-hardest-game2/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <span class="heart-icon" onclick="toggleFavorite('game10')">❤️</span>
             </div>
-            <div class="game-card">
+            <div class="game-card" id="game11">
                 <img src="Tiny-fishing/download (3).jpeg">
                 <h3>Tiny Fishing</h3>
-                <p>Very tiny.</p>
                 <button class="button" onclick="openFileInWindow('Tiny-fishing/index.html')">Play Game</button>
                 <a href="Tiny-fishing/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <span class="heart-icon" onclick="toggleFavorite('game11')">❤️</span>
             </div>
-            <div class="game-card">
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div>    
+            <div class="game-card" id="game12">
                 <img src="My-rusty-submarine/splash.png">
                 <h3>My rusty submarine</h3>
-                <p>Very rusty.</p>
                 <button class="button" onclick="openFileInWindow('My-rusty-submarine/index.html')">Play Game</button>
                 <a href="My-rusty-submarine/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <span class="heart-icon" onclick="toggleFavorite('game12')">❤️</span>
             </div>
-            <div class="game-card">
+            <div class="game-card" id="game13">
                 <img src="idle-breakout/img/favicon.png">
                 <h3>Idle Breakout</h3>
-                <p>Breakout.</p>
                 <button class="button" onclick="openFileInWindow('idle-breakout/index.html')">Play Game</button>
                 <a href="idle-breakout/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <span class="heart-icon" onclick="toggleFavorite('game13')">❤️</span>
             </div>
-            <div class="game-card">
-                <img src="fruit-ninja/FruitNinjaTeaser.jpg">
+            <div class="game-card" id="game14">
+                <img src="fruit-ninja/FruitNinjaTeaser.jpg" id="game14">
                 <h3>Fruit Ninja</h3>
-                <p>Slice and dice fruit.</p>
                 <button class="button" onclick="openFileInWindow('fruit-ninja/index.html')">Play Game</button>
                 <a href="fruit-ninja/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <span class="heart-icon" onclick="toggleFavorite('game14')">❤️</span>
             </div>
-            <div class="game-card">
-                <img src="tanuki-sunset/img/logo.png">
+            <div class="game-card" id="game15">
+                <img src="tanuki-sunset/img/logo.png" id="game15">
                 <h3>Tanuki Sunset</h3>
-                <p>I love raccoons.</p>
                 <button class="button" onclick="openFileInWindow('tanuki-sunset/index.html')">Play Game</button>
                 <a href="tanuki-sunset/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <span class="heart-icon" onclick="toggleFavorite('game15')">❤️</span>
             </div>
-            <div class="game-card">
-                <img src="The-heist/theheist.jpg">
+            <div class="game-card" id="game16">
+                <img src="The-heist/theheist.jpg" id="game16">
                 <h3>The heist</h3>
                 <button class="button" onclick="openFileInWindow('The-heist/index.html')">Play Game</button>
                 <a href="The-heist/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <span class="heart-icon" onclick="toggleFavorite('game16')">❤️</span>
             </div>
-            <div class="game-card">
-                <img src="1v1lol/splash.png">
+            <div class="game-card" id="game17">
+                <img src="1v1lol/splash.png" id="game17">
                 <h3>1v1.lol</h3>
                 <button class="button" onclick="openFileInWindow('1v1lol/index.html')">Play Game</button>
                 <a href="1v1lol/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <span class="heart-icon" onclick="toggleFavorite('game17')">❤️</span>
             </div>
-            <div class="game-card">
-                <img src="justfall.lol/splash.jpg">
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div>     
+            <div class="game-card" id="game18">
+                <img src="justfall.lol/splash.jpg" id="game18">
                 <h3>JustFall.lol</h3>
                 <button class="button" onclick="openFileInWindow('justfall.lol/index.html')">Play Game</button>
                 <a href="justfall.lol/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <span class="heart-icon" onclick="toggleFavorite('game18')">❤️</span>
             </div>
-            <div class="game-card">
-                <img src="justoneboss/pv1Gr5.png">
+            <div class="game-card" id="game18">
+                <img src="justoneboss/pv1Gr5.png" id="game19">
                 <h3>JustOne Boss</h3>
                 <button class="button" onclick="openFileInWindow('justoneboss/index.html')">Play Game</button>
                 <a href="justoneboss/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <span class="heart-icon" onclick="toggleFavorite('game19')">❤️</span>
             </div>            
             <div class="game-card">
-                <img src="impossiblequiz/impossiblequiz.png">
+                <img src="..jeo-games/impossible-quiz/impossiblequiz.png">
                 <h3>Impossible Quiz</h3>
-                <button class="button" onclick="openMyWindow('https://h5cdn.github.io/s8/the-impossible-quiz/')">Play Game</button>
+                <button class="button" onclick="openFileInWindow('..jeo-games/impossible-quiz/index.html')">Play Game</button>
+                <a href="..jeo-games/impossible-quiz/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
-            <div class="game-card">
-                <img src="xTrailRacing/splash.png">
+            <div class="game-card" id="game21">
+                <img src="xTrailRacing/splash.png" id="game21">
                 <h3>xTrailRacing</h3>
                 <button class="button" onclick="openFileInWindow('xTrailRacing/index.html')">Play Game</button>
                 <a href="xTrailRacing/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <span class="heart-icon" onclick="toggleFavorite('game21')">❤️</span>
             </div>
-            <div class="game-card">
-                <img src="99balls/99-balls-evo.jpg">
+            <div class="game-card" id="game22">
+                <img src="99balls/99-balls-evo.jpg" id="game22">
                 <h3>99-balls-evo</h3>
                 <button class="button" onclick="openFileInWindow('99balls/index.html')">Play Game</button>
                 <a href="99balls/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <span class="heart-icon" onclick="toggleFavorite('game22')">❤️</span>
             </div>
-            <div class="game-card">
-                <img src="1v1space/splash.png">
+            <div class="game-card" id="game23">
+                <img src="1v1space/splash.png" id="game23">
                 <h3>1v1space</h3>
                 <button class="button" onclick="openFileInWindow('1v1space/index.html')">Play Game</button>
                 <a href="1v1space/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <span class="heart-icon" onclick="toggleFavorite('game23')">❤️</span>
             </div>
-            <div class="game-card">
-                <img src="10-minutes-till-dawn/splash.png">
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div>    
+            <div class="game-card" id="game24">
+                <img src="10-minutes-till-dawn/splash.png" id="game24">
                 <h3>10-minutes-till-dawn</h3>
                 <button class="button" onclick="openFileInWindow('10-minutes-till-dawn/index.html')">Play Game</button>
                 <a href="10-minutes-till-dawn/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <span class="heart-icon" onclick="toggleFavorite('game24')">❤️</span>
             </div>
-            <div class="game-card">
-                <img src="aqua-park/splash.png">
+            <div class="game-card" id="game25">
+                <img src="aqua-park/splash.png" id="game25">
                 <h3>aqua-park slides</h3>
                 <button class="button" onclick="openFileInWindow('aqua-park/index.html')">Play Game</button>
                 <a href="aqua-park/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <span class="heart-icon" onclick="toggleFavorite('game25')">❤️</span>
             </div>
-            <div class="game-card">
+            <div class="game-card" id="game26">
                 <img src="Dino-Game/images/100-error-offline.png">
                 <h3>Dino Game</h3>
                 <button class="button" onclick="openFileInWindow('Dino-Game/index.html')">Play Game</button>
                 <a href="Dino-Game/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <span class="heart-icon" onclick="toggleFavorite('game26')">❤️</span>
             </div>
-            <div class="game-card">
-                <img src="drift-booos/splash.png" alt="Game 27">
+            <div class="game-card" id="game27">
+                <img src="drift-booos/splash.png" id="game27">
                 <h3>Drift Boss</h3>
                 <button class="button" onclick="openFileInWindow('drift-booos/index.html')">Play Game</button>
                 <a href="drift-booos/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <span class="heart-icon" onclick="toggleFavorite('game27')">❤️</span>
             </div>
-            <div class="game-card">
-                <img src="drift-hunter/download (5).jpeg" alt="Game 28">
+            <div class="game-card" id="game28">
+                <img src="drift-hunter/download (5).jpeg" alt="game28">
                 <h3>Drift Hunter</h3>
                 <button class="button" onclick="openFileInWindow('drift-hunter/index.html')">Play Game</button>
                 <a href="drift-hunter/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <span class="heart-icon" onclick="toggleFavorite('game28')">❤️</span>
             </div>
-            <div class="game-card">
-                <img src="There-is-no-game/logo.png" alt="Game 29">
+            <div class="game-card" id="game29">
+                <img src="There-is-no-game/logo.png" id="game29">
                 <h3>There is No Game</h3>
                 <button class="button" onclick="openFileInWindow('There-is-no-game/index.html')">Play Game</button>
                 <a href="There-is-no-game/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <span class="heart-icon" onclick="toggleFavorite('game29')">❤️</span>
             </div>
-            <div class="game-card">                             
-                <img src="Rocket-Soccer/download.jpeg" alt="Game 30">
-                <h3>Rocket Soccer</h3>
-                <button class="button" onclick="openFileInWindow('Rocket-Soccer/index.html')">Play Game</button>
-                <a href="Rocket-Soccer/index.html" class="link-button" target="_blank">Open In A New Tab</a>
-            </div>
-            <div class="game-card">
-                <img src="Spiral-Role/Screenshot 2023-10-12 9.03.40 AM.png" alt="Game 31">
-                <h3>Spiral-Role</h3>
-                <button class="button" onclick="openFileInWindow('Spiral-Role/index.html')">Play Game</button>
-                <a href="Spiral-Role/index.html" class="link-button" target="_blank">Open In A New Tab</a>
-            </div>
-            <div class="game-card">
-                <img src="1on1Basketball/Screenshot 2023-11-05 6.28.45 PM.png" alt="Game 32">
-                <h3>1on1 Basket Ball</h3>
-                <button class="button" onclick="openFileInWindow('1on1Basketballindex.html')">Play Game</button>
-                <a href="1on1Basketball/index.html" class="link-button" target="_blank">Open In A New Tab</a>
-            </div>
-            <div class="game-card">
-                <img src="1on1Hokey/Screenshot 2023-11-05 6.32.59 PM.png" alt="Game 33">
-                <h3>1on1 Hochey</h3>
-                <button class="button" onclick="openFileInWindow('1on1Hokey/index.html')">Play Game</button>
-                <a href="1on1Hokey/index.html" class="link-button" target="_blank">Open In A New Tab</a>
-            </div>
-            <div class="game-card">
-                <img src="1on1soccer/Screenshot 2023-11-05 6.30.06 PM.png" alt="Game 34">
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div>            
+            <div class="game-card" id="game34">
+                <img src="1on1soccer/Screenshot 2023-11-05 6.30.06 PM.png" id="game34">
                 <h3>1on1 Soccer</h3>
                 <button class="button" onclick="openFileInWindow('1on1soccer/index.html')">Play Game</button>
                 <a href="1on1soccer/index.html" class="link-button" target="_blank">Open In A New Tab</a>
-                </div>            
-                <div class="game-card">
-                    <img src="1on1SoccerBigHeads/Screenshot 2023-11-05 6.31.18 PM.png" alt="Game 35">
+                <span class="heart-icon" onclick="toggleFavorite('game34')">❤️</span>
+           </div>            
+                <div class="game-card" id="game35">
+                    <img src="1on1SoccerBigHeads/Screenshot 2023-11-05 6.31.18 PM.png" id="game35">
                     <h3>Big Head Soccer</h3>
                     <button class="button" onclick="openFileInWindow('1on1SoccerBigHeads/index.html')">Play Game</button>
                     <a href="1on1SoccerBigHeads/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                    <span class="heart-icon" onclick="toggleFavorite('game35')">❤️</span>
                 </div>
-                <div class="game-card">
-                    <img src="Masked-forces/Screenshot 2023-11-05 6.49.28 PM.png" alt="Game 36">
-                    <h3>Masked-forces</h3>
-                    <button class="button" onclick="openFileInWindow('Masked-forces/index.html')">Play Game</button>
-                    <a href="Masked-forces/index.html" class="link-button" target="_blank">Open In A New Tab</a>
-                </div>
-                <div class="game-card">
-                    <img src="Houserofhasards/house-of-hazards.png" alt="Game 37">
+                <div class="game-card" id="game37">
+                    <img src="Houserofhasards/house-of-hazards.png" id="game37">
                     <h3>House of Hazards</h3>
                     <button class="button" onclick="openFileInWindow('Houserofhasards/index.html')">Play Game</button>
                     <a href="Houserofhasards/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                    <span class="heart-icon" onclick="toggleFavorite('game37')">❤️</span>
                 </div>
-                <div class="game-card">
-                    <img src="Ducklife1/download (6).jpeg" alt="Game 37">
+                <div class="game-card" id="game38">
+                    <img src="Ducklife1/download (6).jpeg" id="game38">
                     <h3>Duck Life 1</h3>
                     <button class="button" onclick="openFileInWindow('Ducklife1/index.html')">Play Game</button>
                     <a href="Ducklife1/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                    <span class="heart-icon" onclick="toggleFavorite('game38')">❤️</span>
                 </div>
-                <div class="game-card">
-                    <img src="Ducklife2/download (7).jpeg" alt="Game 37">
+                <div class="game-card" id="game39">
+                    <img src="Ducklife2/download (7).jpeg" id="game39">
                     <h3>Duck Life 2</h3>
                     <button class="button" onclick="openFileInWindow('Ducklife2/index.html')">Play Game</button>
                     <a href="Ducklife2/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                    <span class="heart-icon" onclick="toggleFavorite('game39')">❤️</span>
                 </div>
-                <div class="game-card">
-                    <img src="Ducklife3/download (8).jpeg" alt="Game 37">
+                <div class="game-card" id="game40">
+                    <img src="Ducklife3/download (8).jpeg" id="game40">
                     <h3>Duck Life 3</h3>
                     <button class="button" onclick="openFileInWindow('Ducklife3/index.html')">Play Game</button>
                     <a href="Ducklife3/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                    <span class="heart-icon" onclick="toggleFavorite('game40')">❤️</span>
                 </div>
-                <div class="game-card">
-                    <img src="Ducklife4/download (9).jpeg" alt="Game 37">
+                <div class="game-ad-container">
+                    <script type="text/javascript">
+                        aclib.runBanner({
+                            zoneId: '8201334',
+                        });
+                    </script>
+                </div>  
+                <div class="game-card" id="game41">
+                    <img src="Ducklife4/download (9).jpeg" id="game41">
                     <h3>Duck Life 4</h3>
                     <button class="button" onclick="openFileInWindow('Ducklife4/index.html')">Play Game</button>
                     <a href="Ducklife4/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                    <span class="heart-icon" onclick="toggleFavorite('game41')">❤️</span>
                 </div>
-                <div class="game-card">
-                    <img src="duckLife5/download (10).jpeg" alt="Game 37">
+                <div class="game-card" id="game42">
+                    <img src="duckLife5/download (10).jpeg" id="game42">
                     <h3>Duck Life 5</h3>
                     <button class="button" onclick="openFileInWindow('duckLife5/index.html')">Play Game</button>
                     <a href="duckLife5/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                    <span class="heart-icon" onclick="toggleFavorite('game42')">❤️</span>
                 </div>
-                <div class="game-card">
-                    <img src="Time-Shooter/download (11).jpeg" alt="Game 37">
+                <div class="game-card" id="game43">
+                    <img src="Time-Shooter/download (11).jpeg" id="game43">
                     <h3>Time Shooter 2</h3>
                     <button class="button" onclick="openFileInWindow('Time-Shooter/index.html')">Play Game</button>
                     <a href="Time-Shooter/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                    <span class="heart-icon" onclick="toggleFavorite('game43')">❤️</span>
                 </div>            
-                <div class="game-card">
-                    <img src="Time-Shooter-swat/download (12).jpeg" alt="Game 37">
+                <div class="game-card" id="game44">
+                    <img src="Time-Shooter-swat/download (12).jpeg" id="game44">
                     <h3>Time Shooter 3 Swat</h3>
                     <button class="button" onclick="openFileInWindow('Time-Shooter-swat/index.html')">Play Game</button>
                     <a href="Time-Shooter-swat/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                    <span class="heart-icon" onclick="toggleFavorite('game44')">❤️</span>
                 </div>                
-            <div class="game-card">
+            <div class="game-card" id="game45">
                 <img src="fnf-stick-man/pqgaW4qd1gNazQqho2Him0h5E8ntJuI37OOQpAo4t9aV5-jpLXLk6yYgbbn9ZrzWtIFs5wQeNBKEJRxNs99J1c-56KIu9bUXUe0lA_g=s2048.jpg">
                 <h3>Friday Night Funking Stick Man Mod</h3>
                 <button class="button" onclick="openFileInWindow('fnf-stick-man/ndex.html')">Play Game</button>
+                <span class="heart-icon" onclick="toggleFavorite('game45')">❤️</span>
             </div>
-            <div class="game-card">
-                <img src="fnf-hex/U6UErGZwrI-yA1AbE5r97Hnd4CkMQ7fNuHUQ1t-6PUy3-mxRqEBO6hGn67LZ2drmhxiAILeU7z5X2VuPRx9--DMQR9nD3wD0p97xy7cefI3KmDUnGnF3RPzM9E0W66qmYxN-nFFw3g=s2048.jpg">
+            <div class="game-card" id="game46">
+                <img src="fnf-hex/hex.jpg">
                 <h3>Friday Night Funking Hex Mod</h3>
                 <button class="button" onclick="openFileInWindow('fnf-hex/index.html')">Play Game</button>
+                <span class="heart-icon" onclick="toggleFavorite('game46')">❤️</span>
             </div>
-            <div class="game-card">
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div>  
+            <div class="game-card" id="game47">
                 <img src="fnf-mobile/6sGAZ1Z0MVgqvqq949cUPnVgNaW-PDCpl6SveSkaE40tuH-jcnop6Li2Lb5DjE908PVOwuDUAkX4PFdQaAeOGpuDDX4u9xpEoFdkITlhVcJzoSv_GCMg74DxEVQsAjm3JKBf25BP8EimdPPCdmi1DcvYmLfqTUO4zso6_2Fj=s2048.jpg">
                 <h3>Friday Night Funking Mobile</h3>
                 <button class="button" onclick="openFileInWindow('fnf-mobile/index.html')">Play Game</button>
+                <span class="heart-icon" onclick="toggleFavorite('game47')">❤️</span>
             </div>
-            <div class="game-card">
-                <img src="fnf-imposter/amonus.jpg">
+            <div class="game-card" id="game48">
+                <img src="fnf-imposter/amonus.jpg" id="game48">
                 <h3>Friday Night Funking Imposter</h3>
                 <button class="button" onclick="openFileInWindow('fnf-imposter/index.html')">Play Game</button>
+                <span class="heart-icon" onclick="toggleFavorite('game48')">❤️</span>
             </div>
-            <div class="game-card">
+            <div class="game-card" id="game49">
                 <img src="fnf-slender/eJ_PiiaJAiPL4CfT5Ka5hoELPozEGVsMchpS6PniENbtswf18HWSsNoNfgcCelXbhBRM-X7Inb8pHYza1GjnnWQTctnvfv53RRb28bcwSN2ZQFeVQrW80nJdnjEt4nEVvyUOzsL8VMwNfUaeO1PVutFLhIH5AoH4wCPUKOvVUsiDZ-jnvZuOaTicnKz4FcQo5VwCsbA3RBxZ_O7fBQ=s2048.png">
                 <h3>Friday Night Funking Slender</h3>
                 <button class="button" onclick="openFileInWindow('fnf-slender/index.html')">Play Game</button>
+                <span class="heart-icon" onclick="toggleFavorite('game49')">❤️</span>
             </div>
-            <div class="game-card">
-                <img src="fnf-sonic.exe/sonic.jpg">
+            <div class="game-card" id="game50">
+                <img src="fnf-sonic.exe/sonic.jpg" id="game50">
                 <h3>Friday Night Funking Sonic.exe</h3>
                 <button class="button" onclick="openFileInWindow('fnf-sonic/index.html')">Play Game</button>
+                <span class="heart-icon" onclick="toggleFavorite('game50')">❤️</span>
             </div>
             <div class="game-card">
                 <img src="fnf-shaggy/shaggy.jpg">
@@ -746,6 +650,13 @@
                 <h3>Smokeout Struggle FNF</h3>
                 <button class="button" onclick="openMyWindow('https://levixddlmao.github.io/smokeemoutstrugglefnf/')">Play Game</button>
             </div>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div>  
             <div class="game-card">
                 <img src="zimages/bsides.jpeg">
                 <h3>Bsides FNF</h3>
@@ -776,6 +687,13 @@
                 <h3>Vs Cassandra</h3>
                 <button class="button" onclick="openMyWindow('https://derpy-jacob-903.github.io/projectfnfweb/VsCassandra/index.html')">Play Game</button>
             </div>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div>  
             <div class="game-card">
                 <img src="zimages/vs NONSENSE.jpeg">
                 <h3>NONSENCE FNF</h3>
@@ -806,6 +724,13 @@
                 <h3>Tourture Mod FNF</h3>
                 <button class="button" onclick="openMyWindow('https://sonicisbest.github.io/VS-Mag-Agent-Torture/')">Play Game</button>
             </div>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '82013341',
+                    });
+                </script>
+            </div>  
             <div class="game-card">
                 <img src="zimages/ww 3.jpeg">
                 <h3>Wii Mod FNF</h3>
@@ -839,12 +764,13 @@
                 <button class="button" onclick="openFileInWindow('btd3/index.html')">Play Game</button>
                 <a href="btd3/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
-            <div class="game-card">
-                <img src="atari-breakout/atari.png">
-                <h3>Atari Breakout</h3>
-                <button class="button" onclick="openFileInWindow('atari-breakout/index.html')">Play Game</button>
-                <a href="atari-breakout/index.html" class="link-button" target="_blank">Open In A New Tab</a>
-            </div>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div>  
             <div class="game-card">
                 <img src="papa-gurger/gurger.png">
                 <h3>Papa's Burgeria</h3>
@@ -858,7 +784,7 @@
                 <a href="papa-cheseria/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
             <div class="game-card">
-                <img src="papa-cupcakearia/cupcake.jpeg">
+                <img src="papa-cupcake/cupcake.jpeg">
                 <h3>Papa's Cupcakearia</h3>
                 <button class="button" onclick="openFileInWindow('papa-cupcake/index.html')">Play Game</button>
                 <a href="papa-cupcake/index.html" class="link-button" target="_blank">Open In A New Tab</a>
@@ -881,6 +807,13 @@
                 <button class="button" onclick="openFileInWindow('papa-dogeria/index.html')">Play Game</button>
                 <a href="papa-dogeria/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div>  
             <div class="game-card">
                 <img src="papa-pancakearia/download (5).jpeg">
                 <h3>Papa's Pancake</h3>
@@ -917,6 +850,14 @@
                 <button class="button" onclick="openFileInWindow('papa-tacomia/index.html')">Play Game</button>
                 <a href="papa-tacomia/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div>   
             <div class="game-card">
                 <img src="papa-wingaria/download (8).jpeg">
                 <h3>Papa's Wingeria</h3>
@@ -938,8 +879,8 @@
             <div class="game-card">
                 <img src="learntofly2/learn-to-fly-2.jpg">
                 <h3>Learn to Fly 2</h3>
-                <button class="button" onclick="openFileInWindow('learn-to-fly-2/index.html')">Play Game</button>
-                <a href="learn-to-fly-2/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <button class="button" onclick="openFileInWindow('learntofly2/index.html')">Play Game</button>
+                <a href="learntofly2/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
             <div class="game-card">
                 <img src="madalin-stunt-cars-2/img/logo.jpg">
@@ -953,12 +894,14 @@
                 <button class="button" onclick="openFileInWindow('madalin-stunt-cars-3/index.html')">Play Game</button>
                 <a href="madalin-stunt-cars-3/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
-            <div class="game-card">
-                <img src="minecraft-18/splash.png">
-                <h3>Minecraft</h3>
-                <button class="button" onclick="openFileInWindow('minecraft-18/index.html')">Play Game</button>
-                <a href="minecraft-18/index.html" class="link-button" target="_blank">Open In A New Tab</a>
-            </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div>   
             <div class="game-card">
                 <img src="pandemic2/pandemic2.png">
                 <h3>Pandemic 2</h3>
@@ -995,6 +938,14 @@
                 <button class="button" onclick="openFileInWindow('adarkroom/index.html')">Play Game</button>
                 <a href="adarkroom/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div>   
             <div class="game-card">
                 <img src="adrenalinechallenge/adrenalinechallenge.jpg">
                 <h3>Adrenaline Challenge</h3>
@@ -1031,6 +982,14 @@
                 <button class="button" onclick="openFileInWindow('amidst-the-clouds/index.html')">Play Game</button>
                 <a href="amidst-the-clouds/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div>   
             <div class="game-card">
                 <img src="amazing-rope-police/amazing-strange-rope-police-vice-spider-vegas.jpg">
                 <h3>Amazing Rope Police</h3>
@@ -1067,6 +1026,14 @@
                 <button class="button" onclick="openFileInWindow('avalanche/index.html')">Play Game</button>
                 <a href="avalanche/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div>   
             <div class="game-card">
                 <img src="awesometanks2/awesometanks2.jpg">
                 <h3>Awesome Tanks 2</h3>
@@ -1103,6 +1070,14 @@
                 <button class="button" onclick="openFileInWindow('bad-ice-cream-2/index.html')">Play Game</button>
                 <a href="bad-ice-cream-2/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div>   
             <div class="game-card">
                 <img src="bad-ice-cream-3/bad-ice-cream-3.png">
                 <h3>Bad Ice Cream 3</h3>
@@ -1139,6 +1114,14 @@
                 <button class="button" onclick="openFileInWindow('basketbros-io/index.html')">Play Game</button>
                 <a href="basketbros-io/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div>   
             <div class="game-card">
                 <img src="battleforgondor/battleforgondor.JPG">
                 <h3>Battle Forgondor</h3>
@@ -1175,11 +1158,19 @@
                 <button class="button" onclick="openFileInWindow('blockpost/index.html')">Play Game</button>
                 <a href="blockpost/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div>   
             <div class="game-card">
                 <img src="bonkio/image.png">
                 <h3>Bonk.io</h3>
                 <button class="button" onclick="openFileInWindow('bonkio/index.html')">Play Game</button>
-                <a href="bonkio/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <a href="bonkio/bonkio.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
             <div class="game-card">
                 <img src="boxhead2play/boxhead2play.jpg">
@@ -1211,6 +1202,14 @@
                 <button class="button" onclick="openFileInWindow('canyondefense/index.html')">Play Game</button>
                 <a href="canyondefense/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div>   
             <div class="game-card">
                 <img src="car/favicon.ico">
                 <h3>Car</h3>
@@ -1247,6 +1246,14 @@
                 <button class="button" onclick="openFileInWindow('connect3/index.html')">Play Game</button>
                 <a href="connect3/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div>   
             <div class="game-card">
                 <img src="core-ball/image/download.png">
                 <h3>Core Ball</h3>
@@ -1283,6 +1290,14 @@
                 <button class="button" onclick="openFileInWindow('ctr/index.html')">Play Game</button>
                 <a href="ctr/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div>   
             <div class="game-card">
                 <img src="ctr-holiday/Holiday_Gift.webp">
                 <h3>Cut The Rope Holiday</h3>
@@ -1319,6 +1334,14 @@
                 <button class="button" onclick="openFileInWindow('defend-the-tank/index.html')">Play Game</button>
                 <a href="defend-the-tank/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div>   
             <div class="game-card">
                 <img src="DogeMiner/img/dogeminer_300x300.png">
                 <h3>Doge Miner</h3>
@@ -1357,6 +1380,14 @@
                 <button class="button" onclick="openFileInWindow('dumbwaystodie/index.html')">Play Game</button>
                 <a href="dumbwaystodie/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div>   
             <div class="game-card">
                 <img src="earntodie/loading.png">
                 <h3>Earn to Die</h3>
@@ -1378,8 +1409,8 @@
             <div class="game-card">
                 <img src="eggycar/eggy-car.png">
                 <h3>Eggy Car</h3>
-                <button class="button" onclick="openFileInWindow('eggy-car/index.html')">Play Game</button>
-                <a href="eggy-car/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <button class="button" onclick="openFileInWindow('eggycar/egg-car/index.html')">Play Game</button>
+                <a href="eggycar/egg-car/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
             <div class="game-card">
                 <img src="elasticman/elasticman.jpg">
@@ -1393,6 +1424,14 @@
                 <button class="button" onclick="openFileInWindow('escapingtheprison/index.html')">Play Game</button>
                 <a href="escapingtheprison/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div>   
             <div class="game-card">
                 <img src="evil-glitch/evil.png">
                 <h3>Evil Glitch</h3>
@@ -1429,6 +1468,14 @@
                 <button class="button" onclick="openFileInWindow('google-snake/index.html')">Play Game</button>
                 <a href="google-snake/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div>   
             <div class="game-card">
                 <img src="7-days-norain/7days.jpeg">
                 <h3>7 Days Without Rain</h3>
@@ -1465,6 +1512,14 @@
                 <button class="button" onclick="openFileInWindow('portal-flash/index.html')">Play Game</button>
                 <a href="portal-flash/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>            
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div>   
             <div class="game-card">
                 <img src="gem-craft/gemcarft.png">
                 <h3>Gem Craft</h3>
@@ -1501,6 +1556,14 @@
                 <button class="button" onclick="openFileInWindow('bloons-player-pack2/index.html')">Play Game</button>
                 <a href="bloons-player-pack2/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div>   
             <div class="game-card">
                 <img src="bloons-player-pack3/player pack3.jpeg">
                 <h3>Bloons Player Pack 3</h3>
@@ -1539,6 +1602,14 @@
                 <button class="button" onclick="openFileInWindow('stack-bumb-3d/index.html')">Play Game</button>
                 <a href="stack-bumb-3d/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div>   
             <div class="game-card">
                 <img src="ninjaVsEvilcorpe/splash.png">
                 <h3>Ninja VS Evil Corpe</h3>
@@ -1575,6 +1646,14 @@
                 <button class="button" onclick="openFileInWindow('the-final-earth/index.html')">Play Game</button>
                 <a href="the-final-earth/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div>   
             <div class="game-card">
                 <img src="jetpack-joyride/splash.jpg">
                 <h3>Jetpack Joyride</h3>
@@ -1611,6 +1690,14 @@
                 <button class="button" onclick="openFileInWindow('save-my-pet/index.html')">Play Game</button>
                 <a href="save-my-pet/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div>   
             <div class="game-card">
                 <img src="moto-x3m-winter/moto3xm.jpeg">
                 <h3>Moto X3M Winter</h3>
@@ -1647,6 +1734,14 @@
                 <button class="button" onclick="openFileInWindow('castel-modern/index.html')">Play Game</button>
                 <a href="castel-modern/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div> 
             <div class="game-card">
                 <img src="hole.io/hole.io.jpeg">
                 <h3>Hole.io</h3>
@@ -1683,6 +1778,14 @@
                 <button class="button" onclick="openFileInWindow('tube-jumpers/index.html')">Play Game</button>
                 <a href="tube-jumpers/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div> 
             <div class="game-card">
                 <img src="happy-wheels/happy.jpeg">
                 <h3>Happy Wheels</h3>
@@ -1719,6 +1822,14 @@
                 <button class="button" onclick="openFileInWindow('vex6/index.html')">Play Game</button>
                 <a href="vex6/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div> 
             <div class="game-card">
                 <img src="vex7/vex7.jpeg">
                 <h3>Vex 7</h3>
@@ -1755,6 +1866,14 @@
                 <button class="button" onclick="openFileInWindow('jelly-truck/index.html')">Play Game</button>
                 <a href="jelly-truck/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div> 
             <div class="game-card">
                 <img src="jack-smith/jack smith.jpeg">
                 <h3>Jack Smith</h3>
@@ -1791,6 +1910,14 @@
                 <button class="button" onclick="openFileInWindow('big-tower-tiny-square/index.html')">Play Game</button>
                 <a href="big-tower-tiny-square/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div> 
             <div class="game-card">
                 <img src="tomb-of-mask/tomb of mask.png">
                 <h3>Tomb of Mask</h3>
@@ -1827,6 +1954,14 @@
                 <button class="button" onclick="openFileInWindow('geometry-dash/index.html')">Play Game</button>
                 <a href="geometry-dash/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div> 
             <div class="game-card">
                 <img src="tower-of-scratch/tower of.jpeg">
                 <h3>Tower Of Scratch</h3>
@@ -1863,6 +1998,14 @@
                 <button class="button" onclick="openFileInWindow('matrix-rampage/index.html')">Play Game</button>
                 <a href="matrix-rampage/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div> 
             <div class="game-card">
                 <img src="paper-minecraft/paper scratch.jpeg">
                 <h3>Paper Minecraft</h3>
@@ -1900,6 +2043,14 @@
                 <button class="button" onclick="openFileInWindow('zhtml-games/fortz.html')">Play Game</button>
                 <a href="zhtml-games/fortz.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div> 
             <div class="game-card">
                 <img src="zimages/cyber punk racing.jpeg">
                 <h3>Cyber Cars Punk Racing</h3>
@@ -1936,6 +2087,14 @@
                 <button class="button" onclick="openFileInWindow('zhtml-games/city-driver.html')">Play Game</button>
                 <a href="zhtml-games/city-driver.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div> 
             <div class="game-card">
                 <img src="zimages/grind carft.jpeg">
                 <h3>Grind Craft</h3>
@@ -1952,7 +2111,7 @@
                 <img src="zimages/gun mayhem.jpeg">
                 <h3>Gun Mayhem</h3>
                 <button class="button" onclick="openFileInWindow('zhtml-games/gunmayhem.html')">Play Game</button>
-                <a href="zhtml-games/gunmayhem.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <a href="zhtml-games/gun-mayhem.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
             <div class="game-card">
                 <img src="zimages/gun mayem 2.jpeg">
@@ -1970,8 +2129,16 @@
                 <img src="zimages/gun spin.jpeg">
                 <h3>Gun Spin</h3>
                 <button class="button" onclick="openFileInWindow('zhtml-games/gunspin.html')">Play Game</button>
-                <a href="zhtml-games/gunspin.html" class="link-button" target="_blank">Open In A New Tab</a>
+                <a href="zhtml-games/gun-spin.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div> 
             <div class="game-card">
                 <img src="zimages/g switch 3.jpeg">
                 <h3>G switch 3</h3>
@@ -2008,6 +2175,14 @@
                 <button class="button" onclick="openFileInWindow('zhtml-games/stick-man.html')">Play Game</button>
                 <a href="zhtml-games/stick-man.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div> 
             <div class="game-card">
                 <img src="zimages/dread head parqour.jpeg">
                 <h3>Dread Head Parkour</h3>
@@ -2043,7 +2218,15 @@
                 <h3>Stick Man Hook</h3>
                 <button class="button" onclick="openFileInWindow('zhtml-games/stickman-hook.html')">Play Game</button>
                 <a href="zhtml-games/stickman-hook.html" class="link-button" target="_blank">Open In A New Tab</a>
-            </div>            
+            </div>        
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8198942',
+                    });
+                </script>
+            </div>     
             <div class="game-card">
                 <img src="zimages/offroader v5.png">
                 <h3>Offroader 5V</h3>
@@ -2080,6 +2263,14 @@
                 <button class="button" onclick="openFileInWindow('zhtml-games/fancy2.html')">Play Game</button>
                 <a href="zhtml-games/fancy2.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div> 
             <div class="game-card">
                 <img src="zimages/fancy-pants-3.png">
                 <h3>Fancy Pants 3</h3>
@@ -2116,6 +2307,14 @@
                 <button class="button" onclick="openFileInWindow('hobo5/index.html')">Play Game</button>
                 <a href="hobo5/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div> 
             <div class="game-card">
                 <img src="hobo6/hobo 6.jpg">
                 <h3>Hobo 6</h3>
@@ -2152,6 +2351,14 @@
                 <button class="button" onclick="openFileInWindow('last-stand2/index.html')">Play Game</button>
                 <a href="last-stand2/index.html" class="link-button" target="_blank">Open In A New Tab</a>
             </div>
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div> 
             <div class="game-card">
                 <img src="3d-ping/3d ping pong.jpeg">
                 <h3>3D Ping Pong</h3>
@@ -2187,7 +2394,15 @@
                 <h3>Sushi Cat</h3>
                 <button class="button" onclick="openFileInWindow('suchi-cat/index.html')">Play Game</button>
                 <a href="suchi-cat/index.html" class="link-button" target="_blank">Open In A New Tab</a>
-            </div>            
+            </div>   
+            <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+            <div class="game-ad-container">
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8201334',
+                    });
+                </script>
+            </div>          
         <div class="game-card">
             <img src="super-drift/duper drift.jpeg">
             <h3>Super Drift 3D</h3>
@@ -2224,6 +2439,14 @@
             <button class="button" onclick="openFileInWindow('sniper-assa5/index.html')">Play Game</button>
             <a href="sniper-assa5/index.html" class="link-button" target="_blank">Open In A New Tab</a>
         </div>
+        <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+        <div class="game-ad-container">
+            <script type="text/javascript">
+                aclib.runBanner({
+                    zoneId: '8198942',
+                });
+            </script>
+        </div> 
         <div class="game-card">
             <img src="amusepark/amuse.png">
             <h3>Amusement Park</h3>
@@ -2260,6 +2483,14 @@
             <button class="button" onclick="openFileInWindow('potty-race2/index.html')">Play Game</button>
             <a href="potty-race2/index.html" class="link-button" target="_blank">Open In A New Tab</a>
         </div>
+        <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+        <div class="game-ad-container">
+            <script type="text/javascript">
+                aclib.runBanner({
+                    zoneId: '8198942',
+                });
+            </script>
+        </div> 
         <div class="game-card">
             <img src="potty-race3/potty racer 3.jpeg">
             <h3>Potty Racers 3</h3>
@@ -2296,6 +2527,14 @@
             <button class="button" onclick="openFileInWindow('penguin-diner/index.html')">Play Game</button>
             <a href="penguin-diner/index.html" class="link-button" target="_blank">Open In A New Tab</a>
         </div>
+        <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+        <div class="game-ad-container">
+            <script type="text/javascript">
+                aclib.runBanner({
+                    zoneId: '8198942',
+                });
+            </script>
+        </div> 
         <div class="game-card">
             <img src="penguin-diner2/penguin 2.jpeg">
             <h3>Penguin Diner 2</h3>
@@ -2332,6 +2571,14 @@
             <button class="button" onclick="openFileInWindow('pokemon-tower2/index.html')">Play Game</button>
             <a href="pokemon-tower2/index.html" class="link-button" target="_blank">Open In A New Tab</a>
         </div>
+        <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+        <div class="game-ad-container">
+            <script type="text/javascript">
+                aclib.runBanner({
+                    zoneId: '8198942',
+                });
+            </script>
+        </div> 
         <div class="game-card">
             <img src="president-war/president.jpeg">
             <h3>President War</h3>
@@ -2368,6 +2615,14 @@
             <button class="button" onclick="openFileInWindow('T-rex/index.html')">Play Game</button>
             <a href="wind-tyccon/index.html" class="link-button" target="_blank">Open In A New Tab</a>
         </div>
+        <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+        <div class="game-ad-container">
+            <script type="text/javascript">
+                aclib.runBanner({
+                    zoneId: '8198942',
+                });
+            </script>
+        </div> 
         <div class="game-card">
             <img src="race-horse/race horse tycoon.jpeg">
             <h3>Racing Horce Tycoon</h3>
@@ -2404,6 +2659,14 @@
             <button class="button" onclick="openFileInWindow('12-battle/index.html')">Play Game</button>
             <a href="12-battle/index.html" class="link-button" target="_blank">Open In A New Tab</a>
         </div>
+        <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+        <div class="game-ad-container">
+            <script type="text/javascript">
+                aclib.runBanner({
+                    zoneId: '8198942',
+                });
+            </script>
+        </div> 
         <div class="game-card">
             <img src="angry-bird/angry-birds.jpg">
             <h3>Angry Birds</h3>
@@ -2440,6 +2703,14 @@
             <button class="button" onclick="openFileInWindow('bobtherobber4/index.html')">Play Game</button>
             <a href="bobtherobber4/index.html" class="link-button" target="_blank">Open In A New Tab</a>
         </div>
+        <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+        <div class="game-ad-container">
+            <script type="text/javascript">
+                aclib.runBanner({
+                    zoneId: '8198942',
+                });
+            </script>
+        </div> 
         <div class="game-card">
             <img src="bobtherobber5/btr5.png">
             <h3>Bob The Robber 5</h3>
@@ -2476,6 +2747,14 @@
             <button class="button" onclick="openFileInWindow('super-mario-world/index.html')">Play Game</button>
             <a href="super-mario-world/index.html" class="link-button" target="_blank">Open In A New Tab</a>
         </div>
+        <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+        <div class="game-ad-container">
+            <script type="text/javascript">
+                aclib.runBanner({
+                    zoneId: '8198942',
+                });
+            </script>
+        </div> 
         <div class="game-card">
             <img src="getoff-mylawn/get off my lawn.jpeg">
             <h3>Get off My Lawn</h3>
@@ -2512,6 +2791,14 @@
             <button class="button" onclick="openFileInWindow('cactus-mc/index.html')">Play Game</button>
             <a href="cactus-mc/index.html" class="link-button" target="_blank">Open In A New Tab</a>
         </div>
+        <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+        <div class="game-ad-container">
+            <script type="text/javascript">
+                aclib.runBanner({
+                    zoneId: '8198942',
+                });
+            </script>
+        </div> 
         <div class="game-card">
             <img src="cactus-mc2/catus macoy 2.jpg">
             <h3>Cactus Maccoy 2</h3>
@@ -2548,6 +2835,14 @@
             <button class="button" onclick="openFileInWindow('fire-boy1/index.html')">Play Game</button>
             <a href="fire-boy1/index.html" class="link-button" target="_blank">Open In A New Tab</a>
         </div>
+        <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+        <div class="game-ad-container">
+            <script type="text/javascript">
+                aclib.runBanner({
+                    zoneId: '8198942',
+                });
+            </script>
+        </div> 
         <div class="game-card">
             <img src="fire-boy2/fire 2.jpg">
             <h3>Fire Boy Water Girl 2</h3>
@@ -2584,6 +2879,14 @@
             <button class="button" onclick="openFileInWindow('my-fried-pedro/index.html')">Play Game</button>
             <a href="my-fried-pedro/index.html" class="link-button" target="_blank">Open In A New Tab</a>
         </div>
+        <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+        <div class="game-ad-container">
+            <script type="text/javascript">
+                aclib.runBanner({
+                    zoneId: '8198942',
+                });
+            </script>
+        </div> 
         <div class="game-card">
             <img src="jonny-upgrades/jonny upgrade.jpg">
             <h3>Johhny Upgrade</h3>
@@ -2610,7 +2913,7 @@
             <a href="push-your-luck/index.html" class="link-button" target="_blank">Open In A New Tab</a>
         </div>
         <div class="game-card">
-            <img src="push-the-square/img/icon.png">
+            <img src="push-the-square/img/push-the-square.jpeg">
             <h3>Push The Square</h3>
             <button class="button" onclick="openFileInWindow('push-the-square/index.html')">Play Game</button>
             <a href="push-the-square/index.html" class="link-button" target="_blank">Open In A New Tab</a>
@@ -2621,7 +2924,711 @@
             <button class="button" onclick="openFileInWindow('minecraft-recent/index.html')">Play Game</button>
             <a href="minecraft-recent/index.html" class="link-button" target="_blank">Open In A New Tab</a>
         </div>
-        </section>
+        <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+        <div class="game-ad-container">
+            <script type="text/javascript">
+                aclib.runBanner({
+                    zoneId: '8198942',
+                });
+            </script>
+        </div> 
+        <div class="game-card">
+            <img src="subway-surfers/img/FirstAvatar.png">
+            <h3>Subway Surfers</h3>
+            <button class="button" onclick="openFileInWindow('subway-surfers/index.html')">Play Game</button>
+            <a href="subway-surfers/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="temple-run/img/temple-run-2-256.png">
+            <h3>Temple Run</h3>
+            <button class="button" onclick="openFileInWindow('temple-run/index.html')">Play Game</button>
+            <a href="temple-run/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="fit-cats/fit-cats.png">
+            <h3>Fit Cats</h3>
+            <button class="button" onclick="openFileInWindow('fit-cats/index.html')">Play Game</button>
+            <a href="fit-cats/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="zombs-royale/zombs-royale_unzipped.zip_unzipped/zombs-royale/zomb.png">
+            <h3>Zombs Royale</h3>
+            <button class="button" onclick="openFileInWindow('zombs-royale/zombs-royale_unzipped.zip_unzipped/zombs-royale/index.html')">Play Game</button>
+            <a href="zombs-royale/zombs-royale_unzipped.zip_unzipped/zombs-royale/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="you-are-bezos/img/icon.png">
+            <h3>You Are Bezos</h3>
+            <button class="button" onclick="openFileInWindow('you-are-bezos/index.html')">Play Game</button>
+            <a href="you-are-bezos/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="yoshifabrication/icons/icon-16.png">
+            <h3>yoshifabrication</h3>
+            <button class="button" onclick="openFileInWindow('yoshifabrication/index.html')">Play Game</button>
+            <a href="yoshifabrication/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+        <div class="game-ad-container">
+            <script type="text/javascript">
+                aclib.runBanner({
+                    zoneId: '8198942',
+                });
+            </script>
+        </div> 
+        <div class="game-card">
+            <img src="xx142/splash.png">
+            <h3>xx142</h3>
+            <button class="button" onclick="openFileInWindow('xx142/index.html')">Play Game</button>
+            <a href="xx142/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="web-gl-fluidsim/logo.png">
+            <h3>Web GL Fluid Sim</h3>
+            <button class="button" onclick="openFileInWindow('web-gl-fluidsim/index.html')">Play Game</button>
+            <a href="web-gl-fluidsim/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="weaveslik/thumb.png">
+            <h3>Weave Silk</h3>
+            <button class="button" onclick="openFileInWindow('weaveslik/index.html')">Play Game</button>
+            <a href="weaveslik/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="wallsmash/thumb.png">
+            <h3>WallSmash</h3>
+            <button class="button" onclick="openFileInWindow('wallsmash/index.html')">Play Game</button>
+            <a href="wallsmash/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="veloce/icon.png">
+            <h3>Veloce</h3>
+            <button class="button" onclick="openFileInWindow('veloce/index.html')">Play Game</button>
+            <a href="veloce/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="twitch-tetris/logo.png">
+            <h3>Twitch Tetris/h3>
+            <button class="button" onclick="openFileInWindow('twitch-tetris/index.html')">Play Game</button>
+            <a href="twitch-tetris/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="subway-surfers-ny/NewYorkIcon.png">
+            <h3>Subway Surfers NY</h3>
+            <button class="button" onclick="openFileInWindow('subway-surfers-ny/index.html')">Play Game</button>
+            <a href="subway-surfers-ny/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="tv-static/static.png">
+            <h3>TV Static</h3>
+            <button class="button" onclick="openFileInWindow('tv-static/index.html')">Play Game</button>
+            <a href="tv-static/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="suchi-unroll/favicon.png">
+            <h3>Suchi Unroll</h3>
+           <button class="button" onclick="openFileInWindow('suchi-unroll/index.html')">Play Game</button>
+            <a href="suchi-unroll/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="stick-merge/splash.png">
+            <h3>Stick Merge</h3>
+           <button class="button" onclick="openFileInWindow('stick-merge/index.html')">Play Game</button>
+            <a href="stick-merge/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="stick-duel/512x512.jpg">
+            <h3>Stick Duel</h3>
+            <button class="button" onclick="openFileInWindow('stick-duel/index.html')">Play Game</button>
+            <a href="stick-duel/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="stick-archers/splash.jpg">
+            <h3>Stick Archers</h3>
+            <button class="button" onclick="openFileInWindow('stick-archers/index.html')">Play Game</button>
+            <a href="stick-archers/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="riddle-school/riddleschool.png">
+            <h3>Riddle School</h3>
+            <button class="button" onclick="openFileInWindow('riddle-school/index.html')">Play Game</button>
+            <a href="riddle-school/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="riddle-school2/riddleschool2.png">
+            <h3>Riddle School 2</h3>
+            <button class="button" onclick="openFileInWindow('riddle-school2/index.html')">Play Game</button>
+            <a href="riddle-school2/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="riddle-school3/riddleschool3.png">
+            <h3>Riddle School 3</h3>
+            <button class="button" onclick="openFileInWindow('riddle-school3/index.html')">Play Game</button>
+            <a href="riddle-school3/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="riddle-school4/riddleschool4.png">
+            <h3>Riddle School 4</h3>
+            <button class="button" onclick="openFileInWindow('riddle-school4/index.html')">Play Game</button>
+            <a href="riddle-school4/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="riddle-school5/riddleschool5.png">
+            <h3>Riddle School 5</h3>
+            <button class="button" onclick="openFileInWindow('riddle-school5/index.html')">Play Game</button>
+            <a href="riddle-school5/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="riddle-transfer/riddletransfer.png">
+            <h3>Riddle Transfer</h3>
+            <button class="button" onclick="openFileInWindow('riddle-transfer/index.html')">Play Game</button>
+            <a href="riddle-transfer/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="riddle-transfer2/riddletransfer2.png">
+            <h3>Riddle Transfer 2</h3>
+            <button class="button" onclick="openFileInWindow('riddle-transfer2/index.html')">Play Game</button>
+            <a href="riddle-transfer2/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="cookie-clicker/cookie.png">
+            <h3>Cookie Clicker</h3>
+            <button class="button" onclick="openFileInWindow('cookie-clicker/index.html')">Play Game</button>
+            <a href="cookie-clicker/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="townscraper/img/cover.jpg">
+            <h3>Town Scraper</h3>
+            <button class="button" onclick="openFileInWindow('townscraper/index.html')">Play Game</button>
+            <a href="townscraper/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="gimme-the-airpod/img/airpod.png">
+            <h3>Gimme The Airpod</h3>
+            <button class="button" onclick="openFileInWindow('gimme-the-airpod/index.html')">Play Game</button>
+            <a href="gimme-the-airpod/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/drift-hunters/drift-hunters.png">
+            <h3>Drift Hunter</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/drift-hunters/index.html')">Play Game</button>
+            <a href="..jeo-games/drift-hunters/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/handshakes/splash.jpg">
+            <h3>Hand Shakes</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/handshakes/index.html')">Play Game</button>
+            <a href="..jeo-games/handshakes/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/burger-and-frights/splash.png">
+            <h3>Burger And Frights</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/burger-and-frights/index.html')">Play Game</button>
+            <a href="..jeo-games/burger-and-frights/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/frying-nemo/splash.png">
+            <h3>Frying Nemo</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/frying-nemo/index.html')">Play Game</button>
+            <a href="..jeo-games/frying-nemo/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/noob-steve-parkour/logo.png">
+            <h3>Noob Steve Parkour</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/noob-steve-parkour/index.html')">Play Game</button>
+            <a href="..jeo-games/noob-steve-parkour/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/american-racing/american.jpeg">
+            <h3>American Racing</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/american-racing/index.html')">Play Game</button>
+            <a href="..jeo-games/american-racing/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/american-racing2/american2.jpeg">
+            <h3>American Racing 2</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/american-racing2/index.html')">Play Game</button>
+            <a href="..jeo-games/american-racing2/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/hba/hoverbotarena.JPG">
+            <h3>HBA</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/hba/index.html')">Play Game</button>
+            <a href="..jeo-games/hba/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/9007199254740992/logo-4.png">
+            <h3>Town Scraper</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/9007199254740992/index.html')">Play Game</button>
+            <a href="..jeo-games/9007199254740992/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/game-inside/img/icon.png">
+            <h3>Game inside</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/game-inside/index.html')">Play Game</button>
+            <a href="..jeo-games/game-inside/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/generic-fishing-game/splash.png">
+            <h3>Generic Fishing Game</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/generic-fishing-game/index.html')">Play Game</button>
+            <a href="..jeo-games/generic-fishing-game/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/geodash/geoscratchicon.png">
+            <h3>GeoDash</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/geodash/index.html')">Play Game</button>
+            <a href="..jeo-games/geodash/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/georgeandtheprinter/img/icon.png">
+            <h3>George and the Printer</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/georgeandtheprinter/index.html')">Play Game</button>
+            <a href="..jeo-games/georgeandtheprinter/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/merge-round-racers/splash.png">
+            <h3>Merge Round Racers</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/merge-round-racers/index.html')">Play Game</button>
+            <a href="..jeo-games/merge-round-racers/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/mineblocks/splash.png">
+            <h3>Mineblocks</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/mineblocks/index.html')">Play Game</button>
+            <a href="..jeo-games/mineblocks/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/rabbit-samurai/splash.png">
+            <h3>Rabbit Samurai</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/rabbit-samurai/index.html')">Play Game</button>
+            <a href="..jeo-games/rabbit-samurai/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/rabbit-samurai2/splash.png">
+            <h3>Rabbit Samurai 2</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/rabbit-samurai2/index.html')">Play Game</button>
+            <a href="..jeo-games/rabbit-samurai2/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/doublewires/doublewires.png">
+            <h3>Double Wires</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/doublewires/index.html')">Play Game</button>
+            <a href="..jeo-games/doublewires/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/polybranch/img/pic1.png">
+            <h3>PolyBranch</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/polybranch/index.html')">Play Game</button>
+            <a href="..jeo-games/polybranch/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/popcat-classic/splash.png">
+            <h3>PopCat Classic</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/popcat-classic/index.html')">Play Game</button>
+            <a href="..jeo-games/popcat-classic/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/ns-shaft/icon.png">
+            <h3>NS Shaft</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/ns-shaft/index.html')">Play Game</button>
+            <a href="..jeo-games/ns-shaft/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/nsresurgence/neon.png">
+            <h3>NS Resurgence</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/nsresurgence/index.html')">Play Game</button>
+            <a href="..jeo-games/nsresurgence/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/OfflineParadise/assets/icon.jpeg">
+            <h3>Offline Paradise</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/OfflineParadise/index.html')">Play Game</button>
+            <a href="..jeo-games/OfflineParadise/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/om-bounce/assets/icon.jpeg">
+            <h3>om Bounce</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/om-bounce/index.html')">Play Game</button>
+            <a href="..jeo-games/om-bounce/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/hackertype/logo192.png">
+            <h3>Hacker Type</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/hackertype/index.html')">Play Game</button>
+            <a href="..jeo-games/hackertype/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/happy-hop/happy-hop-online.jpg">
+            <h3>Happy Hop/h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/happy-hop/index.html')">Play Game</button>
+            <a href="..jeo-games/happy-hop/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/helicopter/helicopter.png">
+            <h3>Helicopter</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/helicopter/index.html')">Play Game</button>
+            <a href="..jeo-games/helicopter/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/hexempire/hexempire.jpg">
+            <h3>Hexempire</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/hexempire/index.html')">Play Game</button>
+            <a href="..jeo-games/hexempire/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/froggys-battle/splash.png">
+            <h3>Froggys Battle</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/froggys-battle/index.html')">Play Game</button>
+            <a href="..jeo-games/froggys-battle/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/google-feud/splash.png">
+            <h3>Google Google Feud</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/google-feud/index.html')">Play Game</button>
+            <a href="..jeo-games/google-feud/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/protektor/splash.jpg">
+            <h3>Protektor</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/protektor/index.html')">Play Game</button>
+            <a href="..jeo-games/protektor/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/papery-planes/splash.jpg">
+            <h3>Papery Planes</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/papery-planes/index.html')">Play Game</button>
+            <a href="..jeo-games/papery-planes/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/flappy-2048/meta/apple-touch-icon.png">
+            <h3>Flappy 2048</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/drift-hunters/index.html')">Play Game</button>
+            <a href="..jeo-games/drift-hunters/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/flappybird/logo.png">
+            <h3>Flappy Bird</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/flappybird/index.html')">Play Game</button>
+            <a href="..jeo-games/flappybird/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/flashtetris/flashtetris.png">
+            <h3>Flash Tetris</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/flashtetris/index.html')">Play Game</button>
+            <a href="..jeo-games/flashtetris/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/flippy-fish/2022_10_28_0jt_Kleki.png">
+            <h3>Flippy Fish</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/flippy-fish/index.html')">Play Game</button>
+            <a href="..jeo-games/flippy-fish/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/fnaw/splash.png">
+            <h3>Five Nights At Winston</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/fnaw/index.html')">Play Game</button>
+            <a href="..jeo-games/fnaw/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/sm64/sm64/logo.png">
+            <h3>Super Mario 64</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/sm64/sm64/index.html')">Play Game</button>
+            <a href="..jeo-games/sm64/sm64/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/soundboard/img/better_eye.jpeg">
+            <h3>Soundboard</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/soundboard/index.html')">Play Game</button>
+            <a href="..jeo-games/soundboard/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/space-company/SpaceCompanyFavicon.png">
+            <h3>Space Company</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/space-company/index.html')">Play Game</button>
+            <a href="..jeo-games/space-company/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/spaceguard-io/images/fullscreen.png">
+            <h3>Space Guard.io</h3>
+            <p>test</p>
+            <button class="button" onclick="openFileInWindow('..jeo-games/spaceguard-io/index.html')">Play Game</button>
+            <a href="..jeo-games/spaceguard-io/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/three-goblets/images/loading.png">
+            <h3>Three Goblets</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/three-goblets/index.html')">Play Game</button>
+            <a href="..jeo-games/three-goblets/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/kitchen-gun-game/splash.png">
+            <h3>Kitchen Gun Game</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/kitchen-gun-game/index.html')">Play Game</button>
+            <a href="..jeo-games/kitchen-gun-game/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/supermarioconstruct/textareaimage.png">
+            <h3>SuperMario Construct</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/supermarioconstruct/index.html')">Play Game</button>
+            <a href="..jeo-games/supermarioconstruct/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/swerve/img/favicon.jpg">
+            <h3>Swerve</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/swerve/index.html')">Play Game</button>
+            <a href="..jeo-games/swerve/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/synesthesia/index.splash.png">
+            <h3>Synesthesia</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/synesthesia/index.html')">Play Game</button>
+            <a href="..jeo-games/synesthesia/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/tactical-weapon-pack-2/splash.jpg">
+            <h3>Tactical Weapon Pack 2</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/tactical-asasin-2/index.html')">Play Game</button>
+            <a href="..jeo-games/tactical-weapon-pack-2/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/the-hotel/splash.png">
+            <h3>The Hotel</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/the-hotel/index.html')">Play Game</button>
+            <a href="..jeo-games/the-hotel/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/thebattle/thebattle.png">
+            <h3>The Battle</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/thebattle/index.html')">Play Game</button>
+            <a href="..jeo-games/thebattle/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/protektor/icon-256.png">
+            <h3>Protektor</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/protektor/index.html')">Play Game</button>
+            <a href="..jeo-games/protektor/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/rolling-forests/icon.png">
+            <h3>Roling Forests</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/rolling-forests/index.html')">Play Game</button>
+            <a href="..jeo-games/rolling-forests/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/rolly-vortex/loading-logo.png">
+            <h3>Rolly Vortex/h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/rolly-vortex/index.html')">Play Game</button>
+            <a href="..jeo-games/rolly-vortex/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/sand-game/sand.png">
+            <h3>Sand Game</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/sand-game/index.html')">Play Game</button>
+            <a href="..jeo-games/sand-game/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/sandboxels/sandboxels.jpg">
+            <h3>Sand Boxels</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/sandboxels/index.html')">Play Game</button>
+            <a href="..jeo-games/sandboxels/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/santy-is-home/splash.png">
+            <h3>Santy is Home</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/santy-is-home/index.html')">Play Game</button>
+            <a href="..jeo-games/santy-is-home/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/scrapmetal/img/splash.png">
+            <h3>Scrap Metal</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/scrapmetal/index.html')">Play Game</button>
+            <a href="..jeo-games/scrapmetal/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/shellshockers/img/favicon.jpg">
+            <h3>Shell Shockers</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/shellshockers/index.html')">Play Game</button>
+            <a href="..jeo-games/shellshockers/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/shotinthedark/shot.png">
+            <h3>Shot in the dark</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/shotinthedark/index.html')">Play Game</button>
+            <a href="..jeo-games/shotinthedark/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/shuttledeck/splash.png">
+            <h3>Shuttle Deck</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/shuttledeck/index.html')">Play Game</button>
+            <a href="..jeo-games/shuttledeck/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/soldier-legend/images/splash.jpeg">
+            <h3>Solitaire</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/soldier-legend/index.html')">Play Game</button>
+            <a href="..jeo-games/soldier-legend/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/spacegarden/spl.png">
+            <h3>Space Garden</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/spacegarden/index.html')">Play Game</button>
+            <a href="..jeo-games/spacegarden/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/spinningrat/favicon-32x32.png">
+            <h3>Spining Rat</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/spinningrat/index.html')">Play Game</button>
+            <a href="..jeo-games/spinningrat/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/stack/stack.png">
+            <h3>Stack</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/stack/index.html')">Play Game</button>
+            <a href="..jeo-games/stack/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/stack-bump-3d/thumbnail.jpg">
+            <h3>Stack Bumb 3D</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/stack-bumb-3d/index.html')">Play Game</button>
+            <a href="..jeo-games/stack-bump-3d/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/starve/img/favicon.png">
+            <h3>Starve</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/starve/index.html')">Play Game</button>
+            <a href="..jeo-games/starve/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/station-141/icon.png">
+            <h3>Station 141</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/station-141/index.html')">Play Game</button>
+            <a href="..jeo-games/station-141/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/stickman-boost/icon-256.png">
+            <h3>Stickman Boost</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/stickman-boost/index.html')">Play Game</button>
+            <a href="..jeo-games/stickman-boost/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/stickman-golf/splash.png">
+            <h3>Stickman Golf</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/stickman-boost/index.html')">Play Game</button>
+            <a href="..jeo-games/stickman-boost/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/stormthehouse2/stormthehouse2.jpg">
+            <h3>Storm The House 2</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/stormthehouse2/index.html')">Play Game</button>
+            <a href="..jeo-games/stormthehouse2/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/superhot/hot.jpg">
+            <h3>Super Hot</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/superhot/index.html')">Play Game</button>
+            <a href="..jeo-games/superhot/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/marvin-spectrum/marvinspectrum.png">
+            <h3>Marvin Spectrum</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/marvin-spectrum/index.html')">Play Game</button>
+            <a href="..jeo-games/marvin-spectrum/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/avalanche/avalanche.png">
+            <h3>Avalanche</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/avalanche/index.html')">Play Game</button>
+            <a href="..jeo-games/avalanche/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/tank-trouble-2/loading-logo.png">
+            <h3>Tank Trouble 2</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/tank-trouble-2/index.html')">Play Game</button>
+            <a href="..jeo-games/tank-trouble-2/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/interactivebuddy/interactivebuddy.jpg">
+            <h3>Interactive Buddy</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/interactivebuddy/index.html')">Play Game</button>
+            <a href="..jeo-games/interactivebuddy/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/knife-master/512x512.jpg">
+            <h3>Knife Master</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/knife-master/index.html')">Play Game</button>
+            <a href="..jeo-games/knife-master/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/krunker/img/krunker-io.jpg">
+            <h3>Krunker</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/krunker/index.html')">Play Game</button>
+            <a href="..jeo-games/krunker/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/minesweeper/img/minesweeper.png">
+            <h3>MineSweeper</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/minesweeper/index.html')">Play Game</button>
+            <a href="..jeo-games/minesweeper/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/miniputt/miniputt.png">
+            <h3>Mini Putt</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/miniputt/index.html')">Play Game</button>
+            <a href="..jeo-games/miniputt/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/missiles/miss.png">
+            <h3>Missiles</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/missiles/index.html')">Play Game</button>
+            <a href="..jeo-games/missiles/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/n-gon/img/n-gonbot.png">
+            <h3>N gon</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/n-gon/index.html')">Play Game</button>
+            <a href="..jeo-games/n-gon/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/particle-clicker/favicon.ico">
+            <h3>Particle Clicker</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/particle-clicker/index.html')">Play Game</button>
+            <a href="..jeo-games/particle-clicker/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/pixel-gun-survival/512x512.png">
+            <h3>Pixel Gun Survival</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/pixel-gun-survival/index.html')">Play Game</button>
+            <a href="..jeo-games/pixel-gun-survival/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/sleepingbeauty/sleeping-beauty.png">
+            <h3>Sleeping Beauty</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/sleeping-beauty/index.html')">Play Game</button>
+            <a href="..jeo-games/sleepingbeauty/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/smokingbarrels/smokingbarrels.jpg">
+            <h3>Smoking Barrels</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/smokingbarrels/index.html')">Play Game</button>
+            <a href="..jeo-games/smokingbarrels/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/surviv/img/favicon.png">
+            <h3>Surviv</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/surviv/index.html')">Play Game</button>
+            <a href="..jeo-games/surviv/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="..jeo-games/celesteclassic/celesteclassic.png">
+            <h3>Celestec Classic</h3>
+            <button class="button" onclick="openFileInWindow('..jeo-games/celesteclassic/index.html')">Play Game</button>
+            <a href="..jeo-games/celesteclassic/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+    </div>
+</div> 
+</div>  
+</html>
     </main>
     <script src="sc.js"></script>
     <script src="button.js"></script>

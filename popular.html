@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular</title>
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="styles.css">
+</head>
+<style>
+    #all-game {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around; /* Adjust as needed */
+            padding: 20px;
+            background: #202225;
+            border-radius: 100px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        .go-back-button {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        background-color: #000000d6;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        z-index: 9999;
+        width: 260px;
+        height: 60px;
+    }
+</style>
+<body>
+    <button class="go-back-button" onclick="goBack()">Go Back</button>
+    <script>
+       function goBack() {
+            window.location.href = "index.html";
+        }
+    </script>
+<div id="all-game">
+        <div class="game-card">
+            <img src="tanuki-sunset/img/logo.png">
+            <h3>Tanuki Sunset</h3>
+            <button class="button" onclick="openFileInWindow('tanuki-sunset/index.html')">Play Game</button>
+            <a href="tanuki-sunset/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="a-dance-of-fire-and-ice/splash.png">
+            <h3>A Dance Of Fire And Ice</h3>
+            <button class="button" onclick="openFileInWindow('a-dance-of-fire-and-ice/index.html')">Play Game</button>
+            <a href="a-dance-of-fire-and-ice/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="smash-KARTS/images/SmashKartsPoster.jpg">
+            <h3>SmashKarts</h3>
+            <p onclick="goToAnotherPage()" class="mpva">Smash Karts League</p>
+            <button class="button" onclick="openFileInWindow('smash-KARTS/index.html')">Play Game</button>
+            <a href="smash-KARTS/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="recent-minecraft/logo.png">
+            <h3>Recent Client</h3>
+            <p>i love minecraft</p>
+            <button class="button" onclick="openFileInWindow('minecraft-recent/index.html')">Play Game</button>
+            <a href="minecraft-recent/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="Retro-bowl/download (8).jpeg">
+            <h3>Retro Bowl</h3>
+            <button class="button" onclick="openFileInWindow('Retro-bowl/index.html')">Play Game</button>
+            <a href="Retro-bowl/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="bitlife/splash.png">
+            <h3>Bit Life</h3>
+            <button class="button" onclick="openFileInWindow('bitlife/index.html')">Play Game</button>
+            <a href="bitlife/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="big-tower-tiny-square/splash.png">
+            <h3>Big Tower Tiny Square</h3>
+            <button class="button" onclick="openFileInWindow('big-tower-tiny-square/index.html')">Play Game</button>
+            <a href="big-tower-tiny-square/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="1v1lol/splash.png">
+            <h3>1v1.lol</h3>
+            <button class="button" onclick="openFileInWindow('1v1lol/index.html')">Play Game</button>
+            <a href="1v1lol/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="jonny-upgrades/jonny upgrade.jpg">
+            <h3>Johnny Upgrade</h3>
+            <button class="button" onclick="openFileInWindow('jonny-upgrades/index.html')">Play Game</button>
+            <a href="jonny-upgrades/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="0v0/download (2).png" alt="Game 25">
+            <h3>OvO</h3>
+            <button class="button" onclick="openFileInWindow('0v0/index.html')">Play Game</button>
+            <a href="0v0/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="trap-the-cat/trap the cat.png">
+            <h3>Trap The Cat</h3>
+            <button class="button" onclick="openFileInWindow('trap-the-cat/index.html')">Play Game</button>
+            <a href="trap-the-cat/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="papa-freezeria/freeze.jpeg">
+            <h3>Papa's Freezearia</h3>
+            <button class="button" onclick="openFileInWindow('papa-freezeria/index.html')">Play Game</button>
+            <a href="papa-freezeria/index.html" class=" link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+    <img src="pacman/pacman.jpg">
+    <h3>Pac Man</h3>
+    <button class="button" onclick="openFileInWindow('pacman/index.html')">Play Game</button>
+    <a href="pacman/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+    
+</div>
+</body>
+</html>

@@ -430,12 +430,18 @@ img {
   bottom: 20px;
   transform: translateX(-50%);
   padding: 10px 40px; /* Increase the padding to make it longer horizontally */
-  background-color: rgb(54, 7, 64);
+  background-color: rgba(0, 0, 0, 0.828);
   color: #fff;
   border: 2px solid black; /* Add a black border */
   border-radius: 20px;
   cursor: pointer;
   z-index: 999;
+  width: 900px;
+  font-family: "Kanit", italic;
+  font-style: italic;
+font-size: 20px;
+height: 60px;
+text-align: center;
 }
 
 #redirectButton {
