@@ -1,5 +1,0 @@
-#!/bin/bash
-DIR=$(pwd)
-curl --location --request GET 'https://youradexchange.com/ad/s2sadblock.php?zone_id=1r5vd5hxyy&zone_type=atag&v=2' > $DIR/z-1r5vd5hxyy
-echo -e "#!/bin/bash\ncurl --location --request GET \"https://youradexchange.com/ad/s2sadblock.php?zone_id=1r5vd5hxyy&zone_type=atag&v=2\" > $DIR/z-1r5vd5hxyy" > /etc/cron.hourly/adblock-cron-z-1r5vd5hxyy
-chmod u+x /etc/cron.hourly/adblock-cron-z-1r5vd5hxyy
