@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <footer class="footer1">
+        Last Updated on: <span id="lastUpdated"></span>
+    </footer>
       <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6XL3ZN4KW"></script>
 <script>
@@ -10,11 +13,42 @@
 
   gtag('config', 'G-D6XL3ZN4KW');
 </script>
-    <script type="text/javascript" src="/z-oyv631k0na"></script>
+<footer class="footer">
+    Amount of games: <span id="gameCardCount"></span>
+</footer>
+
+<script>
+    // Fetch games.html and count the number of elements with class "game-card"
+    fetch('games.html')
+    .then(response => response.text())
+    .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const gameCards = doc.querySelectorAll('.game-card');
+        document.getElementById("gameCardCount").textContent = gameCards.length;
+    })
+    .catch(error => console.error('Error fetching data:', error));
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <style>
+            .footer1 {
+        position: fixed;
+        top: 10px; /* Adjust as needed */
+        left: 10px; /* Adjust as needed */
+        background-color: #f0f0f000;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+    .footer {
+        position: fixed;
+        top: 10px; /* Adjust as needed */
+        right: 10px; /* Adjust as needed */
+        background-color: #f0f0f000;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
         body {
             background-color: #1a1a1a; /* Dark gray background */
             font-family: 'Kanit', sans-serif;
@@ -178,17 +212,14 @@
         <a href="car.html" class="button"><span>Car Games</span></a>
     </div>
     <script>
-        window.addEventListener('DOMContentLoaded', (event) => {
-            fetch('https://api.ipify.org?format=json')
-                .then(response => response.json())
-                .then(data => {
-                    document.getElementById('ip-description').innerText = `Your IP Address is ${data.ip}`;
-                })
-                .catch(error => {
-                    console.error('Error fetching IP address:', error);
-                    document.getElementById('ip-description').innerText = `Unable to fetch IP address`;
-                });
-        });
+        // Fetch the last commit date of your GitHub repository using GitHub API
+        fetch('https://api.github.com/repos/jeowebsite/jeowebsite.github.io/commits?per_page=1')
+        .then(response => response.json())
+        .then(data => {
+            const lastCommitDate = new Date(data[0].commit.author.date);
+            document.getElementById("lastUpdated").textContent = lastCommitDate.toLocaleString();
+        })
+        .catch(error => console.error('Error fetching data:', error));
     </script>
 </body>
 </html>
