@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Player</title>
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="styles.css">
+</head>
+<body>
+    <button class="go-back-button" onclick="goBack()">Go Back</button>
+    <script>
+       function goBack() {
+            window.location.href = "index.html";
+        }
+    </script>
+    <style>
+           #all-game {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around; /* Adjust as needed */
+            padding: 20px;
+            background: #202225;
+            border-radius: 100px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+         .go-back-button {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        background-color: #000000d6;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        z-index: 9999;
+        width: 260px;
+        height: 60px;
+    }
+    </style>
+    <div id="all-game">
+        <div class="game-card">
+            <img src="madalin-stunt-cars-2/img/logo.jpg">
+            <h3>Mandalin Stunt Car 2</h3>
+            <button class="button" onclick="openFileInWindow('madalin-stunt-cars-2/index.html')">Play Game</button>
+            <a href="madalin-stunt-cars-2/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+        <div class="game-card">
+            <img src="madalin-stunt-cars-3/img/index.jpg">
+            <h3>Mandalin Stunt Car 3</h3>
+            <button class="button" onclick="openFileInWindow('madalin-stunt-cars-3/index.html')">Play Game</button>
+            <a href="madalin-stunt-cars-3/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+</div>
+</body>
+</html>

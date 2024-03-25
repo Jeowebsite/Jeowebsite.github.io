@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Player</title>
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="styles.css">
+</head>
+<body>
+    <button class="go-back-button" onclick="goBack()">Go Back</button>
+    <script>
+       function goBack() {
+            window.location.href = "index.html";
+        }
+    </script>
+    <style>
+           #all-game {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around; /* Adjust as needed */
+            padding: 20px;
+            background: #202225;
+            border-radius: 100px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+         .go-back-button {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        background-color: #000000d6;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        z-index: 9999;
+        width: 260px;
+        height: 60px;
+    }
+    </style>
+    <div id="all-game">
+        <div class="game-card">
+            <img src="getaway-shootout/img/images.jpg">
+            <h3>Getaway Shootout</h3>
+            <button class="button" onclick="openFileInWindow('getaway-shootout/index.html')">Play Game</button>
+            <a href="getaway-shootout/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+        </div>
+ <div class="game-card">
+    <img src="My-rusty-submarine/splash.png">
+    <h3>My Rusty Submarine</h3>
+    <button class="button" onclick="openFileInWindow('My-rusty-submarine/index.html')">Play Game</button>
+    <a href="My-rusty-submarine/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+    </div>
+    <div class="game-card">
+        <img src="1on1Basketball/Screenshot 2023-11-05 6.28.45 PM.png">
+        <h3>1 on 1 BasketBall</h3>
+        <button class="button" onclick="openFileInWindow('1on1Basketball/index.html')">Play Game</button>
+        <a href="1on1Basketball/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+    </div>
+    <div class="game-card">
+        <img src="1on1SoccerBigHeads/Screenshot 2023-11-05 6.31.18 PM.png">
+        <h3>1 on 1 Big Head Soccer</h3>
+        <button class="button" onclick="openFileInWindow('1on1SoccerBigHeads/index.html')">Play Game</button>
+        <a href="1on1SoccerBigHeads/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+    </div>
+    <div class="game-card">
+        <img src="basketball-stars/assets/images/basketball-stars.png">
+        <h3>BasketBall Stars</h3>
+        <button class="button" onclick="openFileInWindow('basketball-stars/index.html')">Play Game</button>
+        <a href="basketball-stars/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+    </div>
+    <div class="game-card">
+        <img src="Houserofhasards/house-of-hazards.png">
+        <h3>House Of Hazards</h3>
+        <p>may be blocked for some people</p>
+        <button class="button" onclick="openFileInWindow('houseofhazards/index.html')">Play Game</button>
+        <a href="Houserofhasards/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+    </div>
+    <div class="game-card">
+        <img src="fire-boy1/fire boy 1.jpg">
+        <h3>Fire Boy Water Girl</h3>
+        <button class="button" onclick="openFileInWindow('fire-boy1/index.html')">Play Game</button>
+        <a href="fire-boy1/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+    </div>
+    <div class="game-card">
+        <img src="fire-boy2/fire 2.jpg">
+        <h3>Fire Boy Water Girl 2</h3>
+        <button class="button" onclick="openFileInWindow('fire-boy2/index.html')">Play Game</button>
+        <a href="fire-boy2/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+    </div>
+    <div class="game-card">
+        <img src="fire-boy3/fire 3.jpg">
+        <h3>Fire Boy Water Girl 3</h3>
+        <button class="button" onclick="openFileInWindow('fire-boy3/index.html')">Play Game</button>
+        <a href="fire-boy3/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+    </div>
+    <div class="game-card">
+        <img src="fire-boy4/fire 4.jpg">
+        <h3>Fire Boy Water Water Girl 4</h3>
+        <button class="button" onclick="openFileInWindow('fire-boy4/index.html')">Play Game</button>
+        <a href="fire-boy4/index.html" class="link-button" target="_blank">Open In A New Tab</a>
+    </div>
+</div>
+</body>
+</html>

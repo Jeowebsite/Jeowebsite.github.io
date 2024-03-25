@@ -104,9 +104,64 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
+<style>
+          .butt-container {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center;
+            margin-top: 20px; 
+        }
+
+        .butt {
+            background-color: transparent;
+            border: 2px solid #ccc; /* Light gray border */
+            color: #ccc;
+            font-size: 1.2em; 
+            font-weight: bold; 
+            padding: 15px 30px; 
+            margin: 10px;
+            text-decoration: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            border-radius: 25px; /* Rounded button */
+        }
+
+        .butt::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background-color: rgba(255, 255, 255, 0.1);
+            transition: width 0.3s ease, height 0.3s ease;
+            border-radius: 50%;
+            z-index: 0;
+            transform: translate(-50%, -50%);
+        }
+
+        .butt:hover::before {
+            width: 0;
+            height: 0;
+        }
+
+        .butt:hover {
+            transform: scale(1.1); /* Increase button size on hover */
+            opacity: 0.8; /* Reduce opacity on hover */
+            color: #fff; /* Change text color on hover */
+            border-color: #fff; /* Change border color on hover */
+        }
+
+        .butt span {
+            position: relative;
+            z-index: 1;
+        }
+</style>
 <body>
     <h1 class="title">Jeowebite</h1>
-    <p class="description">Welcome to Jeowebite, your one-stop destination for all things gaming! Whether you're into retro classics or the latest mods fnf mods, we've got you covered. Explore our collection of games below.</p>
+    <p class="description">Welcome to Jeowebite, your one-stop destination for all things gaming! Whether you're into retro games or the latest Friday Night Funkin mods, We've got you covered. Explore our huge collection of fun browser games below.</p>
     <p class="description">Your IP Address is 69.69.420</address></p>
     <div class="button-container">
         <a href="games.html" class="button"><span>All Games</span></a>
@@ -116,7 +171,12 @@
         <a href="browser.html" class="button"><span>Proxies</span></a>
         <a href="leaderboards.html" class="button"><span>Leaderboards</span></a>
     </div>
-
+    <p class="description">Game Subgenre</p>
+    <div class="butt-container">
+        <a href="2-player.html" class="button"><span>2 Player Games</span></a>
+        <a href="flash.html" class="button"><span>Flash Games</span></a>
+        <a href="car.html" class="button"><span>Car Games</span></a>
+    </div>
     <script>
         window.addEventListener('DOMContentLoaded', (event) => {
             fetch('https://api.ipify.org?format=json')
