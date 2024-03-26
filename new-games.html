@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" media="screen and (max-width: 767px)" href="styles-mobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="styles.css">
+    <button class="go-back-button" onclick="goBack()">Go Back</button>
+    <script>
+        function goBack() {
+             window.location.href = "index.html";
+         }
+     </script>
+     <style>
+          #all-game {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around; /* Adjust as needed */
+            padding: 20px;
+            background: #202225;
+            border-radius: 100px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+          .go-back-button {
+         position: fixed;
+         top: 20px;
+         right: 20px;
+         padding: 10px 20px;
+         background-color: #000000d6;
+         color: white;
+         font-size: 16px;
+         border: none;
+         border-radius: 8px;
+         cursor: pointer;
+         z-index: 9999;
+         width: 260px;
+         height: 60px;
+     }
+     </style>
+    <!-- Your existing head content -->
+</head>
+<body>
+    <!-- Your existing body content -->
+
+    <div id="gameCardsContainer">
+        <div id="all-game"></div>
+    </div>
+
+    <script>
+        // Fetch games.html and extract the last 50 elements with class "game-card"
+        fetch('games.html')
+        .then(response => response.text())
+        .then(html => {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+            const gameCards = doc.querySelectorAll('.game-card');
+            const last50GameCards = Array.from(gameCards).slice(-50); // Get last 50 elements
+
+            // Display the last 50 game cards on the webpage
+            const allGameContainer = document.getElementById('all-game');
+            last50GameCards.forEach(card => {
+                allGameContainer.appendChild(card.cloneNode(true)); // Clone and append each card
+            });
+        })
+        .catch(error => console.error('Error fetching data:', error));
+    </script>
+</body>
+</html>
