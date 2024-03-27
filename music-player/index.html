@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Music Selection</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f3f3f3;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        width: 80%;
+        margin: 50px auto;
+        text-align: center;
+    }
+    .album {
+        display: inline-block;
+        margin: 10px;
+        cursor: pointer;
+    }
+    .album img {
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+    .album img:hover {
+        transform: scale(1.1);
+    }
+</style>
+<script>
+    function goBack() {
+         window.location.href = "index.html";
+     }
+ </script>
+ <style>
+      .go-back-button {
+     position: fixed;
+     top: 20px;
+     right: 20px;
+     padding: 10px 20px;
+     background-color: #000000d6;
+     color: white;
+     font-size: 16px;
+     border: none;
+     border-radius: 8px;
+     cursor: pointer;
+     z-index: 9999;
+     width: 260px;
+     height: 60px;
+ }
+ </style>
+   <script>
+    function goBack() {
+         window.location.href = "index.html";
+     }
+ </script>
+ <style>
+      .go-back-button {
+     position: fixed;
+     top: 20px;
+     right: 20px;
+     padding: 10px 20px;
+     background-color: #000000d6;
+     color: white;
+     font-size: 16px;
+     border: none;
+     border-radius: 8px;
+     cursor: pointer;
+     z-index: 9999;
+     width: 260px;
+     height: 60px;
+ }
+ </style>
+</head>
+<body>
+<div class="container">
+    <h2>Select Album</h2>
+    <div class="album" onclick="playAlbum('4batz-act2')">
+        <img src="cover/4batz-act2.jpg" alt="Act 2 By 4batz">
+        <p>Act 2 By 4batz</p>
+    </div>
+    <div class="album" onclick="playAlbum('album2')">
+        <img src="cover/damm.jpeg" alt="Album 2">
+        <p>Damm by Kendrick Lemar</p>
+    </div>
+    <!-- Add more albums as needed -->
+</div>
+
+<script>
+    function playAlbum(albumName) {
+        window.location.href = `player.html?album=${encodeURIComponent(albumName)}`;
+    }
+</script>
+
+</body>
+</html>

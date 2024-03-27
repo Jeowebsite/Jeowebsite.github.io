@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional Media Player</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f3f3f3;
+        margin: 0;
+        padding: 0;
+    }
+    .music-player {
+        width: 400px;
+        margin: 50px auto;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+    }
+    audio {
+        width: 100%;
+        outline: none;
+        margin-top: 20px;
+    }
+    .album-cover {
+        max-width: 300px;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        color: #333;
+    }
+    .song-list {
+        text-align: left;
+        margin-top: 20px;
+    }
+    .song-list-item {
+        cursor: pointer;
+        margin-bottom: 5px;
+    }
+    .song-list-item:hover {
+        color: blue;
+    }
+</style>
+</head>
+<body>
+<div class="music-player">
+    <h2>Now Playing</h2>
+    <img src="" alt="Album Cover" class="album-cover" id="albumCover">
+    <audio controls id="audioPlayer">
+        <source src="" type="audio/mpeg" id="audioSource">
+        Your browser does not support the audio element.
+    </audio>
+    <p id="songName"></p>
+    <div class="song-list" id="songList"></div>
+</div>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const albumName = params.get('album');
+
+    let currentSongIndex = 0;
+    let songs = [];
+
+    const audioPlayer = document.getElementById('audioPlayer');
+    const songListElement = document.getElementById('songList');
+
+    audioPlayer.addEventListener('ended', function() {
+        currentSongIndex++;
+        if (currentSongIndex < songs.length) {
+            playSong(currentSongIndex);
+        } else {
+            currentSongIndex = 0;
+            // Handle end of album, maybe play next album or stop playback
+        }
+    });
+
+    function playSong(index) {
+        const song = songs[index];
+        document.getElementById('audioSource').setAttribute('src', song.musicPath);
+        document.getElementById('albumCover').setAttribute('src', song.coverPath);
+        document.getElementById('audioPlayer').load();
+        document.getElementById('audioPlayer').play();
+        document.getElementById('songName').innerText = `Now Playing: ${song.title}`;
+        updateSongList(index);
+    }
+
+    function updateSongList(currentIndex) {
+        songListElement.innerHTML = '';
+        songs.forEach((song, index) => {
+            const listItem = document.createElement('div');
+            listItem.classList.add('song-list-item');
+            listItem.textContent = song.title;
+            if (index === currentIndex) {
+                listItem.style.fontWeight = 'bold';
+            }
+            listItem.addEventListener('click', () => {
+                currentSongIndex = index;
+                playSong(currentSongIndex);
+            });
+            songListElement.appendChild(listItem);
+        });
+    }
+
+    if (albumName) {
+        // Load songs for the selected album
+        switch (albumName) {
+            case '4batz-act2':
+                songs = [
+                    { title: 'Act 2 by 4batz', musicPath: 'music/4batz-act2.mp3', coverPath: 'cover/4batz-act2.jpg' },
+                    // Add more songs as needed
+                ];
+                break;
+            case 'album2':
+                songs = [
+                    { title: 'BLOOD.', musicPath: 'music/Blood..mp3', coverPath: 'cover/damm.jpeg' },
+                    { title: 'DNA.', musicPath: 'music/DNA..mp3', coverPath: 'cover/damm.jpeg' },
+                    // Add more songs as needed
+                ];
+                break;
+            // Add more albums as needed
+            default:
+                alert('Album not found.');
+                window.location.href = 'index.html'; // Redirect back to homepage
+        }
+        playSong(currentSongIndex);
+    } else {
+        // Handle case where album is not set
+        alert('No album selected.');
+        window.location.href = 'index.html'; // Redirect back to homepage
+    }
+</script>
+
+</body>
+</html>
