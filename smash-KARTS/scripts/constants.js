@@ -1,8 +1,5 @@
 'use strict';
 
-//AB TEST
-var pendingGoogleOptimiseABTestLoadDetails = null;
-
 //ADS
 const AdProviderPlaywire = "Playwire";
 const AdProviderGoogleH5Games = "GoogleH5Games";

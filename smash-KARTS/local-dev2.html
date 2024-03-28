@@ -4,12 +4,7 @@
 <head>
 	<script src="scripts/constants.js"></script>
 	
-	<!-- Required for AB Testing via Google Optimise -->
-	<script src="https://www.googleoptimize.com/optimize.js?id=OPT-W8QW63G"></script>
-
-
 	<meta charset="utf-8">
-	<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap" rel="stylesheet">
 	<link rel="icon" href="images/favicon.png" sizes="16x16">
 	<!-- og: Open graph meta tags allow you to control what content shows up when a page is shared on Facebook -->
 	<meta property="og:site_name" content="SmashKarts.io">
@@ -226,11 +221,11 @@
 
 	const buildUrl = "Build";
 
-	const loaderUrl = buildUrl + "/bo5.loader.js";
+	const loaderUrl = buildUrl + "/tt5.loader.js";
 	const config = {
-		dataUrl: buildUrl + "/f6b010c9ebdfa6880bfe9395da65aea4.data.br",
-		frameworkUrl: buildUrl + "/c5082cb377c0207dc5976debf278033e.js.br",
-		codeUrl: buildUrl + "/eaf4cbd45e3ab7c0e18294a7466ee7ce.wasm.br",
+		dataUrl: buildUrl + "/ffd8b90d910fd49965e1d4604a83d913.data.br",
+		frameworkUrl: buildUrl + "/9efaa9a4b36bc8a7560ce34e975ba822.js.br",
+		codeUrl: buildUrl + "/9866bb2ef4052c799ce6f39ed9fdcaa9.wasm.br",
 		// #if MEMORY_FILENAME
 		//         memoryUrl: buildUrl + "/",
 		// #endif
@@ -240,7 +235,7 @@
 		streamingAssetsUrl: "StreamingAssets",
 		companyName: "TallTeam",
 		productName: "Smash Karts",
-		productVersion: "2.2.6",
+		productVersion: "2.3.2",
 	};
 
 	var mainContainer = document.querySelector("#mainContainer");
@@ -318,8 +313,6 @@
 		window.unityGame.SendMessage(unityFirebaseGameOjbectName, "SetDisplayAdProvider", displayAdProvider);
 		window.unityGame.SendMessage(unityFirebaseGameOjbectName, "SetVideoAdProvider", videoAdProvider);
 		
-		trySendGoogleOptimiseABTestLoadedMessage();
-
 		trySendAdBlockDetectedMessage();
 	}
 
@@ -355,51 +348,14 @@
 		}
 	}
 
-	function initGoogleOptimizeCallback()
-	{
-		gtag('event', 'optimize.callback', {
-			callback: (value, name) =>
-			{
-				//console.log(`Google Optimize callback id: ${name} variant: ${value}`);
-
-				pendingGoogleOptimiseABTestLoadDetails = `id_${name}_variant_${value}`;
-
-				setAdinPlaySubIdForABTest(pendingGoogleOptimiseABTestLoadDetails);
-
-				trySendGoogleOptimiseABTestLoadedMessage();
-			}
-		});
-	}
-
 	function setAdinPlaySubIdForABTest(val)
 	{
 		//set adinplay subid which enables segmented daily reports
 		aiptag.subid = val;
 	}
 
-	function trySendGoogleOptimiseABTestLoadedMessage()
-	{
-		if(window.unityGame != null && pendingGoogleOptimiseABTestLoadDetails != null)
-		{
-			//console.log(`Google Optimize send message OnGoogleOptimizeABTestLoaded ${pendingGoogleOptimiseABTestLoadDetails}`);
-
-			window.unityGame.SendMessage(unityFirebaseGameOjbectName, "OnGoogleOptimizeABTestLoaded", pendingGoogleOptimiseABTestLoadDetails);
-
-			//tell unity what ad providers are enabled as they could have changed via ab test
-			window.unityGame.SendMessage(unityFirebaseGameOjbectName, "SetDisplayAdProvider", displayAdProvider);
-			window.unityGame.SendMessage(unityFirebaseGameOjbectName, "SetVideoAdProvider", videoAdProvider);
-
-			pendingGoogleOptimiseABTestLoadDetails = null;
-		}
-		// else
-		// {
-		// 	console.log(`Google Optimize error window.unityGame: ${window.unityGame} pendingGoogleOptimiseABTestLoadDetails: ${pendingGoogleOptimiseABTestLoadDetails}`);
-		// }
-	}
-
 	function onLoad()
 	{
-		initGoogleOptimizeCallback();
 		updateGameCanvasSize();
 	}
 

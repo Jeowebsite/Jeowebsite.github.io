@@ -279,3 +279,4 @@ window.CrazyGames.SDK.getEnvironment((_error, environment) =>
     console.log(environment); // 'local', 'crazygames' or 'disabled'
     cgEnvDisabled = (environment === "disabled");
 });
+

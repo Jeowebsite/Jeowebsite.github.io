@@ -355,32 +355,40 @@ async function callCloudFunctionNew(functionId, jsonData, key, region, count)
   }
 }
 
+const logCloudFunctionErrors = false;
 function logCloudFunctionError(debugErrorRootNode, jsonData, message, functionId)
 {
-  var firebaseUid = firebase.auth().currentUser.uid;
-  var currentTime = new Date().getTime();
-  var debugErrorNode = "cferror/" + debugErrorRootNode + "/" + firebaseUid + "/" + functionId + "/" + currentTime;
-  const dbRef = firebase.database().ref();
-  dbRef.child(debugErrorNode).set({
-    errorData: jsonData,
-    os: getOS(),
-    time: currentTime,
-    successCount: cloudFunctionSuccess,
-    failCound: cloudFunctionFail,
-    errorMessage: message
-  }, (setValueError) =>
+  if(logCloudFunctionErrors)
   {
-    if (setValueError)
+    var firebaseUid = firebase.auth().currentUser.uid;
+    var currentTime = new Date().getTime();
+    var debugErrorNode = "cferror/" + debugErrorRootNode + "/" + firebaseUid + "/" + functionId + "/" + currentTime;
+    const dbRef = firebase.database().ref();
+    dbRef.child(debugErrorNode).set({
+      errorData: jsonData,
+      os: getOS(),
+      time: currentTime,
+      successCount: cloudFunctionSuccess,
+      failCound: cloudFunctionFail,
+      errorMessage: message
+    }, (setValueError) =>
     {
-      console.log("logCloudFunctionError setValueError:: " + setValueError.message);
-    } else
-    {
-      var debugErrorWriteSuccessNode = "cferror/" + debugErrorRootNode + "/" + firebaseUid + "/" + functionId + "/" + currentTime + "/successTime";
-      var successTime = new Date().getTime();
-      dbRef.child(debugErrorWriteSuccessNode).set(successTime);
-      //console.log("logCloudFunctionError Success");
-    }
-  });
+      if (setValueError)
+      {
+        console.log("logCloudFunctionError setValueError:: " + setValueError.message);
+      } else
+      {
+        var debugErrorWriteSuccessNode = "cferror/" + debugErrorRootNode + "/" + firebaseUid + "/" + functionId + "/" + currentTime + "/successTime";
+        var successTime = new Date().getTime();
+        dbRef.child(debugErrorWriteSuccessNode).set(successTime);
+        //console.log("logCloudFunctionError Success");
+      }
+    });
+  }
+  else 
+  {
+    console.log("logCloudFunctionError:: " + debugErrorRootNode + " " + message);
+  }
 }
 
 function logCloudFunctionSuccess(debugErrorRootNode, jsonData, functionId)
@@ -468,3 +476,12 @@ window.addEventListener('load', function() {
 }, false);
 
 
+function getBrowser()
+{
+  return window.navigator.userAgent;
+}
+
+function getBrowserVisibilityState()
+{
+  return document.visibilityState;
+}
