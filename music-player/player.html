@@ -4,6 +4,29 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Professional Media Player</title>
+<button id="castButton">Cast Audio</button>
+<script src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
+<script>
+    // Function to handle casting when the button is clicked
+    function castAudio() {
+        // Check if casting is supported by the browser
+        if ('cast' in window) {
+            // Prompt user to select a Chromecast device
+            cast.framework.CastContext.getInstance().requestSession()
+            .then(function() {
+                console.log('Successfully initiated casting session');
+            })
+            .catch(function(error) {
+                console.error('Error initiating casting session', error);
+            });
+        } else {
+            alert('Chromecast casting is not supported in this browser.');
+        }
+    }
+    
+    // Add click event listener to the button
+    document.getElementById('castButton').addEventListener('click', castAudio);
+    </script>
 <style>
     body {
         font-family: Arial, sans-serif;
