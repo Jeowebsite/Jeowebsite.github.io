@@ -1,4 +1,175 @@
-/* Reset some default styles */
+.footer1 {
+  position: fixed;
+  top: 10px; /* Adjust as needed */
+  left: 10px; /* Adjust as needed */
+  background-color: #f0f0f000;
+  padding: 10px;
+  border: 3px transparent #ccc;
+ border-top-right-radius: 20px;
+ border-top-left-radius: 20px;
+ border-bottom-right-radius: 20px;
+ border-bottom-left-radius: 20px;
+}
+.footer {
+  position: fixed;
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  background-color: #f0f0f000;
+  padding: 10px;
+  border: 3px transparent #ccc;
+  border-top-right-radius: 20px;
+ border-top-left-radius: 20px;
+ border-bottom-right-radius: 20px;
+ border-bottom-left-radius: 20px;
+}
+body {
+  font-family: 'Kanit', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 1px;
+  color: #ffffff00;
+  /* Set the GIF as the background */
+  background-image: url('rain.gif');
+  /* Ensure the background covers the entire viewport */
+  background-size: cover;
+  /* Optionally, you can specify how the background should repeat */
+  background-repeat: repeat;
+}
+
+
+  .title {
+      font-size: 4em;
+      font-weight: bold;
+      margin-bottom: 30px; 
+      text-align: center;
+      text-transform: uppercase;
+      color: #ccc; /* Light gray title */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+
+  .description {
+      max-width: 600px;
+      margin-bottom: 40px; 
+      text-align: center;
+      line-height: 1.6;
+      color: #999; /* Light gray text */
+  }
+
+  .button-container {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: center;
+      margin-top: 20px; 
+  }
+
+  .button {
+      background-color: transparent;
+      border: 2px solid #ccc; /* Light gray border */
+      color: #ccc;
+      font-size: 1.2em; 
+      font-weight: bold; 
+      padding: 15px 30px; 
+      margin: 10px;
+      text-decoration: none;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      border-radius: 25px; /* Rounded button */
+  }
+
+  .button::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 300%;
+      height: 300%;
+      background-color: rgba(255, 255, 255, 0.1);
+      transition: width 0.3s ease, height 0.3s ease;
+      border-radius: 50%;
+      z-index: 0;
+      transform: translate(-50%, -50%);
+  }
+
+  .button:hover::before {
+      width: 0;
+      height: 0;
+  }
+
+  .button:hover {
+      transform: scale(1.1); /* Increase button size on hover */
+      opacity: 0.8; /* Reduce opacity on hover */
+      color: #fff; /* Change text color on hover */
+      border-color: #fff; /* Change border color on hover */
+  }
+
+  .button span {
+      position: relative;
+      z-index: 1;
+  }
+    .butt-container {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: center;
+      margin-top: 20px; 
+  }
+
+  .butt {
+      background-color: transparent;
+      border: 2px solid #ccc; /* Light gray border */
+      color: #ccc;
+      font-size: 1.2em; 
+      font-weight: bold; 
+      padding: 15px 30px; 
+      margin: 10px;
+      text-decoration: none;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      border-radius: 25px; /* Rounded button */
+      height: 23px;
+      text-align: center;
+      height: 60px;
+  }
+
+  .butt::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 300%;
+      height: 200%;
+      background-color: rgba(255, 255, 255, 0.1);
+      transition: width 0.3s ease, height 0.3s ease;
+      border-radius: 50%;
+      z-index: 0;
+      transform: translate(-50%, -50%);
+  }
+
+  .butt:hover::before {
+      width: 0;
+      height: 0;
+  }
+
+  .butt:hover {
+      transform: scale(1.1); /* Increase button size on hover */
+      opacity: 0.8; /* Reduce opacity on hover */
+      color: #fff; /* Change text color on hover */
+      border-color: #fff; /* Change border color on hover */
+  }
+
+  .butt span {
+      position: relative;
+      z-index: 1;
+  }
+/* Reset 
+some default styles */
 * {
   margin: 0;
   padding: 0;
