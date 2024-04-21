@@ -9,12 +9,13 @@
    border-top-left-radius: 20px;
    border-bottom-right-radius: 20px;
    border-bottom-left-radius: 20px;
+   text-decoration-color: #ccc;
 }
 .footer {
     position: fixed;
     top: 10px; /* Adjust as needed */
     right: 10px; /* Adjust as needed */
-    background-color: #f0f0f000;
+    background-color: rgba(0, 0, 0, 0);
     padding: 10px;
     border: 3px transparent #ccc;
     border-top-right-radius: 20px;
@@ -33,7 +34,7 @@ body {
     min-height: 100vh;
     color: #fff;
     /* Set the GIF as the background */
-    background-image: url('rain.gif');
+    background-image: url('76YS.gif');
     /* Ensure the background covers the entire viewport */
     background-size: cover;
     /* Optionally, you can specify how the background should repeat */
@@ -47,7 +48,7 @@ body {
         margin-bottom: 30px; 
         text-align: center;
         text-transform: uppercase;
-        color: #ccc; /* Light gray title */
+        color: #ffffff; /* Light gray title */
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
     }
 

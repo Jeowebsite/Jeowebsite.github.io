@@ -1,10 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>  
+    <style>
+        /* Styles for the pop-up ad */
+        .popup {
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: white;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          z-index: 9999;
+        }
+      
+        .popup img {
+          width: 100%;
+          border-radius: 10px;
+        }
+      
+        .close {
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          font-size: 20px;
+          cursor: pointer;
+        }
+      
+        .close:hover {
+          color: red;
+        }
+    </style>
+    </head>
+    <body>
+    
+    <div class="popup" id="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <img src="Jeowebsite.jpg" alt="Adventure Image">
+        <h1>CLICK ANYWHERE ON THE SCREEN</h1>
+    </div>
+    <script>
+        // Function to display the popup
+        function displayPopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "block";
+        }
+    
+        // Function to close the popup
+        function closePopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "none";
+        }
+    
+        // Set interval to display the popup every 30 minutes
+        setInterval(displayPopup, 30 * 60 * 1000);
+    
+        // Add event listener to close the popup when clicking anywhere on the screen
+        document.addEventListener("click", function(event) {
+            var popup = document.getElementById("popup");
+            if (event.target !== popup && !popup.contains(event.target)) {
+                closePopup();
+            }
+        });
+    </script>
+    
+    
     <link rel="stylesheet" media="screen and (min-width: 768px)" href="home.css">
     <footer class="footer1">
         Last Updated on: <span id="lastUpdated"></span>
     </footer>
+<style>
+    .fotter1{
+        color: aliceblue;
+    }
+</style>
     <link rel="stylesheet" media="screen and (max-width: 767px)" href="styles-mobile.css">
       <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6XL3ZN4KW"></script>
@@ -32,7 +102,7 @@
   min-height: 1px;
   color: #ffffff00;
   /* Set the GIF as the background */
-  background-image: url('rain.gif');
+  background-image: url('76YS.gif');
   /* Ensure the background covers the entire viewport */
   background-size: cover;
   /* Optionally, you can specify how the background should repeat */
