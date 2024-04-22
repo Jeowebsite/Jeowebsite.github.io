@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeo</title>
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 767px)" href="styles-mobile.css">
+  <div id="color>  Last Updated on: <span id="lastUpdated"></span></div>
+</head>
+<body>
+    <style>
+        #lastUpdated{
+color: aliceblue;
+        }
+        #color{
+            color: aliceblue;
+        }
+    </style>
+    <script>
+        // Fetch the last commit date of your GitHub repository using GitHub API
+        fetch('https://api.github.com/repos/jeowebsite/jeowebsite.github.io/commits?per_page=1')
+        .then(response => response.json())
+        .then(data => {
+            const lastCommitDate = new Date(data[0].commit.author.date);
+            document.getElementById("lastUpdated").textContent = lastCommitDate.toLocaleString();
+        })
+        .catch(error => console.error('Error fetching data:', error));
+    </script>
+</body>
+</html>
