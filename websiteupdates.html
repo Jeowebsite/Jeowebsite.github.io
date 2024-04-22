@@ -1,20 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        #all-game {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around; /* Adjust as needed */
+                padding: 20px;
+                background: #202225;
+                border-radius: 100px;
+                box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            }
+            .go-back-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #0000008c;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            z-index: 9999;
+            width: 260px;
+            height: 60px;
+        }
+    </style>
+    <body>
+        <button class="go-back-button" onclick="goBack()">Go Back</button>
+        <script>
+           function goBack() {
+                window.location.href = "index.html";
+            }
+        </script>
+    <h1>
+        i know this Page does not look great but its just so you know when the last time i updated it and what i changed
+    </h1>
+    <div class="size"
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeo</title>
-    <link rel="stylesheet" media="screen and (min-width: 768px)" href="styles.css">
     <link rel="stylesheet" media="screen and (max-width: 767px)" href="styles-mobile.css">
-  <div id="color>  Last Updated on: <span id="lastUpdated"></span></div>
+    Last Updated on: <span id="lastUpdated"></span>
+
+    What I Updated : <span id="Commit"></span>
 </head>
 <body>
     <style>
-        #lastUpdated{
-color: aliceblue;
-        }
-        #color{
-            color: aliceblue;
+       .size{
+        font-family: cursive;
+    
+       }
+        .size{
+        font-size: xx-large;
         }
     </style>
     <script>
@@ -27,5 +66,17 @@ color: aliceblue;
         })
         .catch(error => console.error('Error fetching data:', error));
     </script>
+    <script>
+        // Fetch the latest commit message of your GitHub repository using GitHub API
+        fetch('https://api.github.com/repos/jeowebsite/jeowebsite.github.io/commits?per_page=1')
+        .then(response => response.json())
+        .then(data => {
+            const latestCommitMessage = data[0].commit.message;
+            document.getElementById("Commit").textContent = latestCommitMessage;
+        })
+        .catch(error => console.error('Error fetching data:', error));
+    </script>
+    
+    </div>
 </body>
 </html>
