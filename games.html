@@ -172,30 +172,19 @@ loadImagesFromStorage(function(images) {
     </nav>
     <main>
   <style>
-   .search-container {
-  display: flex;
-  max-width: 900px; /* Adjusted maximum width */
-  margin: 20px auto; /* Center the search bar */
-  border-radius: 50px; /* Increased border-radius for a rounder look */
-  overflow: hidden; /* Hide overflowing content */
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
-  background-color: #333; /* Dark background color */
-}
 </style>
-<div class="search-container">
-    <input type="text" id="searchInput" placeholder="">
-
-</div>
-<div id="results" id="all-games"></div>
+<input type="text" id="searchInput" placeholder="">
+<div id="results"></div>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         var gameCards = document.querySelectorAll('.game-card');
         var searchInput = document.getElementById('searchInput');
-        searchInput.placeholder = "Search among " + gameCards.length + " Very fun website games";
+        var resultsContainer = document.getElementById('results');
+
+        searchInput.placeholder = "Search among " + gameCards.length + " games";
 
         searchInput.addEventListener('input', function() {
             var searchTerm = this.value.trim().toLowerCase();
-            var resultsContainer = document.getElementById('results');
             resultsContainer.innerHTML = '';
 
             if (searchTerm.length > 0) {
@@ -218,6 +207,7 @@ loadImagesFromStorage(function(images) {
         });
     });
 </script>
+
 <style>
     .ads {
 position: absolute; /* Change from relative to absolute */
@@ -3738,7 +3728,7 @@ transition: box-shadow 0.3s ease;
         </div>
         <div class="game-card">
             <img src="cooking-fever/cooking fever.jpeg">
-            <h3d>Cooking Fever</h3d>
+            <h3>Cooking Fever</h3>
             <button class="button" onclick="openFileInWindow('cooking-fever/index.html')">Play Game</button>
             <a href="cooking-fever/index.html" class="link-button" target="_blank">Open In A New Tab</a>
         </div>
