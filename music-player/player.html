@@ -232,17 +232,39 @@
                     // Add more songs as needed
                 ];
                 break;
-            // Add more albums as needed
-            default:
-                alert('Album not found.');
-                window.location.href = 'index.html'; // Redirect back to homepage
-        }
-        playSong(currentSongIndex);
-    } else {
-        // Handle case where album is not set
-        alert('No album selected.');
-        window.location.href = 'index.html'; // Redirect back to homepage
-    }
+                case 'album7':
+    songs = [
+        { title: 'Dont Believe The Hype', musicPath: 'music/Dont-Believe-The-Hype.mp3', coverPath: 'cover/The goat.jpeg' },
+        { title: 'Heartless', musicPath: 'music/Heartless.mp3', coverPath: 'cover/The goat.jpeg' },
+        { title: 'Martin & Gina', musicPath: 'music/Martin-&-Gina.mp3', coverPath: 'cover/The goat.jpeg' },
+        { title: 'Flex', musicPath: 'music/Flex.mp3', coverPath: 'cover/The goat.jpeg' },
+        { title: 'Go Stupid', musicPath: 'music/Go-Stupid.mp3', coverPath: 'cover/The goat.jpeg' },
+        { title: '21', musicPath: 'music/21.mp3', coverPath: 'cover/The goat.jpeg' },
+        { title: '33', musicPath: 'music/33.mp3', coverPath: 'cover/The goat.jpeg' }, 
+        { title: 'I Know', musicPath: 'music/I-Know.mp3', coverPath: 'cover/The goat.jpeg' },
+        { title: 'Beautiful Pain', musicPath: 'music/Beautiful-Pain.mp3', coverPath: 'cover/The goat.jpeg' },
+        { title: 'No Matter What', musicPath: 'music/No-Matter-What.mp3', coverPath: 'cover/The goat.jpeg' },
+        { title: 'Be Something', musicPath: 'music/Be-Something.mp3', coverPath: 'cover/The goat.jpeg' },
+        { title: 'Relentless', musicPath: 'music/Relentless.mp3', coverPath: 'cover/The goat.jpeg' },
+        { title: 'DND', musicPath: 'music/DND.mp3', coverPath: 'cover/The goat.jpeg' },
+        { title: 'Chinatown', musicPath: 'music/Chinatown.mp3', coverPath: 'cover/The goat.jpeg' },
+        { title: 'Trials & Tribulations', musicPath: 'music/Trials-&-Tribulations.mp3', coverPath: 'cover/The goat.jpeg' }, 
+        { title: 'Wishing For A Hero', musicPath: 'music/Wishing-For-A-Hero.mp3', coverPath: 'cover/The goat.jpeg' }
+    ];
+    break;
+
+// Add more cases for other albums as needed
+default:
+    alert('Album not found.');
+    window.location.href = 'index.html'; // Redirect back to homepage
+}
+playSong(currentSongIndex);
+} else {
+// Handle case where album is not set
+alert('No album selected.');
+window.location.href = 'index.html'; // Redirect back to homepage
+}
+
 </script>
 
 </body>
