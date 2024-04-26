@@ -1,6 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <button class="go-back-button" onclick="goBack()">Go Back</button>
+    <script>
+       function goBack() {
+            window.location.href = "https://jeowebsite.github.io/music-player/index.html";
+        }
+    </script>
+    <style>
+         .go-back-button {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        background-color: #000000d6;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        z-index: 9999;
+        width: 260px;
+        height: 60px;
+    }
+    </style>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Professional Media Player</title>
