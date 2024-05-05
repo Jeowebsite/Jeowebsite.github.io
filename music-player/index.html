@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Jeo | Music Player</title>
-    <button class="go-back-button" onclick="goBack()">Go Back</button>
+    <button class="go-back-button" onclick="goBack()">Go Back To Music Selection</button>
     <link rel="stylesheet" media="screen and (max-width: 767px)" href="styles-mobile.css">
     <link rel="stylesheet" media="screen and (min-width: 768px)" href="styles.css">
 <style>
@@ -10,7 +10,7 @@
       text-decoration: none;
       display: inline-block;
       background: linear-gradient(135deg, #000000, #511e66);
-      color: #fff;
+      color: #000000;
       font-weight: 600;
       font-size: 16px;
       padding: 10px 45px;
@@ -36,7 +36,7 @@
         right: 20px;
         padding: 10px 20px;
         background-color: #000000d6;
-        color: white;
+        color: rgb(255, 255, 255);
         font-size: 16px;
         border: none;
         border-radius: 8px;
@@ -69,7 +69,7 @@
     .album img {
         width: 200px;
         height: 200px;
-        border-radius: 10px;
+        border-radius: 25px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease;
     }
@@ -124,74 +124,74 @@
 </head>
 <body>
 <div class="container">
-    <h2>Select Album</h2>
+    <h2>Music Selection</h2>
     <div class="album" onclick="playAlbum('4batz-act2')">
         <img src="cover/4batz-act2.jpg" alt="Act 2 By 4batz">
-        <p>Act ii (Date @ 8) By 4batz</p>
+        <p>Act ii: Date @ 8 (4batz)</p>
     </div>
     <div class="album" onclick="playAlbum('album2')">
         <img src="cover/damm.jpeg" alt="Album 2">
-        <p>DAMN by Kendrick Lamar</p>
+        <p>DAMN (Kendrick Lamar)</p>
     </div>
     <div class="album" onclick="playAlbum('album3')">
         <img src="cover/die-lit.jpeg" alt="Album 2">
-        <p>Die Lit By Playboi Carti</p>
+        <p>Die Lit (Playboi Carti)</p>
     </div>
     <div class="album" onclick="playAlbum('album4')">
         <img src="cover/her-loss.jpeg" alt="Album 2">
-        <p>Her Loss By Drake</p>
+        <p>Her Loss (Drake)</p>
     </div>
     <div class="album" onclick="playAlbum('album5')">
         <img src="cover/looking-out-for-you.jpeg" alt="Album 2">
-        <p>Looking Out For You By Joy Again</p>
+        <p>Looking Out For You (Joy Again)</p>
     </div>
     <div class="album" onclick="playAlbum('album6')">
         <img src="cover/we-dont-trust-you.jpeg" alt="Album 2">
-        <p>We Dont Trust You By Metro</p>
+        <p>We Dont Trust You (Metro)</p>
     </div>
     <div class="album" onclick="playAlbum('album7')">
         <img src="cover/The goat.jpeg" alt="Album 2">
-        <p>The Goat by Polo G</p>
+        <p>The Goat (Polo G)</p>
     </div>
         <div class="album" onclick="playAlbum('album8')">
             <img src="cover/allday.jpeg" alt="Album 2">
-            <p>All Day by Girl Talk</p>
+            <p>All Day (Girl Talk)</p>
         </div>
         <div class="album" onclick="playAlbum('album9')">
             <img src="cover/familyties.png" alt="Album 2">
-            <p>Family Ties by Kendrick Lamar</p>
+            <p>Family Ties (Kendrick Lamar)</p>
         </div>
         <div class="album" onclick="playAlbum('album10')">
             <img src="cover/straightouttacompton.jpg" alt="Album 2">
-            <p>Straight Outta Compton by N.W.A</p>
+            <p>Straight Outta Compton (N.W.A)</p>
         </div>
         <div class="album" onclick="playAlbum('album11')">
             <img src="cover/6locc6a6y.jpg" alt="Album 2">
-            <p>6locc 6a6y by Lil Loaded</p>
+            <p>6locc 6a6y (Lil Loaded)</p>
         </div>
         <div class="album" onclick="playAlbum('album12')">
             <img src="cover/avatar.jpeg" alt="Album 2">
-            <p>Avatar by Lil Loaded</p>
+            <p>Avatar (Lil Loaded)</p>
         </div>
         <div class="album" onclick="playAlbum('album13')">
             <img src="cover/whatspoppin.jpeg" alt="Album 2">
-            <p>WHATS POPPIN by Jack Harlow</p>
+            <p>WHATS POPPIN (Jack Harlow)</p>
         </div>
         <div class="album" onclick="playAlbum('album14')">
             <img src="cover/carnival.jpg" alt="Album 2">
-            <p>CARNIVAL by Kanye West</p>
+            <p>CARNIVAL (Kanye West)</p>
         </div>
         <div class="album" onclick="playAlbum('album15')">
             <img src="cover/misstherage.jpeg" alt="Album 2">
-            <p>Miss The Rage by Trippie Red</p>
+            <p>Miss The Rage (Trippie Red)</p>
         </div>
         <div class="album" onclick="playAlbum('album16')">
             <img src="cover/gangunit.jpeg" alt="Album 2">
-            <p>Gang Unit by Lil Loaded</p>
+            <p>Gang Unit (Lil Loaded)</p>
         </div>
         <div class="album" onclick="playAlbum('album17')">
             <img src="cover/americandream.jpeg" alt="Album 2">
-            <p>American Dream by 21 Savage</p>
+            <p>American Dream (21 Savage)</p>
         </div>
         <div class="album" onclick="playAlbum('album19')">
             <img src="cover/lilmabu.jpeg" alt="Album 2">
@@ -199,58 +199,68 @@
         </div>
         <div class="album" onclick="playAlbum('album20')">
             <img src="cover/doja.png" alt="Album 2">
-            <p>Doja by Central Cee</p>
+            <p>Doja (Central Cee)</p>
         </div>
         <div class="album" onclick="playAlbum('album21')">
             <img src="cover/notinthemood.jpg" alt="Album 2">
-            <p>Not In The Mood by Lil Tjay</p>
+            <p>Not In The Mood (Lil Tjay)</p>
         </div>
         <div class="album" onclick="playAlbum('album22')">
             <img src="cover/bustdownrollieavalanche.jpeg" alt="Album 2">
-            <p>Bustdown Rollie Avalanche by Kai Cenat</p>
+            <p>Bustdown Rollie (Kai Cenat)</p>
         </div>
         <div class="album" onclick="playAlbum('album23')">
             <img src="cover/beattheodds.png" alt="Album 2">
-            <p>Beat The Odds by Lil Tjay</p>
+            <p>Beat The Odds (Lil Tjay)</p>
         </div>
         <div class="album" onclick="playAlbum('album24')">
-            <img src="cover/pushups.png" alt="Album 2">
-            <p>Push Ups by Drake</p>
+            <img src="cover/sprinter.png" alt="Album 2">
+            <p>Sprinter (Central Cee)</p>
         </div>
         <div class="album" onclick="playAlbum('album25')">
-            <img src="cover/euphoria.jpg" alt="Album 2">
-            <p>euphoria by Kendrick Lamar</p>
+            <img src="cover/slutmeout.jpg" alt="Album 2">
+            <p>SLUT ME OUT (NLE Choppa)</p>
         </div>
         <div class="album" onclick="playAlbum('album26')">
-            <img src="cover/sprinter.png" alt="Album 2">
-            <p>Sprinter by Central Cee</p>
+            <img src="cover/shottaflow.png" alt="Album 2">
+            <p>Shotta Flow (NLE Choppa)</p>
         </div>
         <div class="album" onclick="playAlbum('album27')">
-            <img src="cover/slutmeout.jpg" alt="Album 2">
-            <p>SLUT ME OUT by NLE Choppa</p>
+            <img src="cover/popout.jpeg" alt="Album 2">
+            <p>Pop Out (Polo G)</p>
         </div>
         <div class="album" onclick="playAlbum('album28')">
-            <img src="cover/shottaflow.png" alt="Album 2">
-            <p>Shotta Flow by NLE Choppa</p>
+            <img src="cover/gthang.jpeg" alt="Album 2">
+            <p>Nuthin But A G Thang (Dr. DRE)</p>
         </div>
         <div class="album" onclick="playAlbum('album29')">
-            <img src="cover/popout.jpeg" alt="Album 2">
-            <p>Pop Out by Polo G</p>
+            <img src="cover/singleladies.jpeg" alt="Album 2">
+            <p>Single Ladies (Beyonce)</p>
         </div>
         <div class="album" onclick="playAlbum('album30')">
-            <img src="cover/gthang.jpeg" alt="Album 2">
-            <p>Nuthin But A G Thang by Dr. DRE</p>
+            <img src="cover/blastoff.jpeg" alt="Album 2">
+            <p>Blastoff (Trippie Red)</p>
         </div>
         <div class="album" onclick="playAlbum('album31')">
-            <img src="cover/singleladies.jpeg" alt="Album 2">
-            <p>Single Ladies by Beyonce</p>
+            <img src="cover/changes.jpg" alt="Album 2">
+            <p>Changes (2pac)</p>
         </div>
+        <div class="album" onclick="playAlbum('album32')">
+            <img src="cover/kendrickdrake.jpg" alt="Album 2">
+            <p>Drake Vs. Kendrick Lamar</p>
+        </div>
+        <div class="album" onclick="playAlbum('album33')">
+            <img src="cover/hellcatsrt.jpg" alt="Album 2">
+            <p>Hellcat SRT (Sexyy Red)</p>
+        </div>
+        
         
 
 <script>
     function playAlbum(albumName) {
         window.location.href = `player.html?album=${encodeURIComponent(albumName)}`;
     }
+    
 </script>
 
 </body>
