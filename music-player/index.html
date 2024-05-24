@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Jeo | Music Player</title>
-    <button class="go-back-button" onclick="goBack()">Go Back To Music Selection</button>
+    <button class="go-back-button" onclick="goBack()">Go Back</button>
     <link rel="stylesheet" media="screen and (max-width: 767px)" href="styles-mobile.css">
     <link rel="stylesheet" media="screen and (min-width: 768px)" href="styles.css">
 <style>
@@ -35,7 +35,7 @@
         top: 20px;
         right: 20px;
         padding: 10px 20px;
-        background-color: #000000d6;
+        background-color: #ffffff00;
         color: rgb(255, 255, 255);
         font-size: 16px;
         border: none;
@@ -51,32 +51,64 @@
 <title>Music Selection</title>
 <style>
     body {
-        font-family: Arial, sans-serif;
-        background-color: #f3f3f3;
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        background-color: #1e1d1d;
+        color: #ffffff;
         margin: 0;
         padding: 0;
     }
     .container {
-        width: 80%;
+        width: 90%;
+        max-width: 1200px;
         margin: 50px auto;
         text-align: center;
     }
+    h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
     .album {
         display: inline-block;
-        margin: 10px;
+        margin: 20px;
         cursor: pointer;
+        text-align: center;
     }
     .album img {
         width: 200px;
         height: 200px;
-        border-radius: 25px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .album img:hover {
-        transform: scale(1.1);
+        transform: scale(1.10);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    }
+    .album p {
+        margin-top: 10px;
+        font-size: 16px;
+        color: #c5c5c5;
+    }
+    .go-back-button {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        background-color: #79727270;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        z-index: 9999;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .go-back-button:hover {
+        background-color: #79727270;
+        transform: scale(1.05);
     }
 </style>
+
 <script>
     function goBack() {
          window.location.href = "index.html";
@@ -88,7 +120,7 @@
      top: 20px;
      right: 20px;
      padding: 10px 20px;
-     background-color: #000000d6;
+     background-color: #111111d6;
      color: white;
      font-size: 16px;
      border: none;

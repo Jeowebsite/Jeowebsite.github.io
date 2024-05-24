@@ -27,42 +27,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jeo | Music Player</title>
-<button id="castButton">Cast Audio</button>
-<script src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
-<script>
-    // Function to handle casting when the button is clicked
-    function castAudio() {
-        // Check if casting is supported by the browser
-        if ('cast' in window) {
-            // Prompt user to select a Chromecast device
-            cast.framework.CastContext.getInstance().requestSession()
-            .then(function() {
-                console.log('Successfully initiated casting session');
-            })
-            .catch(function(error) {
-                console.error('Error initiating casting session', error);
-            });
-        } else {
-            alert('Chromecast casting is not supported in this browser.');
-        }
-    }
-    
-    // Add click event listener to the button
-    document.getElementById('castButton').addEventListener('click', castAudio);
-    </script>
 <style>
     body {
-        font-family: Arial, sans-serif;
-        background-color: #f3f3f3;
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        background-color: #1d1d1d;
         margin: 0;
         padding: 0;
+        color: #ffffff;
     }
     .music-player {
         width: 400px;
         margin: 50px auto;
         text-align: center;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #242424;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         padding: 20px;
         border-radius: 10px;
     }
@@ -70,28 +48,43 @@
         width: 100%;
         outline: none;
         margin-top: 20px;
+        background-color: #121212;
+        color: #ffffff;
+        border-radius: 5px;
     }
     .album-cover {
         max-width: 300px;
         margin: 20px auto;
         border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .album-cover:hover {
+        transform: scale(1.15);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     }
     h2 {
-        color: #000000;
+        color: #ffffff;
+        font-size: 24px;
+        margin-bottom: 20px;
     }
     .song-list {
-        text-align: left;
+        text-align: center;
         margin-top: 30px;
     }
     .song-list-item {
         cursor: pointer;
         margin-bottom: 7px;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
     }
     .song-list-item:hover {
-        color: linear-gradient(0deg, #ff0000, #0022ff);
+        background-color: #484747;
+        color: #ffffff;
     }
 </style>
+
 </head>
 <body>
 <div class="music-player">
