@@ -1,71 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeo | Updates</title>
-          <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D6XL3ZN4KW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-D6XL3ZN4KW');
-</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6XL3ZN4KW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-D6XL3ZN4KW');
+    </script>
     <style>
-        #all-game {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-around; /* Adjust as needed */
-                padding: 20px;
-                background: #202225;
-                border-radius: 100px;
-                box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-            }
-            .go-back-button {
-            position: fixed;
-            top: 20px;
-            right: 20px;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #5e1a8691;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            width: 100%;
+            padding: 20px;
+            background-color: #000000ac;
+            color: white;
+            text-align: center;
+        }
+        main {
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            margin: 20px;
+            background: #ffffff;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .update-info {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .go-back-button {
             padding: 10px 20px;
-            background-color: #0000008c;
+            background-color: #3c4956;
             color: white;
             font-size: 16px;
             border: none;
             border-radius: 8px;
             cursor: pointer;
-            z-index: 9999;
-            width: 260px;
-            height: 60px;
+            margin-top: 20px;
+            text-decoration: none;
+            display: inline-block;
+            width: 750px ;
+            text-align: center;
         }
     </style>
-    <body>
-        <button class="go-back-button" onclick="goBack()">Go Back</button>
-        <script>
-           function goBack() {
-                window.location.href = "index.html";
-            }
-        </script>
-    <h1>
-        i know this Page does not look great but its just so you know when the last time i updated it and what i changed
-    </h1>
-    <div class="size"
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeo</title>
-    <link rel="stylesheet" media="screen and (max-width: 767px)" href="styles-mobile.css">
-    Last Updated on: <span id="lastUpdated"></span>
-
-    What I Updated : <span id="Commit"></span>
 </head>
 <body>
-    <style>
-       .size{
-        font-family: cursive;
-    
-       }
-        .size{
-        font-size: xx-large;
-        }
-    </style>
+    <header>
+        <h1>Jeo | Updates</h1>
+    </header>
+    <main>
+        <p class="update-info">Last Updated on: <span id="lastUpdated"></span></p>
+        <p class="update-info">What I Updated: <span id="Commit"></span></p>
+        <a href="index.html" class="go-back-button">Go Back</a>
+    </main>
     <script>
         // Fetch the last commit date of your GitHub repository using GitHub API
         fetch('https://api.github.com/repos/jeowebsite/jeowebsite.github.io/commits?per_page=1')
@@ -75,8 +81,7 @@
             document.getElementById("lastUpdated").textContent = lastCommitDate.toLocaleString();
         })
         .catch(error => console.error('Error fetching data:', error));
-    </script>
-    <script>
+
         // Fetch the latest commit message of your GitHub repository using GitHub API
         fetch('https://api.github.com/repos/jeowebsite/jeowebsite.github.io/commits?per_page=1')
         .then(response => response.json())
@@ -86,7 +91,5 @@
         })
         .catch(error => console.error('Error fetching data:', error));
     </script>
-    
-    </div>
 </body>
 </html>
