@@ -1,69 +1,867 @@
+/* Reset some default styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #a64b00; /* Light gray background for a cozy feel */
-    color: #333;
+    font-size: 90%; /* Reducing font size by 10% */
+  
+  }
+  /* Optionally, you may want to adjust other elements */
+  
+  /* You may need to adjust other elements as needed depending on your webpage structure */
+  
+  * {
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-}
-
-.blog-update {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #ffffff;
-    color: #555; /* Slightly darker text color for warmth */
-    padding: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-.update-section {
-    margin-top: 30px;
-    border: 1px solid #E0E0E0; /* Light gray border */
-    padding: 20px;
-    border-radius: 8px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.update-section:hover {
-    transform: scale(1.05);
-}
-
-.update-content {
-    margin-top: 15px;
+    box-sizing: border-box;
+  }
+  
+  /* Base Styles */
+  body {
+    font-family: "Arial", sans-serif;
+    background:var(--copper);
+    color: #000000;
+    text-align: center;
+  /* Game ads */
+  }
+  #counter {
+    font-size: 24px;
+  }
+  .visible {
+    display: block;
+  }
+  
+  .not-visible {
     display: none;
-}
-
-h1, h2, h3 {
-    color: #6D4C41; /* Brownish heading colors for a cozy touch */
-}
-
-.update-date {
-    color: #4CAF50;
-}
-
-a {
-    color: #6D4C41;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-button {
-    background-color: #6D4C41;
-    color: #FFF;
-    border: none;
-    padding: 12px 20px;
-    font-size: 16px;
+  }
+  /* Dark Mode Styles */
+  body.dark-mode {
+    background: #222;
+    color: #fff;
+  }
+  
+  /* Transitions */
+  body,
+  body.dark-mode {
+    transition: background-color 0.5s, color 0.5s;
+    transition-timing-function: ease-in-out;
+  }
+  
+  /* Dark Mode Switch */
+  .dark-mode-switch {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 30px;
+  }
+  
+  .dark-mode-switch input[type="checkbox"] {
+    width: 0;
+    height: 0;
+    position: absolute;
+    visibility: hidden;
+  }
+  
+  .toggle-label {
+    display: block;
+    width: 55px;
+    height: 25px;
+    background: #ccc;
+    border-radius: 30px;
+    position: relative;
     cursor: pointer;
+    transition: background-color 0.5s;
+  }
+  
+  .toggle-label::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    transition: transform 0.3s;
+  }
+  
+  input[type="checkbox"]:checked + .toggle-label {
+    background-color: #666;
+  }
+  
+  input[type="checkbox"]:checked + .toggle-label::before {
+    transform: translateX(20px);
+    background-color: #ff9900;
+  }
+  
+  /* Header Styles */
+  header {
+    background: linear-gradient(to bottom, #000000, #000000);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #000;
+  }
+  
+  /* Navigation Styles */
+  nav {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: -20px;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    position: relative;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px #000;
+  }
+  
+  nav a::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #ff9900;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  nav a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  /* Main Content Styles */
+  main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background:	#bababb;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  #all-games {
+    width: 1363px; /* Set the fixed width */
+    margin-left: -200px; /* Auto margin on left side */
+    margin-right: center; /* Auto margin on right side */
+    padding: 20px;
+    background: #202225;
+    border-radius: 100px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  /* Game Card Styles */
+  .game-card {
+    border: 1px solid #ffffffb2;
+    margin: 20px 0;
+    padding: 20px;
+    background: var(--copper);
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    height: 510px;
+  }
+  
+  .game-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .game-card img {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .game-card h3 {
+    font-size: 1.6rem;
+    margin-top: 15px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .game-card p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 15px;
+  }
+  
+  /* Modern Button Style */
+  .game-card a {
+    text-decoration: none;
+    display: inline-block;
+    background: linear-gradient(135deg, #000000, #511e66);
+    color:var(--copper);
+    font-weight: 600;
+    padding: 12px 40px;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: background 0.3s, transform 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  
+  .game-card a:hover {
+    background: linear-gradient(135deg, #000000, #6d6d6d);
+    transform: scale(1.05);
+  }
+  
+  /* Footer Styles */
+  footer {
+    background: black; /* Change the background color to black */
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Additional Styles for Hover and Focus Effects */
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+  }
+  
+  /* Stylish Hover Effect for Game Cards */
+  .game-card:hover img {
+    transform: scale(1.05);
+  }
+  
+  .game-card:hover h3 {
+    color: #ffffff;
+  }
+  
+  /* Navigation bar styles */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  nav li {
+    margin-right: 1em;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Sort by name button styles */
+  .sort-button {
+    background-color: #dddddd00;
+    border: none;
+    border-radius: 4px;
+    color: black;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    margin: 1em;
+    padding: 0.5em;
+    transition: background-color 0.2s;
+  }
+  
+  .sort-button:hover {
+    background-color: #BBBBBB;
+  }
+  
+  /* Game card styles */
+  .game-card {
+    background-color: #ffffffc4;
+    border-radius: 50px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    overflow: hidden;
+    width: 350px;
+  }
+  
+  .game-card h3 {
+    background-color: #000000;
+    color: rgb(235, 230, 230);
+    font-family: sans-serif;
+    font-size: 1.1em;
+    margin: 0;
+    padding: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 100px; /* Curved bottom corners */
+    border-bottom-right-radius: 100px; /* Curved bottom corners */
+    font-weight: bold; /* Making the font bold */
+    letter-spacing: 1px; /* Adding some letter spacing */
+    line-height: 2.0; /* Adjusting the line height for better readability */
+  }
+  
+  .game-card p {
+    font-family: sans-serif;
+    font-size: 1em;
+    margin: 1em;
+  }
+  
+  .game-card img {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border: 10px solid #000000; /* Adding a border around the image */
+    border-top: none; /* Removing top border to merge with h3 */
+  }
+  
+  .game-card a {
+    background-color: #000000;
+    color: white;
+    margin: 1em;
+    padding: 0.5em;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+  }
+  
+  .game-card a:hover {
+    background-color: rgb(0, 0, 0);
+  }
+  
+  
+  /* A to Z Sorting */
+  #all-games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media (min-width: 768px) {
+    #all-games {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; /* Aligns items in four columns */
+    }
+  
+    /* Target every fourth game card */
+    .game-card:nth-child(4n) {
+      flex-basis: calc(32% - 12px); /* Adjust width to fit in four columns */
+      margin-right: 15px; /* Add 'px' unit */
+      margin-left: 0;
+    }
+  
+    /* Target the first, second, and third game card in each row */
+    .game-card:nth-child(4n-3),
+    .game-card:nth-child(4n-2),
+    .game-card:nth-child(4n-1) {
+      flex-basis: calc(32% - 12px); /* Adjust width to fit in four columns */
+      margin-right: 15px; /* Adjust the margin to maintain spacing */
+      margin-left: 0;
+    }
+  }
+    /* float game cards in left and right columns*/
+   /* Target every third game card */
+  /* Target every third game card */
+  
+  
+  
+  /* Add this to your CSS file or style tag */
+  
+  /* Add this to your CSS file or style tag */
+  
+  img {
+      image-rendering: optimizeQuality; /* Standard property for most browsers */
+      image-rendering: -webkit-optimize-contrast; /* Webkit browsers (Chrome, Safari) */
+      image-rendering: crisp-edges; /* CSS4 */
+      image-rendering: pixelated; /* Firefox */
+  }
+  
+  #scrollButton {
+    position: fixed;
+    left: 49%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    padding: 10px 40px; /* Increase the padding to make it longer horizontally */
+    background-color: rgba(0, 0, 0, 0.828);
+    color: #fff;
+    border: 2px solid black; /* Add a black border */
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 999;
+    width: 900px;
+    font-family: "Kanit", italic;
+    font-style: italic;
+  font-size: 20px;
+  height: 60px;
+  text-align: center;
+  }
+  
+  #redirectButton {
+    position: fixed;
+    left: 75%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    padding: 10px 27px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border: 2px solid black; /* Add a black border */
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  
+  
+  #proxy {
+    position: fixed;
+    left: 23%;
+    bottom: 22px;
+    transform: translateX(-50%);
+    padding: 10px 32px;
+    background-color: rgb(20, 20, 21);
+    color: #fff;
+    border: 2px solid black; /* Add a black border */
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 999;
+  }
+  /* Search Container Styles */
+  /* Search Container Styles */
+  .search-container {
+    display: flex;
+    max-width: 900px; /* Adjusted maximum width */
+    margin: 20px auto; /* Center the search bar */
+    border-radius: 50px; /* Increased border-radius for a rounder look */
+    overflow: hidden; /* Hide overflowing content */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    background-color: #333; /* Dark background color */
+  }
+  
+  /* Search Input Styles */
+  #searchInput {
+    flex: 1; /* Take up remaining space */
+    padding: 15px; /* Increased padding for input field */
+    border: none; /* Remove default border */
+    outline: none; /* Remove outline on focus */
+    border-radius: 50px; /* Rounded corners for input */
+    font-size: 16px; /* Adjusted font size */
+    background-color: #555; /* Darker input background color */
+    color: #fff; /* Text color */
+  }
+  
+  /* Search Button Styles */
+  .search-container button {
+    padding: 15px 25px; /* Adjusted button padding */
+    background-color: #000; /* Black button background color */
+    color: #fff; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 50px; /* Rounded corners for button */
+    cursor: pointer; /* Show pointer cursor */
+    transition: background-color 0.3s; /* Smooth background transition */
+  }
+  
+  /* Button Hover Effect */
+  .search-container button:hover {
+    background-color: #333; /* Darker color on hover */
+  }
+  .button {
+    text-decoration: none;
+    display: inline-block;
+    background: linear-gradient(135deg, #000000, #511e66);
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 45px; /* Reduced vertical padding for a smaller height */
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    border: 2px solid transparent;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .button:hover {
+    background: linear-gradient(135deg, #000000, #6d6d6d);
+    transform: scale(1.05);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  #color-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .color-box {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+    border: 2px solid rgb(0, 0, 0); /* Added white border */
+  }
+  
+  .text {
+    top: 1px; /* Adjust as needed */
+    left: 50%; /* Center the text */
+    transform: translateX(-50%); /* Center the text */
+  }
+  
+  #button-container {
+    margin-top: 20px;
+  }
+  
+  #saveColorBtn,
+  #removeColorBtn {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
     border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #4E342E; /* Darker brown on hover */
-}
+  }
+  
+  #saveColorBtn {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  #removeColorBtn {
+    background-color: #ff0000;
+    color: #fff;
+  }
+  
+  #saveColorBtn:hover {
+    background-color: #45a049;
+  }
+  
+  #removeColorBtn:hover {
+    background-color: #e60000;
+  }
+  .iframe-container {
+    position: absolute; /* Change from relative to absolute */
+    top: 10px; /* Adjust the top position as needed */
+    left: 1px; /* Adjust the left position as needed */
+    width: 300px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .iframe-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .iframe-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  transition: transform 0.3s ease;
+  }
+  
+  .iframe-container:hover iframe {
+  transform: scale(1.05);
+  }
+  
+  .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7));
+  pointer-events: none;
+  }
+  .iframe {
+    position: absolute; /* Change from relative to absolute */
+    top: 10px; /* Adjust the top position as needed */
+    right: 5px; /* Adjust the left position as needed */
+    width: 280px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .iframe:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .iframe iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  transition: transform 0.3s ease;
+  }
+  
+  .iframe:hover iframe {
+  transform: scale(1.05);
+  }
+  .game-container {
+    width: 100%;
+    overflow-x: scroll; /* Added scroll property */
+    white-space: nowrap;
+    border: 1px solid #cccccca3;
+    display: flex; /* Added flex property for better alignment */
+  }
+  
+  .retro-cards {
+    display: flex;
+    flex-direction: row;
+    color: #000;
+  }
+  
+  .retro-card {
+    background-color: #ffffffb2;
+    border-radius: 50px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0.5em;
+    overflow: hidden;
+    width: 370px;
+    height: 600px;
+  }
+  
+  .retro-card img {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 10px solid #ffffffb2;
+    transition: transform 0.3s ease;
+  }
+  
+  .retro-card:hover img {
+    transform: scale(1.05);
+  }
+  
+  .retro-card h3 {
+    background-color: #000000;
+    color: rgb(235, 230, 230);
+    font-family: sans-serif;
+    font-size: 1.1em;
+    margin: 0;
+    padding: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 2.0;
+    transition: color 0.3s;
+  }
+  
+  .retro-card:hover h3 {
+    color: #ffffff;
+  }
+  
+  .retro-card p {
+    font-family: sans-serif;
+    font-size: 1em;
+    margin: 1em;
+  }
+  
+  .retro-card a {
+    background-color: #000000;
+    color: #ffffffb2;
+    margin: 1em;
+    padding: 0.5em;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+  }
+  
+  .retro-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .retro-card a:hover {
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .button {
+    text-decoration: none;
+    display: inline-block;
+    background: linear-gradient(135deg, #000000, #511e66);
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 45px;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    border: 2px solid transparent;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .button:hover {
+    background: linear-gradient(135deg, #000000, #6d6d6d);
+    transform: scale(1.05);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  .mpva  {
+    text-decoration: none;
+    color: #5a5a5a;
+    font-weight: 600;
+    transition: color 0.3s;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    position: relative;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px #000;
+  }
+  
+  .mpva::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #ff9900;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .mpva:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  #ret{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: bold;
+  }
+  
+  /* Tailwind CSS Color Palette */
+  :root {
+    --russian_violet: #10002b;
+    --russian_violet-100: #030008;
+    --russian_violet-200: #060010;
+    --russian_violet-300: #090018;
+    --russian_violet-400: #0c0021;
+    --russian_violet-500: #10002b;
+    --russian_violet-600: #310087;
+    --russian_violet-700: #5400e4;
+    --russian_violet-800: #8843ff;
+    --russian_violet-900: #c4a1ff;
+  
+    --persian_indigo: #3c096c;
+    --tekhelet: #5a189a;
+    --french_violet: #7b2cbf;
+    --amethyst: #9d4edd;
+    --heliotrope: #c77dff;
+    --mauve: #e0aaff;
+  }
+  /* CSS HEX */
+    /* CSS HEX */
+   :root {
+  --copper: #a8763eff;
+  --cosmic-latte: #f7f3e3ff;
+  --antiflash-white: #ecf0f1ff;
+  --barn-red: #6f1a07ff;
+  --bistre: #2b2118ff;
+  
+  /* CSS HSL */
+  --copper: #202225;
+  --cosmic-latte: hsla(48, 56%, 93%, 1);
+  --antiflash-white: hsla(192, 15%, 94%, 1);
+  --barn-red: hsla(11, 88%, 23%, 1);
+  --bistre: hsla(28, 28%, 13%, 1);
+   }
+  .link-button{
+    text-decoration: none;
+    display: inline-block;
+    background: linear-gradient(135deg, #000000, #511e66);
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 45px; /* Reduced vertical padding for a smaller height */
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    border: 2px solid transparent;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .heart-icon {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    cursor: pointer;
+    color: red;
+    font-size: 24px;
+    z-index: 1; /* Ensure heart icon stays on top */
+    outline: 4px solid red; /* Outline for heart icon box */
+    animation: bounce 0.5s ease; /* Apply bounce animation */
+  }
+  
+  @keyframes bounce {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-5px); }
+    50% { transform: translateY(0); }
+    75% { transform: translateY(-2px); }
+    100% { transform: translateY(0); }
+  }
