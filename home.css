@@ -69,8 +69,8 @@ body {
 
     .button {
         background-color: transparent;
-        border: 2px solid #ccc; /* Light gray border */
-        color: #ccc;
+        border: 2px solid #ffffff; /* Light gray border */
+        color: #ffffff;
         font-size: 1.2em; 
         font-weight: bold; 
         padding: 15px 30px; 
@@ -90,7 +90,7 @@ body {
         left: 50%;
         width: 300%;
         height: 300%;
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: rgb(0, 0, 0);
         transition: width 0.3s ease, height 0.3s ease;
         border-radius: 50%;
         z-index: 0;
