@@ -1,174 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
-   <meta name="google-site-verification" content="AEDdz9XcY3x0M9T7nN3N5C0jDTqfXBeSObY9oFh1xP4" />
 <head>
-    <script type="text/javascript">
-        aclib.runAutoTag({
-            zoneId: '1vhqorrk',
-        });
-    </script>
-</head>
-<head>  
-    <style>
-        /* Styles for the pop-up ad */
-        .popup {
-          position: fixed;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          background-color: white;
-          padding: 20px;
-          border-radius: 10px;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-          z-index: 9999;
-        }
-      
-        .popup img {
-          width: 100%;
-          border-radius: 10px;
-        }
-      
-        .close {
-          position: absolute;
-          top: 5px;
-          right: 5px;
-          font-size: 20px;
-          cursor: pointer;
-        }
-      
-        .close:hover {
-          color: red;
-        }
-    </style>
-    </head>
-    <body>
-    
+  <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+  <meta name="google-site-verification" content="AEDdz9XcY3x0M9T7nN3N5C0jDTqfXBeSObY9oFh1xP4" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
 
-    <script>
-        // Function to display the popup
-        function displayPopup() {
-            var popup = document.getElementById("popup");
-            popup.style.display = "block";
-        }
-    
-        // Function to close the popup
-        function closePopup() {
-            var popup = document.getElementById("popup");
-            popup.style.display = "none";
-        }
-    
-        // Set interval to display the popup every 30 minutes
-        setInterval(displayPopup, 30 * 60 * 1000);
-    
-        // Add event listener to close the popup when clicking anywhere on the screen
-        document.addEventListener("click", function(event) {
-            var popup = document.getElementById("popup");
-            if (event.target !== popup && !popup.contains(event.target)) {
-                closePopup();
-            }
-        });
-    </script>
-    
-    
-    <link rel="stylesheet" media="screen and (min-width: 768px)" href="home.css">
-    <footer class="footer1">
-        Last Updated on: <span id="lastUpdated"></span>
-    </footer>
-<style>
-    .fotter1{
-        color: aliceblue;
-    }
-</style>
-    <link rel="stylesheet" media="screen and (max-width: 767px)" href="styles-mobile.css">
-      <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D6XL3ZN4KW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script type="text/javascript">
+    aclib.runAutoTag({
+      zoneId: '1vhqorrk',
+    });
+  </script>
 
-  gtag('config', 'G-D6XL3ZN4KW');
-</script>
-<footer class="footer">
-    Amount of games: <span id="gameCardCount"></span>
-</footer>
-<head>
-</head>
-<style>
+  <link rel="stylesheet" media="screen and (min-width: 768px)" href="home.css">
+  <link rel="stylesheet" media="screen and (max-width: 767px)" href="styles-mobile.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
     body {
-  font-family: 'Kanit', sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 1px;
-  color: #ffffff00;
-  /* Set the GIF as the background */
-  background-image: url('76YS.gif');
-  /* Ensure the background covers the entire viewport */
-  background-size: cover;
-  /* Optionally, you can specify how the background should repeat */
-  background-repeat: repeat;
-}
-</style>
-<script>
-    // Fetch games.html and count the number of elements with class "game-card"
+      font-family: 'Kanit', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 1px;
+      color: #ffffff00;
+      background-image: url('76YS.gif');
+      background-size: cover;
+      background-repeat: repeat;
+    }
+
+    /* Popup styles */
+    .popup-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      display: none;
+      z-index: 9999;
+    }
+
+    .popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 18px 18px 14px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+      width: min(560px, calc(100vw - 32px));
+      display: none;
+      z-index: 10000;
+      color: #111;
+      text-align: center;
+    }
+
+    .popup .close {
+      position: absolute;
+      top: 6px;
+      right: 10px;
+      font-size: 22px;
+      cursor: pointer;
+      user-select: none;
+      line-height: 1;
+    }
+
+    .popup .close:hover { color: red; }
+
+    .popup h2 {
+      margin: 8px 0 10px;
+      font-size: 22px;
+      color: #111;
+    }
+
+    .popup p {
+      margin: 0 0 12px;
+      font-size: 16px;
+      color: #222;
+    }
+
+    .popup .actions {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .popup .actions a,
+    .popup .actions button {
+      border: 0;
+      border-radius: 10px;
+      padding: 10px 14px;
+      font-family: inherit;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .popup .actions a {
+      background: #0b5cff;
+      color: #fff;
+    }
+
+    .popup .actions button {
+      background: #e9e9e9;
+      color: #111;
+    }
+  </style>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6XL3ZN4KW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D6XL3ZN4KW');
+  </script>
+</head>
+
+<body>
+  <!-- Popup markup -->
+  <div id="popupOverlay" class="popup-overlay"></div>
+  <div id="popup" class="popup" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+    <div class="close" id="popupClose" aria-label="Close popup">&times;</div>
+    <h2 id="popupTitle">New website</h2>
+    <p>Hey guys theres a new website im working on and itll have all my focus jeoweb.app</p>
+    <div class="actions">
+      <a id="popupGo" href="https://jeoweb.app" target="_blank" rel="noopener">Open jeoweb.app</a>
+      <button id="popupLater" type="button">Close</button>
+    </div>
+  </div>
+
+  <h1 class="title">Jeowebsite</h1>
+  <p class="description">Welcome to Jeowebsite, This website was made by a little kid that likes games so please enjoy!</p>
+  <a href="https://forms.gle/15wWvUPew76BDbfP6" target="_blank" class="butt">Make my website better</a>
+
+  <div class="button-container">
+    <a href="games.html" class="button"><span>All Games</span></a>
+    <a href="websiteupdates.html" class="button"><span>Updated Blog</span></a>
+    <a href="browser.html" class="button"><span>Proxy</span></a>
+    <a href="popular.html" class="button"><span>Popular Games</span></a>
+    <a href="retro.html" class="button"><span>Retro Games</span></a>
+    <a href="fnf.html" class="button"><span>Friday Night Funkin Mods</span></a>
+    <a href="new-games.html" class="button"><span>Newest 50 games</span></a>
+  </div>
+
+  <p class="description">Other stuff</p>
+  <div class="butt-container">
+    <a href="music-player/index.html" class="button"><span>Music Player</span></a>
+    <a href="jeoflix/index.html" class="button"><span>JeoFlix</span></a>
+    <a href="my-projects.html" class="button"><span>My Silly Projects : ></span></a>
+    <a href="makeyourownjeo.html" class="button"><span>JeoFlix</span></a>
+  </div>
+
+  <footer class="footer1">
+    Last Updated on: <span id="lastUpdated"></span>
+  </footer>
+
+  <footer class="footer">
+    Amount of games: <span id="gameCardCount"></span>
+  </footer>
+
+  <script>
+    function changeBackground(imageUrl) {
+      document.body.style.backgroundImage = `url('${imageUrl}')`;
+    }
+
+    // --- Popup behavior ---
+    const POPUP_KEY = "jeoweb_popup_shown_v1";
+
+    function showPopup() {
+      const overlay = document.getElementById("popupOverlay");
+      const popup = document.getElementById("popup");
+      overlay.style.display = "block";
+      popup.style.display = "block";
+    }
+
+    function hidePopup() {
+      const overlay = document.getElementById("popupOverlay");
+      const popup = document.getElementById("popup");
+      overlay.style.display = "none";
+      popup.style.display = "none";
+    }
+
+    function openJeowebInNewTab() {
+      // Opens jeoweb.app in a new tab
+      window.open("https://jeoweb.app", "_blank", "noopener");
+    }
+
+    // Show the popup on arrival, and open jeoweb.app in a new tab.
+    // NOTE: Some browsers may block the new-tab open unless triggered by a click.
+    window.addEventListener("DOMContentLoaded", () => {
+      // If you want it EVERY visit, remove this if-block + localStorage lines.
+      if (!localStorage.getItem(POPUP_KEY)) {
+        localStorage.setItem(POPUP_KEY, "1");
+        showPopup();
+        openJeowebInNewTab();
+      }
+    });
+
+    // Close actions
+    document.getElementById("popupClose").addEventListener("click", hidePopup);
+    document.getElementById("popupLater").addEventListener("click", hidePopup);
+
+    // If they click the button/link, also hide popup (optional)
+    document.getElementById("popupGo").addEventListener("click", () => {
+      hidePopup();
+      // The <a target="_blank"> already opens it; keeping this clean.
+    });
+
+    // Click outside popup closes it
+    document.getElementById("popupOverlay").addEventListener("click", hidePopup);
+
+    // --- Existing scripts you had ---
     fetch('games.html')
-    .then(response => response.text())
-    .then(html => {
+      .then(response => response.text())
+      .then(html => {
         const parser = new DOMParser();
         const doc = parser.parseFromString(html, 'text/html');
         const gameCards = doc.querySelectorAll('.game-card');
         document.getElementById("gameCardCount").textContent = gameCards.length;
-    })
-    .catch(error => console.error('Error fetching data:', error));
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-</head>
+      })
+      .catch(error => console.error('Error fetching data:', error));
 
-<script>
-    function changeBackground(imageUrl) {
-        document.body.style.backgroundImage = `url('${imageUrl}')`;
-    }
-</script>
-<body>
-    <h1 class="title">Jeowebsite</h1>
-    <p class="description">Welcome to Jeowebsite, This website was made by a little kid that likes games so please enjoy!</p>
-    <a href="https://forms.gle/15wWvUPew76BDbfP6" target="_blank" class="butt">Make my website better</a>
-    <div class="button-container">
-        <a href="games.html" class="button"><span>All Games</span></a>
-        <a href="websiteupdates.html" class="button"><span>Updated Blog</span></a>
-        <a href="browser.html" class="button"><span>Proxy</span></a>
-        <a href="popular.html" class="button"><span>Popular Games</span></a>
-        <a href="retro.html" class="button"><span>Retro Games</span></a>
-        <a href="fnf.html" class="button"><span>Friday Night Funkin Mods</span></a>
-        <a href="new-games.html" class="button"><span>Newest 50 games</span></a>
-    </div>
-    <p class="description">Other stuff</p>
-    <div class="butt-container">
-        <a href="music-player/index.html" class="button"><span>Music Player</span></a>
-        <a href="jeoflix/index.html" class="button"><span>JeoFlix</span></a>
-        <a href="my-projects.html" class="button"><span>My Silly Projects : ></span></a>
-        <a href="makeyourownjeo.html" class="button"><span>JeoFlix</span></a>
-    </div>
-    <script>
-        // Fetch the last commit date of your GitHub repository using GitHub API
-        fetch('https://api.github.com/repos/jeowebsite/jeowebsite.github.io/commits?per_page=1')
-        .then(response => response.json())
-        .then(data => {
-            const lastCommitDate = new Date(data[0].commit.author.date);
-            document.getElementById("lastUpdated").textContent = lastCommitDate.toLocaleString();
-        })
-        .catch(error => console.error('Error fetching data:', error));
-    </script>
+    fetch('https://api.github.com/repos/jeowebsite/jeowebsite.github.io/commits?per_page=1')
+      .then(response => response.json())
+      .then(data => {
+        const lastCommitDate = new Date(data[0].commit.author.date);
+        document.getElementById("lastUpdated").textContent = lastCommitDate.toLocaleString();
+      })
+      .catch(error => console.error('Error fetching data:', error));
+  </script>
 </body>
 </html>
